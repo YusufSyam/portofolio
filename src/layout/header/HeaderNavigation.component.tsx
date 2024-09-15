@@ -10,7 +10,7 @@ export interface IHeaderNavigationComp {
 const HeaderNavigationComp: React.FC<IHeaderNavigationComp> = ({href='', label='label' }) => {
   return (
     <Link to={href}>
-      <Text>
+      <Text className='text-white font-roboto tracking-5'>
         {label}
       </Text>
     </Link>

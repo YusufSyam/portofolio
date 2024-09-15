@@ -18,6 +18,7 @@ export default {
       "dark-grey": "#2E3944",
       grey: "#748D92",
       "light-grey": "#D3D9D4",
+      "cream": "#F7E987",
     },
     fontFamily: {
       'poppins': [
@@ -40,6 +41,13 @@ export default {
         'roboto-light', 'sans-serif'
       ],
       'roboto-semibold': ['roboto-semibold', 'sans-serif'],
+      'alkatra': [
+        'alkatra', 'sans-serif'
+      ],
+      'alkatra-semibold': [
+        'alkatra-semibold', 'sans-serif'
+      ],
+      'alkatra-bold': ['alkatra-bold', 'sans-serif']
     },
     fontSize: {
       xs: 10,

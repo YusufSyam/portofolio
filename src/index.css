@@ -44,10 +44,25 @@
   src: url("./assets/fonts/Roboto/Roboto-Light.ttf");
 }
 
+@font-face {
+  font-family: "alkatra";
+  src: url("./assets/fonts/Alkatra/Alkatra-Regular.ttf");
+}
+
+@font-face {
+  font-family: "alkatra-bold";
+  src: url("./assets/fonts/Alkatra/Alkatra-Bold.ttf");
+}
+
+
+@font-face {
+  font-family: "alkatra-semibold";
+  src: url("./assets/fonts/Alkatra/Alkatra-SemiBold.ttf");
+}
+
 body {
   font-size: 14px;
   font-weight: normal;
-  min-width: fit-content;
   /* background-color: #FFE6E6 !important; */
 }
 
