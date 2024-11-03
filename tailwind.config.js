@@ -19,6 +19,11 @@ export default {
       grey: "#748D92",
       "light-grey": "#D3D9D4",
       "cream": "#F7E987",
+      "fd-cream": "#FFF3C7",
+      "fd-light-pink": "#FEC7B4",
+      "fd-pink": "#FC819E",
+      "fd-blue": "#96ccdc",
+      "fd-dark-pink": "#F7418F"
     },
     fontFamily: {
       'poppins': [
@@ -70,7 +75,13 @@ export default {
       "1": "0px 1px 4px rgba(0, 0, 0, 0.12)",
       "2": "drop-shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'galeri': "url('../src/assets/images/galeri.jpg')",
+        'background': "url('../src/assets/images/bg.jpg')",
+        'background2': "url('../src/assets/images/bg2.jpg')",
+      }
+    },
   },
   plugins: [],
 }

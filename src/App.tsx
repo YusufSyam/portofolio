@@ -6,6 +6,10 @@ import { MantineProvider } from "@mantine/core";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MAINROUTES } from "./utils/const/routes";
 import HomePage from "./pages/home/Home.page";
+import FDHomePage from "./pages/home/jumbotron/fd/pages/home/FDHome.page";
+import FDTimelinePage from "./pages/home/jumbotron/fd/pages/timeline/FDTimeline.page";
+import { FDROUTES } from "./pages/home/jumbotron/fd/utils/const";
+import FDMutolPage from "./pages/home/jumbotron/fd/pages/mutol/FDMutol.page";
 
 function App() {
   return (
@@ -171,12 +175,75 @@ function App() {
             "#F7E987",
             "#F7E987"
           ],
+          "fd-cream": [
+            "#FFF3C7",
+            "#FFF3C7",
+            "#FFF3C7",
+            "#FFF3C7",
+            "#FFF3C7",
+            "#FFF3C7",
+            "#FFF3C7",
+            "#FFF3C7",
+            "#FFF3C7",
+            "#FFF3C7"
+          ],
+          "fd-light-pink": [
+            "#FEC7B4",
+            "#FEC7B4",
+            "#FEC7B4",
+            "#FEC7B4",
+            "#FEC7B4",
+            "#FEC7B4",
+            "#FEC7B4",
+            "#FEC7B4",
+            "#FEC7B4",
+            "#FEC7B4"
+          ],
+          "fd-pink": [
+            "#FC819E",
+            "#FC819E",
+            "#FC819E",
+            "#FC819E",
+            "#FC819E",
+            "#FC819E",
+            "#FC819E",
+            "#FC819E",
+            "#FC819E",
+            "#FC819E"
+          ],
+          "fd-blue": [
+            "#96ccdc",
+            "#96ccdc",
+            "#96ccdc",
+            "#96ccdc",
+            "#96ccdc",
+            "#96ccdc",
+            "#96ccdc",
+            "#96ccdc",
+            "#96ccdc",
+            "#96ccdc"
+          ],
+          "fd-dark-pink": [
+            "#F7418F",
+            "#F7418F",
+            "#F7418F",
+            "#F7418F",
+            "#F7418F",
+            "#F7418F",
+            "#F7418F",
+            "#F7418F",
+            "#F7418F",
+            "#F7418F"
+          ],
         }
       }}
     >
       <BrowserRouter>
         <Routes>
           <Route path={MAINROUTES.home} element={<HomePage />} />
+          <Route path={FDROUTES.fd} element={<FDHomePage />} />
+          <Route path={FDROUTES.fdTimeline} element={<FDTimelinePage />} />
+          <Route path={FDROUTES.fdGalleryOne} element={<FDMutolPage />} />
         </Routes>
       </BrowserRouter>
     </MantineProvider>
