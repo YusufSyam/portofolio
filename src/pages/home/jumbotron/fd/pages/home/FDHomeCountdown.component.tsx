@@ -2,11 +2,13 @@ import { Group, Stack, Text, useMantineTheme } from "@mantine/core";
 import React, { useEffect, useState } from "react";
 import { IconExplosion } from "../../../../../../assets/icons/Fluent";
 
-export interface IFDHomeCountdownComp {}
+export interface IFDHomeCountdownComp {
+  targetRef: React.MutableRefObject<any>;
+}
 
 const TARGET_DATE = new Date("2025-06-06T00:00:00");
 
-const FDHomeCountdownComp: React.FC<IFDHomeCountdownComp> = ({}) => {
+const FDHomeCountdownComp: React.FC<IFDHomeCountdownComp> = ({ targetRef }) => {
   // State untuk menyimpan waktu yang tersisa
   const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft());
 
@@ -40,10 +42,16 @@ const FDHomeCountdownComp: React.FC<IFDHomeCountdownComp> = ({}) => {
     //     {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
     //   </div>
     // </div>
-    <Stack className="my-10 border-y border-fd-pink py-10 bg-fd-light-pink/25">
-      <Text className="text-primary-text-1 text-3xl font-poppins text-center">
-        Time left until we meet:
-      </Text>
+    <Stack className="mt-10 mb-4 border-y border-fd-pink py-10 bg-fd-light-pink/25">
+      <Stack className="gap-0">
+        <Text
+          className="text-primary-text-1 text-3xl font-poppins text-center"
+          ref={targetRef}
+        >
+          Time left until we meet:
+        </Text>
+        <Text className="text-secondary-text-500 text-center -mt-1 text-md font-semibold"> 6 Juni 2025 </Text>
+      </Stack>
       <Stack className="gap-4  mx-auto self-center w-fit relative ">
         <Stack className="gap-0 self-center z-10">
           <Text className="bg-fd-pink text-white font-poppins-semibold text-[48px] p-6 rounded-full">

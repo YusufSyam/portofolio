@@ -11,10 +11,10 @@ const FDHomePage: React.FC<IFDHomePage> = ({}) => {
   const [isMailClicked, setIsMailClicked] = useState(false);
   return (
     <FDMainLayout>
-      <Stack className="mt-10">
+      <Stack className="mt-0">
         <FDHomeSection1 isMailClicked={isMailClicked} setIsMailClicked={setIsMailClicked} />
         <FDHomeSection2 isMailClicked={isMailClicked} setIsMailClicked={setIsMailClicked}  />
-        <FDHomeSection3 />
+        {/* <FDHomeSection3 /> */}
       </Stack>
     </FDMainLayout>
   );

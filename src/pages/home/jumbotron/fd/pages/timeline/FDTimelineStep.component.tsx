@@ -31,7 +31,7 @@ const FDTimelineStepComp: React.FC<IFDTimelineStepComp> = ({
             borderBottomLeftRadius: stepType == "end" ? "9999px" : "0px",
             borderBottomRightRadius: stepType == "end" ? "9999px" : "0px"
           }}
-          className="h-full bg-fd-light-pink"
+          className="h-full bg-fd-blue/40"
         >
           <div
             className={`self-center w-[2px] h-32 ${
@@ -40,7 +40,7 @@ const FDTimelineStepComp: React.FC<IFDTimelineStepComp> = ({
           ></div>
           <Stack className="gap-2">
             {/* <Stack className="mt-12 gap-2"> */}
-            <Text className="text-center py-2 px-4  rounded-full text-2xl font-poppins text-white bg-fd-dark-pink w-fit self-center">
+            <Text className="text-center py-2 px-4  rounded-full text-2xl font-poppins text-white bg-fd-pink w-fit self-center">
               {dateNumber}
             </Text>
             <Text className="text-center text-fd-dark-pink font-semibold tracking-5">
@@ -57,14 +57,14 @@ const FDTimelineStepComp: React.FC<IFDTimelineStepComp> = ({
       </Grid.Col>
       <Grid.Col span={4}>
         <Stack className="w-full relative mb-14">
-          <div className="w-full z-10 rounded-3xl border border-fd-pink  overflow-hidden">
+          <div className="w-full z-10 rounded-3xl border border-fd-blue  overflow-hidden">
             <img
               src={image}
               alt="Gambar Item"
               className="w-full h-[220px] object-cover"
             />
           </div>
-          <Stack className="bg-fd-pink absolute w-full h-full -left-2 -bottom-2 rounded-3xl"></Stack>
+          <Stack className="bg-fd-blue absolute w-full h-full -left-2 -bottom-2 rounded-3xl"></Stack>
         </Stack>
       </Grid.Col>
       <Grid.Col span={6}>

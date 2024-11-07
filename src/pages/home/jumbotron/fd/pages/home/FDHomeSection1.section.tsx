@@ -1,10 +1,19 @@
-import { Divider, Grid, Group, Stack, Text } from "@mantine/core";
+import {
+  Divider,
+  Grid,
+  Group,
+  Stack,
+  Text,
+  useMantineTheme
+} from "@mantine/core";
 import React, { useState } from "react";
 import dhea from "../../assets/images/dhea-jumbotron.png";
 import jumbotron from "../../assets/images/jumbotron.png";
 import mail from "../../assets/images/mail2.png";
 import fullMail from "../../assets/images/mail.png";
 import FDModal from "../../../../../../components/FDModal.component";
+import { IconHeartFilled } from "../../../../../../assets/icons/Fluent";
+import FDChat from "./FDChat.component";
 
 export interface IFDHomeSection1 {
   isMailClicked: boolean;
@@ -15,8 +24,9 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
   isMailClicked,
   setIsMailClicked
 }) => {
+  const theme = useMantineTheme();
   return (
-    <Stack className="p-4 gap-8">
+    <Stack className="p-4 gap-8 mb-10">
       <FDModal
         opened={isMailClicked}
         setOpened={setIsMailClicked}
@@ -59,25 +69,73 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
           setIsMailClicked(false);
         }}
       />
-      <Stack className="self-center gap-1">
-        <Text className="text-center font-poppins text-fd-pink text-[48px]">
-          Happy 23rd Birthday
-        </Text>
-        <Text className="text-center text-fd-dark-pink text-xl">
-          Ardhiyah Regita Iriani
-          {/* ❤️ Ardhiyah Regita Iriani ❤️ */}
-        </Text>
-      </Stack>
-      <Stack className="bg-background bg-cover rounded-3xl px-2 pt-8">
-        <div className="w-[50%] mx-auto">
+      <Stack className="bg-background bg-cover rounded-3xl px-4 pt-6 pb-8 relative ">
+        <div className="absolute w-full h-full bg-fd-dark-pink/70 left-0 top-0 rounded-3xl"></div>
+        <Grid gutter={"xl"} columns={24}>
+          <Grid.Col span={11} className="z-50">
+            <Stack className="w-full mx-auto gap-0">
+              <div className="w-[95%] mx-auto self-center">
+                <img
+                  src={jumbotron}
+                  alt="Gambar Item"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <Stack className="self-center gap-1">
+                <Text className="text-center font-dancing-script-bold text-white text-[44px]">
+                  happy 23rd birthday
+                </Text>
+              </Stack>
+            </Stack>
+          </Grid.Col>
+          <Grid.Col span={13} className="z-10">
+            <Stack className="gap-12">
+              <Stack className="gap-0">
+                <Text className="text-white font-semibold text-md ml-4">
+                  A website made for my favourite person,
+                </Text>
+                <Group className="-mt-4 gap-2">
+                  <Text className="text-white font-roboto text-[72px] tracking-5 ">
+                    Ardhiyah
+                  </Text>
+                  <IconHeartFilled
+                    size={72}
+                    color={theme.colors["fd-cream"][5]}
+                  />
+                </Group>
+                <Text className="text-white font-roboto text-[36px] ml-56 -mt-6 tracking-5">
+                  Regita Iriani
+                </Text>
+              </Stack>
+              <Stack>
+                <FDChat caption="Selamat datang di website yang dibuat Ucup yang dibuat untuk Dhea tercintaa" />
+                <FDChat
+                  cardColor="fd-cream"
+                  caption="Hope you enjoy and appreciate my work"
+                />
+                <FDChat cardColor="fd-blue" caption="2 weeks of work >...<" />
+                <FDChat
+                  cardColor="fd-light-pink"
+                  caption="Langkah Pertama: Klik ikon surat di bawah 👇🏻"
+                />
+              </Stack>
+            </Stack>
+          </Grid.Col>
+        </Grid>
+        <div
+          onClick={() => {
+            setIsMailClicked(true);
+          }}
+          className="w-32 cursor-pointer z-10 bg-white p-1 rounded-xl absolute right-20 -bottom-12"
+        >
           <img
-            src={jumbotron}
+            src={fullMail}
             alt="Gambar Item"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover bg-cream"
           />
         </div>
       </Stack>
-      <Grid gutter={"xl"} className="mx-4 mt-8">
+      {/* <Grid gutter={"xl"} className="mx-4 mt-8">
         <Grid.Col span={8}>
           <Stack className="">
             <Text className="font-poppins text-[36px] text-primary-text-1 text-start">
@@ -151,7 +209,7 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
             )}
           </Stack>
         </Grid.Col>
-      </Grid>
+      </Grid> */}
     </Stack>
   );
 };

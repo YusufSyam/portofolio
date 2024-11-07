@@ -1,179 +1,24 @@
-import dhea1 from "../../assets/images/dhea1.jpg"
+import i1 from "../mutol/photos/1.jpg"
+import i2 from "../mutol/photos/2.png"
 
-export interface IGalleryImages  {
+export interface IGalleryImages {
   src: string;
   width: number;
   height: 180;
   caption: string;
 }
 
-export const Pictures : IGalleryImages[] = [
+export const Pictures: IGalleryImages[] = [
   {
-    src: dhea1,
+    src: i1,
     width: 300,
     height: 180,
-    caption: "Kebun Jagung"
+    caption: "Satu"
   },
   {
-    src: dhea1,
+    src: i2,
     width: 300,
     height: 180,
-    caption: "Kebun Jagung"
+    caption: "Dua"
   },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-  {
-    src: dhea1,
-    width: 300,
-    height: 180,
-    caption: "Kebun Jagung"
-  },
-]
+];

@@ -52,7 +52,23 @@ export default {
       'alkatra-semibold': [
         'alkatra-semibold', 'sans-serif'
       ],
-      'alkatra-bold': ['alkatra-bold', 'sans-serif']
+      'alkatra-bold': ['alkatra-bold', 'sans-serif'],
+      'quicksand': [
+        'quicksand', 'sans-serif'
+      ],
+      'quicksand-semibold': [
+        'quicksand-semibold', 'sans-serif'
+      ],
+      'quicksand-bold': ['quicksand-bold', 'sans-serif'],
+      'dancing-script': [
+        'dancing-script', 'sans-serif'
+      ],
+      'dancing-script-semibold': [
+        'dancing-script-semibold', 'sans-serif'
+      ],
+      'dancing-script-bold': ['dancing-script-bold', 'sans-serif'],
+      'great-vibes': ['great-vibes', 'sans-serif'],
+      
     },
     fontSize: {
       xs: 10,

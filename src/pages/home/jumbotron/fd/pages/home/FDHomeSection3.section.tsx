@@ -7,7 +7,6 @@ export interface IFDHomeSection3 {}
 const FDHomeSection3: React.FC<IFDHomeSection3> = ({ }) => {
   return (
     <Stack>
-      <FDHomeCountdownComp />
     </Stack>
   )
 }

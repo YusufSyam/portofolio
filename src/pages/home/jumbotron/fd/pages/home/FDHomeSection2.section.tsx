@@ -5,6 +5,8 @@ import FDNavigateCardComp from "./FDNavigateCard.component";
 import { MAINROUTES } from "../../../../../../utils/const/routes";
 import { useNavigate } from "react-router-dom";
 import { FDROUTES } from "../../utils/const";
+import { useScrollIntoView } from "@mantine/hooks";
+import FDHomeCountdownComp from "./FDHomeCountdown.component";
 
 export interface IFDHomeSection2 {
   isMailClicked: boolean;
@@ -17,15 +19,20 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
 }) => {
   const navigate = useNavigate();
 
-  function onClickMutolDhea(){
-    navigate(FDROUTES.fdGalleryOne)
+  function onClickMutolDhea() {
+    navigate(FDROUTES.fdGalleryOne);
   }
+
+  const { scrollIntoView, targetRef } = useScrollIntoView<HTMLDivElement>({});
   return (
-    <Stack>
-      <Grid gutter={64}>
+    <Stack className="gap-10">
+      <Text className="text-fd-dark-pink text-[48px] text-center font-poppins-semibold tracking-5">
+        explore
+      </Text>
+      <Grid gutter={64} className="mb-8">
         <Grid.Col span={6}>
           <FDNavigateCardComp
-            cardColor="fd-dark-pink"
+            cardColor="fd-blue"
             title="Story of Us"
             caption="Timeline hubungan Dhea dan Ucup. First encounter, menjadi teman VC sleep call, from close friend to lover, until now"
             onClick={() => {
@@ -34,10 +41,24 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
           />
         </Grid.Col>
         <Grid.Col span={6}>
-          <FDNavigateCardComp cardColor="fd-cream" />
+          <FDNavigateCardComp
+            cardColor="fd-cream"
+            title="Our meeting 'countdown'"
+            caption="Countdown atau hitungan mundur 6 Juni 2025 AKA 'pertemuan pelepas rindu' di mana Dhea (mungkin?) pulang ke Makassar dan akhirnya bisa memecah celengan rindu anjirr"
+            onClick={() => {
+              scrollIntoView({
+                alignment: "center"
+              });
+            }}
+          />
         </Grid.Col>
         <Grid.Col span={6}>
-          <FDNavigateCardComp cardColor="fd-light-pink" title="Our Gallery" onClick={onClickMutolDhea} />
+          <FDNavigateCardComp
+            cardColor="fd-pink"
+            title="Our Gallery"
+            onClick={onClickMutolDhea}
+            caption="Halaman yang berisi gambar dan foto yang mengabadikan momen-momen penting Ucup dan Dhea :)"
+          />
         </Grid.Col>
         <Grid.Col span={6}>
           <FDNavigateCardComp
@@ -50,6 +71,7 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
           />
         </Grid.Col>
       </Grid>
+      <FDHomeCountdownComp targetRef={targetRef} />
     </Stack>
   );
 };

@@ -45,6 +45,43 @@
 }
 
 @font-face {
+  font-family: "quicksand";
+  src: url("./assets/fonts/Quicksand/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: "quicksand-bold";
+  src: url("./assets/fonts/Quicksand/Quicksand-Bold.ttf");
+}
+
+
+@font-face {
+  font-family: "quicksand-semibold";
+  src: url("./assets/fonts/Quicksand/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "dancing-script";
+  src: url("./assets/fonts/Dancing Script/DancingScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "dancing-script-bold";
+  src: url("./assets/fonts/Dancing Script/DancingScript-Bold.ttf");
+}
+
+
+@font-face {
+  font-family: "dancing-script-semibold";
+  src: url("./assets/fonts/Dancing Script/DancingScript-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "great-vibes";
+  src: url("./assets/fonts/Great Vibes/GreatVibes-Regular.ttf");
+}
+
+@font-face {
   font-family: "alkatra";
   src: url("./assets/fonts/Alkatra/Alkatra-Regular.ttf");
 }

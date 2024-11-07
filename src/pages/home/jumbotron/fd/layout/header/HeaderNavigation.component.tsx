@@ -10,7 +10,7 @@ export interface IFDHeaderNavigationComp {
 const FDHeaderNavigationComp: React.FC<IFDHeaderNavigationComp> = ({href='', label='label' }) => {
   return (
     <Link to={href}>
-      <Text className='text-primary-text-1 font-roboto tracking-5'>
+      <Text className='text-white font-poppins tracking-5'>
         {label}
       </Text>
     </Link>

@@ -1,4 +1,4 @@
-import { AppShell } from "@mantine/core";
+import { AppShell, Text } from "@mantine/core";
 import React from "react";
 import HeaderLayout from "./header/Header.layout";
 
@@ -11,7 +11,14 @@ export interface IFDMainLayout {
 const FDMainLayout: React.FC<IFDMainLayout> = ({ activePage, children }) => {
   return (
     <AppShell
-      header={<HeaderLayout/>}
+      header={<HeaderLayout />}
+      footer={
+        <Text className="justify-between px-8 py-5 bg-white text-primary-text-1 border-t border-fd-dark-pink mt-24 text-center font-quicksand">
+          - Promise you wont let go, u know im afraid of goodbyes.
+          <span className="text-fd-dark-pink font-quicksand-semibold">{" "}Love you always.</span>
+          -
+        </Text>
+      }
       // navbar={<SideNavbar />}
       // footer={
       //   <Stack className="bg-dark-red w-full py-6 mt-12 border-t-4 border-yellow">
