@@ -30,7 +30,7 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
         explore
       </Text>
       <Grid gutter={48} className="mb-8 mx-10">
-        <Grid.Col span={6}>
+        <Grid.Col span={12} sm={6}>
           <FDNavigateCardComp
             cardColor="fd-blue"
             title="Story of Us"
@@ -40,7 +40,7 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
             }}
           />
         </Grid.Col>
-        <Grid.Col span={6}>
+        <Grid.Col span={12} sm={6}>
           <FDNavigateCardComp
             cardColor="fd-cream"
             title="Our meeting 'countdown'"
@@ -52,7 +52,7 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
             }}
           />
         </Grid.Col>
-        <Grid.Col span={6}>
+        <Grid.Col span={12} sm={6}>
           <FDNavigateCardComp
             cardColor="fd-pink"
             title="Our Gallery"
@@ -60,7 +60,7 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
             caption="Halaman yang berisi gambar dan foto yang mengabadikan momen-momen penting Ucup dan Dhea :)"
           />
         </Grid.Col>
-        <Grid.Col span={6}>
+        <Grid.Col span={12} sm={6}>
           <FDNavigateCardComp
             cardColor="fd-pink"
             title="Pesan dari Ucup"

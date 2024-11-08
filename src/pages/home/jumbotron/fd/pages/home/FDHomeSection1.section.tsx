@@ -31,7 +31,7 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
         opened={isMailClicked}
         setOpened={setIsMailClicked}
         title={"Untuk Bintangku, Dhea"}
-        minWidth={800}
+        minWidth={400}
         children={
           <Stack className=" gap-2">
             <Text className="text-primary-text-2 font-semibold tracking-5 text-lg mx-6">
@@ -69,12 +69,12 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
           setIsMailClicked(false);
         }}
       />
-      <Stack className="bg-background bg-cover rounded-3xl px-4 pt-6 pb-8 relative ">
+      <Stack className="bg-background bg-cover rounded-3xl px-4 pt-6 pb-14 sm:pb-8 relative ">
         <div className="absolute w-full h-full bg-fd-dark-pink/70 left-0 top-0 rounded-3xl"></div>
         <Grid gutter={"xl"} columns={24}>
-          <Grid.Col span={11} className="z-50">
+          <Grid.Col span={24} md={11} className="z-50">
             <Stack className="w-full mx-auto gap-0">
-              <div className="w-[95%] mx-auto self-center">
+              <div className="w-full sm:w-[95%] mx-auto self-center">
                 <img
                   src={jumbotron}
                   alt="Gambar Item"
@@ -82,28 +82,34 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
                 />
               </div>
               <Stack className="self-center gap-1">
-                <Text className="text-center font-dancing-script-bold text-white text-[44px]">
+                <Text className="text-center font-dancing-script-bold text-white text-[34px] sm:text-[44px]">
                   happy 23rd birthday
                 </Text>
               </Stack>
             </Stack>
           </Grid.Col>
-          <Grid.Col span={13} className="z-10">
-            <Stack className="gap-12">
-              <Stack className="gap-0">
-                <Text className="text-white font-semibold text-md ml-4">
+          <Grid.Col span={24} md={13} className="z-10">
+            <Stack className="gap-12 mx-1 mt-4 md:mt-0">
+              <Stack className="gap-0  w-full">
+                <Text className="text-white font-semibold text-md ml-4 md:block hidden">
                   A website made for my favourite person,
                 </Text>
-                <Group className="-mt-4 gap-2">
-                  <Text className="text-white font-roboto text-[72px] tracking-5 ">
+                <Group className="-mt-4 gap-2 md:self-start self-center">
+                  <Text className="text-white font-roboto text-[56px] sm:text-[64px] md:text-[72px] tracking-5 ">
                     Ardhiyah
                   </Text>
                   <IconHeartFilled
                     size={72}
                     color={theme.colors["fd-cream"][5]}
+                    className="hidden sm:block"
+                  />
+                  <IconHeartFilled
+                    size={54}
+                    color={theme.colors["fd-cream"][5]}
+                    className="block sm:hidden"
                   />
                 </Group>
-                <Text className="text-white font-roboto text-[36px] ml-56 -mt-6 tracking-5">
+                <Text className="text-white font-roboto text-[24px] sm:text-[36px] md:self-start self-end sm:mr-0 mr-8 sm:self-center sm:ml-4 md:ml-56 -mt-4 sm:-mt-6 tracking-5">
                   Regita Iriani
                 </Text>
               </Stack>
@@ -126,7 +132,7 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
           onClick={() => {
             setIsMailClicked(true);
           }}
-          className="w-32 cursor-pointer z-10 bg-white p-1 rounded-xl absolute right-20 -bottom-12"
+          className="w-24 sm:w-32 cursor-pointer z-10 bg-white p-1 rounded-xl absolute right-10 sm:right-20 -bottom-8 sm:-bottom-12"
         >
           <img
             src={fullMail}

@@ -26,7 +26,7 @@ const FDMainLayout: React.FC<IFDMainLayout> = ({ activePage, children }) => {
       //   </Stack>
       // }
       // padding={"0px"}
-      className="bg-white px-12"
+      className="bg-white px-0 sm:px-2 md:px-12"
       // className="bg-fd-light-pink/25 px-12"
     >
       <div>{children}</div>

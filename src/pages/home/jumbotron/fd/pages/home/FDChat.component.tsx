@@ -20,7 +20,7 @@ const FDChat: React.FC<IFDChat> = ({
         style={{
           borderColor: theme.colors[cardColor][5]
         }}
-        className={`w-fit rounded-3xl bg-white z-10 py-2 px-6 overflow-hidden border text-primary-text-1 `}
+        className={`w-fit rounded-3xl bg-white z-10 py-2 px-4 sm:px-6 overflow-hidden sm:text-lg text-md border text-primary-text-1 `}
       >
         {caption}
       </Text>

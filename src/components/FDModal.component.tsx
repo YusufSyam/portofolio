@@ -57,13 +57,13 @@ const FDModal = ({
           {leftTitleIcon == null ? (
             <IconHeartFilled
               color={theme.colors["fd-dark-pink"][5]}
-              size={40}
+              size={32}
               className=""
             />
           ) : (
             <>{leftTitleIcon}</>
           )}
-          <Text className="text-[24px] text-primary-text-500 font-poppins-semibold">
+          <Text className="sm:text-[24px] text-xl text-primary-text-500 font-poppins-semibold">
             {title}
           </Text>
         </Group>

@@ -16,8 +16,8 @@ const FDHomeSection3: React.FC<IFDHomeSection3> = ({}) => {
       <Text className="text-secondary-text-500 text-[48px] text-center font-poppins-semibold tracking-5">
         bonus
       </Text>
-      <Grid gutter={32} className="flex">
-        <Grid.Col span={4} className="self-center">
+      <Grid gutter={32} className="flex sm:mx-0 mx-2">
+        <Grid.Col span={12} sm={6} md={4} className="self-center">
           <div className="relative z-10 mx-auto">
             <Stack className="bg-secondary rounded-[32px] px-6 py-6 z-10">
               <Group className="">
@@ -53,7 +53,7 @@ const FDHomeSection3: React.FC<IFDHomeSection3> = ({}) => {
 
         {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, culpa? */}
 
-        <Grid.Col span={4} className="self-center">
+        <Grid.Col span={12} sm={6} md={4} className="self-center">
           <div className="relative z-10 mx-auto">
             <Stack className="bg-fd-light-pink rounded-[32px] px-6 py-6 z-10">
               <Group className="">
@@ -73,7 +73,7 @@ const FDHomeSection3: React.FC<IFDHomeSection3> = ({}) => {
                   <Text className="text-primary-text-1">Kumpulan video ucapan untuk Dhea</Text>
                 </Grid.Col>
                 <Grid.Col span={2}>
-                  <Link target="_blank" to={"#"} className="">
+                  <Link target="" to={"#"} className="">
                     <IconRightArrowNoTail
                       size={44}
                       className="bg-fd-dark-pink hover:bg-opacity-75 duration-100 cursor-pointer rounded-full p-1 mx-auto"
@@ -89,7 +89,7 @@ const FDHomeSection3: React.FC<IFDHomeSection3> = ({}) => {
 
         {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, culpa? */}
 
-        <Grid.Col span={4} className="self-center">
+        <Grid.Col span={12} sm={6} md={4} className="self-center">
           <div className="relative z-10 mx-auto">
             <Stack className="bg-fd-cream rounded-[32px] px-6 py-6 z-10">
               <Group className="">

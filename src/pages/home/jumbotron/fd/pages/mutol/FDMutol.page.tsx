@@ -66,7 +66,7 @@ const FDMutolPage: React.FC<IFDMutolPage> = ({}) => {
             padding={0}
             styles={{
               content: {
-                minWidth: `1000px`,
+                minWidth: `400px`,
                 borderRadius: "6px",
                 zIndex: 10
               },
@@ -181,9 +181,9 @@ const FDMutolPage: React.FC<IFDMutolPage> = ({}) => {
               </Text>
             </Group>
             <Text className="text-lg text-white text-justify mt-4 font-semibold">
-              Pada halaman ini kamu bisa melihat foto dan gambar yang sebagian
+              Pada halaman ini terdapat foto dan gambar yang sebagian
               besar di-ss sendiri oleh Ucup, itu dikarenakan Dhea sangat pelit
-              memberikan selfie dan pap. Klik gambar untuk memperbesar
+              memberikan selfie dan pap
             </Text>
           </Stack>
           {/* <div className="absolute -bottom-6 -right-6 h-full w-full bg-gradient-to-r from-fd-dark-pink to-fd-blue"></div> */}
