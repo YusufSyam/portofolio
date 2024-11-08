@@ -29,7 +29,7 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
       <Text className="text-fd-dark-pink text-[48px] text-center font-poppins-semibold tracking-5">
         explore
       </Text>
-      <Grid gutter={64} className="mb-8">
+      <Grid gutter={48} className="mb-8 mx-10">
         <Grid.Col span={6}>
           <FDNavigateCardComp
             cardColor="fd-blue"

@@ -14,7 +14,7 @@ const FDHomePage: React.FC<IFDHomePage> = ({}) => {
       <Stack className="mt-0">
         <FDHomeSection1 isMailClicked={isMailClicked} setIsMailClicked={setIsMailClicked} />
         <FDHomeSection2 isMailClicked={isMailClicked} setIsMailClicked={setIsMailClicked}  />
-        {/* <FDHomeSection3 /> */}
+        <FDHomeSection3 />
       </Stack>
     </FDMainLayout>
   );
