@@ -5,7 +5,8 @@ import FDChat from "./FDChat.component";
 import { IconRightArrowNoTail } from "../../../../../../assets/icons/Fluent";
 import { Link } from "react-router-dom";
 import gdLogo from "../../assets/images/logo_gd.png";
-import ttLogo from "../../assets/images/logo_tt.png";
+import ytLogo from "../../assets/images/logo_yt.png";
+import sLogo from "../../assets/images/logo_s.png";
 
 export interface IFDHomeSection3 {}
 
@@ -59,7 +60,7 @@ const FDHomeSection3: React.FC<IFDHomeSection3> = ({}) => {
               <Group className="">
                 <div className={`w-8 z-10`}>
                   <img
-                    src={ttLogo}
+                    src={ytLogo}
                     alt="Gambar Item"
                     className="w-full h-full object-"
                   />
@@ -73,7 +74,7 @@ const FDHomeSection3: React.FC<IFDHomeSection3> = ({}) => {
                   <Text className="text-primary-text-1">Kumpulan video ucapan untuk Dhea</Text>
                 </Grid.Col>
                 <Grid.Col span={2}>
-                  <Link target="" to={"#"} className="">
+                  <Link target="_blank" to={"https://youtube.com/shorts/7Ni0SaB_-Jg?feature=share"} className="">
                     <IconRightArrowNoTail
                       size={44}
                       className="bg-fd-dark-pink hover:bg-opacity-75 duration-100 cursor-pointer rounded-full p-1 mx-auto"
@@ -124,6 +125,40 @@ const FDHomeSection3: React.FC<IFDHomeSection3> = ({}) => {
         </Grid.Col>
 
         {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, culpa? */}
+
+        <Grid.Col span={12} sm={6} md={4} className="self-center">
+          <div className="relative z-10 mx-auto">
+            <Stack className="bg-white/90 rounded-[32px] px-6 py-6 z-10">
+              <Group className="">
+                <div className={`w-9 z-10`}>
+                  <img
+                    src={sLogo}
+                    alt="Gambar Item"
+                    className="w-full h-full object-"
+                  />
+                </div>
+                <Text className="text-primary-text-2 font-roboto-semibold text-3xl tracking-5">
+                  Playlist
+                </Text>
+              </Group>
+              <Grid className="" gutter={0}>
+                <Grid.Col span={10} className="my-auto">
+                  <Text className="text-primary-text-1">Collection of tunes that remind me of you</Text>
+                </Grid.Col>
+                <Grid.Col span={2}>
+                  <Link target="_blank" to={"https://open.spotify.com/playlist/1CsNKzW7XoUaJKSMYjsaEy?si=b0629c21e9e646f6"} className="">
+                    <IconRightArrowNoTail
+                      size={44}
+                      className="bg-[#1DB954] hover:bg-opacity-75 duration-100 cursor-pointer rounded-full p-1 mx-auto"
+                      color={theme.colors["white"][5]}
+                    />
+                  </Link>
+                </Grid.Col>
+              </Grid>
+            </Stack>
+            <div className="w-full h-full absolute -bottom-2 -left-2 bg-[#1DB954] rounded-[32px] -z-10"></div>
+          </div>
+        </Grid.Col>
       </Grid>
     </Stack>
   );

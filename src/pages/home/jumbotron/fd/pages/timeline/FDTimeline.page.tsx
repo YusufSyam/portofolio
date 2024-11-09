@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import FDMainLayout from "../../layout/Main.layout";
 import { Grid, Group, Stack, Text, useMantineTheme } from "@mantine/core";
-import FDTimelineStepComp from "./FDTimelineStep.component";
+import FDTimelineStepComp, {
+  IFDTimelineStepComp
+} from "./FDTimelineStep.component";
 import { IconCalendarLtrOutline } from "../../../../../../assets/icons/Fluent";
+import { OUR_TIMELINE } from "./FDTimelineConst.const";
 
 export interface IFDTimelinePage {}
 
 const FDTimelinePage: React.FC<IFDTimelinePage> = ({}) => {
   const theme = useMantineTheme();
+  // const [ourTimeline] = useState<IFDTimelineStepComp[]>(OUR_TIMELINE);
+  const ourTimeline = OUR_TIMELINE
   return (
     <FDMainLayout>
       <Stack className="mx-0 sm:mx-6 md:mx-24 gap-10 mt-10">
@@ -37,12 +42,26 @@ const FDTimelinePage: React.FC<IFDTimelinePage> = ({}) => {
           </Grid.Col>
         </Grid>
         <Stack className="gap-0">
-          <FDTimelineStepComp stepType="start" />
+          {ourTimeline?.map((d: IFDTimelineStepComp, idx: number) => {
+            return (
+              <FDTimelineStepComp
+                key={idx}
+                {...d}
+                stepType={
+                  idx === 0
+                    ? "start"
+                    : idx === ourTimeline?.length - 1
+                    ? "end"
+                    : "mid"
+                }
+              />
+            );
+          })}
+          {/* <FDTimelineStepComp stepType="start" />
           <FDTimelineStepComp />
           <FDTimelineStepComp />
           <FDTimelineStepComp />
-          <FDTimelineStepComp />
-          <FDTimelineStepComp stepType="end" />
+          <FDTimelineStepComp stepType="end" /> */}
         </Stack>
       </Stack>
     </FDMainLayout>

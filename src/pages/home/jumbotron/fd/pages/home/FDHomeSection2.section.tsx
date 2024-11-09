@@ -7,6 +7,10 @@ import { useNavigate } from "react-router-dom";
 import { FDROUTES } from "../../utils/const";
 import { useScrollIntoView } from "@mantine/hooks";
 import FDHomeCountdownComp from "./FDHomeCountdown.component";
+import storyOfUsImage from "../../assets/images/storyOfUs.jpg"
+import countdownImage from "../timeline/timeline-images/20.jpg"
+import ourGalleryImage from "../../../../../../assets/images/bg.jpg"
+import ucupMessageImage from "../../assets/images/ucupMessage.jpg"
 
 export interface IFDHomeSection2 {
   isMailClicked: boolean;
@@ -38,18 +42,7 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
             onClick={() => {
               navigate(FDROUTES.fdTimeline);
             }}
-          />
-        </Grid.Col>
-        <Grid.Col span={12} sm={6}>
-          <FDNavigateCardComp
-            cardColor="fd-cream"
-            title="Our meeting 'countdown'"
-            caption="Countdown atau hitungan mundur 6 Juni 2025 AKA 'pertemuan pelepas rindu' di mana Dhea (mungkin?) pulang ke Makassar dan akhirnya bisa memecah celengan rindu anjirr"
-            onClick={() => {
-              scrollIntoView({
-                alignment: "center"
-              });
-            }}
+            image={storyOfUsImage}
           />
         </Grid.Col>
         <Grid.Col span={12} sm={6}>
@@ -57,16 +50,31 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
             cardColor="fd-pink"
             title="Our Gallery"
             onClick={onClickMutolDhea}
+            image={ourGalleryImage}
             caption="Halaman yang berisi gambar dan foto yang mengabadikan momen-momen penting Ucup dan Dhea :)"
           />
         </Grid.Col>
         <Grid.Col span={12} sm={6}>
           <FDNavigateCardComp
-            cardColor="fd-pink"
+            cardColor="fd-light-pink"
             title="Pesan dari Ucup"
             caption="Sebuah pesan singkat yang ditulis ucup untuk istri masa depannya"
             onClick={() => {
               setIsMailClicked(true);
+            }}
+            image={ucupMessageImage}
+          />
+        </Grid.Col>
+        <Grid.Col span={12} sm={6}>
+          <FDNavigateCardComp
+            cardColor="fd-cream"
+            title="Our meeting 'countdown'"
+            image={countdownImage}
+            caption="Countdown atau hitungan mundur 6 Juni 2025 AKA 'pertemuan pelepas rindu' di mana Dhea (mungkin?) pulang ke Makassar dan akhirnya bisa memecah celengan rindu anjirr"
+            onClick={() => {
+              scrollIntoView({
+                alignment: "center"
+              });
             }}
           />
         </Grid.Col>

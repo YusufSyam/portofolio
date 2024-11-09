@@ -8,16 +8,16 @@ export interface IFDTimelineStepComp {
   secondCaption?: string;
   dateNumber?: string;
   dateMonth?: string;
-  image?: string;
+  imageList?: string[];
   stepType?: "start" | "mid" | "end";
 }
 
 const FDTimelineStepComp: React.FC<IFDTimelineStepComp> = ({
   dateNumber = "2",
   dateMonth = "Juni, 2024",
-  firstCaption = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid pariatur magni ex quaerat. Pariatur vel provident quaerat vitae",
-  secondCaption = "Necessitatibus harum dolore esse quasi architecto similique.   Praesentium sint non cupiditate earum quidem magni perspiciatis doloribus eius voluptas nam, in repellat nulla!",
-  image = dhea1,
+  firstCaption = "",
+  secondCaption = "",
+  imageList = [dhea1],
   title = "First Encounter",
   stepType = "mid"
 }) => {
@@ -57,31 +57,48 @@ const FDTimelineStepComp: React.FC<IFDTimelineStepComp> = ({
       </Grid.Col>
       <Grid.Col span={9} sm={10}>
         <Grid columns={5} gutter={0} gutterSm={16}>
-          <Grid.Col span={5} sm={2}>
-            <Stack className="w-full relative mb-4 sm:mb-10 md:mb-14">
-              <div className="w-full z-10 rounded-3xl border border-fd-blue  overflow-hidden">
-                <img
-                  src={image}
-                  alt="Gambar Item"
-                  className="w-full h-[220px] object-cover"
-                />
-              </div>
-              <Stack className="bg-fd-blue absolute w-full h-full -left-2 -bottom-2 rounded-3xl"></Stack>
-            </Stack>
+          <Grid.Col span={5} sm={2} className="p-0">
+            <Group className="mb-1 sm:mb-10 md:mb-14 w-full rounded-3xl overflow-x-scroll overflow-y-hidden flex-nowrap">
+              <Stack className="w-[353px] shrink-0 h-[220px] relative rounded-3xl p-1">
+                <div className="w-full rounded-3xl border border-fd-blue  overflow-hidden z-20">
+                  <img
+                    src={imageList?.[0]}
+                    alt="Gambar Item"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <Stack className="bg-fd-blue absolute w-full h-full -left-2 -bottom-2 rounded-3xl -z-10"></Stack>
+              </Stack>
+              {imageList?.length >= 2 && (
+                <Stack className="w-[353px] shrink-0 h-[220px] relative rounded-3xl p-1">
+                  <div className="w-full rounded-3xl border border-fd-blue  overflow-hidden z-20">
+                    <img
+                      src={imageList?.[1]}
+                      alt="Gambar Item"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <Stack className="bg-fd-blue absolute w-full h-full -left-2 -bottom-2 rounded-3xl -z-10"></Stack>
+                </Stack>
+              )}
+            </Group>
           </Grid.Col>
           <Grid.Col span={5} sm={3}>
-            <Stack className="mt-0 sm:mt-2 gap-1 sm:gap-2 md:mb-0 mb-14">
-              <Text className="text-fd-dark-pink text-[26px] sm:text-[32px] font-roboto mb-0 sm:mb-2">
+            <Stack className="mt-0 sm:mt-2 gap-1 sm:gap-2 md:mb-0 mb-14 ml-1 sm:ml-0">
+              <Text className="text-fd-dark-pink text-[26px] sm:text-[32px] font-roboto mb-0 sm:mb-2 ">
                 {title}
               </Text>
-              <Text className="text-primary-text-1 text-justify">
+              {
+                firstCaption &&
+              <Text className="text-primary-text-1 text-justify text-md ml-[2px] sm:ml-0">
                 {firstCaption}
               </Text>
-              {/* {secondCaption && (
-                <Text className="text-primary-text-1 text-justify">
+              }
+              {secondCaption && (
+                <Text className="text-primary-text-1 text-justify text-md ml-[2px] sm:ml-0">
                   {secondCaption}
                 </Text>
-              )} */}
+              )}
             </Stack>
           </Grid.Col>
         </Grid>
