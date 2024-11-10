@@ -1,6 +1,6 @@
 import { MantineProvider } from "@mantine/core";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { PortoProvider } from "./context/PortoContext.context";
 import HomePage from "./pages/home/Home.page";
@@ -241,14 +241,14 @@ function App() {
     >
       <QueryClientProvider client={queryClient}>
         <PortoProvider>
-          <BrowserRouter>
+          <HashRouter>
             <Routes>
               <Route path={MAINROUTES.home} element={<HomePage />} />
               <Route path={FDROUTES.fd} element={<FDHomePage />} />
               <Route path={FDROUTES.fdTimeline} element={<FDTimelinePage />} />
               <Route path={FDROUTES.fdGalleryOne} element={<FDMutolPage />} />
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </PortoProvider>
       </QueryClientProvider>
     </MantineProvider>
