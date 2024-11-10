@@ -10,7 +10,7 @@ const HomePage: React.FC<IHomePage> = ({}) => {
     <MainLayout>
       <Stack className="mt-10">
         <HomeJumbotronSection />
-        <div className="font-bold">Halo</div>
+        {/* <div className="font-bold">Halo</div> */}
       </Stack>
     </MainLayout>
   );
