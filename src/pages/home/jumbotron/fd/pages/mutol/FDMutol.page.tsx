@@ -181,15 +181,13 @@ const FDMutolPage: React.FC<IFDMutolPage> = ({}) => {
               </Text>
             </Group>
             <Text className="text-lg text-white text-justify mt-4 font-semibold">
-              Pada halaman ini terdapat foto dan gambar yang sebagian
-              besar di-ss sendiri oleh Ucup, itu dikarenakan Dhea sangat pelit
-              memberikan selfie dan pap
+              Halaman ini isinya foto2 berdua Ucup dan Dhea yang jumlahnya secuil karena memang sesingkat itu hubungannya di Makassar. Sisanya LDR bangke
             </Text>
           </Stack>
           {/* <div className="absolute -bottom-6 -right-6 h-full w-full bg-gradient-to-r from-fd-dark-pink to-fd-blue"></div> */}
         </div>
         <VerticalDivider />
-        <Stack className="mx-12 mt-10 gap-0">
+        <Stack className="mx-0 mt-10 gap-0">
           {/* <Text className="font-poppins-semibold text-[48px] text-primaryBlue px-3 text-center">
             Galeri
           </Text> */}
@@ -231,6 +229,9 @@ const FDMutolPage: React.FC<IFDMutolPage> = ({}) => {
                 margin={8}
                 onClick={onClickGallery}
                 maxRows={isGalleryExpanded ? 999 : 3}
+                thumbnailStyle={{
+                  objectFit: "cover"
+                }}
               />
             )}
             {/* <div className="absolute w-full h-20 flex justify-center bottom-5">

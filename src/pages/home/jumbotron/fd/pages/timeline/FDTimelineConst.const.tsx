@@ -49,21 +49,24 @@ export const OUR_TIMELINE: IFDTimelineStepComp[] = [
     dateNumber: "21",
     dateMonth: "Mei, 2024",
     imageList: [i2],
-    firstCaption: "Ketemu lagi sama ini org di Goal Cafe. Satu yg kunotice ini org knp pke baju tidur trs nongkrong cok."
+    firstCaption:
+      "Ketemu lagi sama ini org di Goal Cafe. Satu yg kunotice ini org knp pke baju tidur trs nongkrong cok."
   },
   {
     title: "Insiden Social Barn",
     dateNumber: "24",
     dateMonth: "Juni, 2024",
     imageList: [i3],
-    firstCaption: "Lamaku menunggu di SB Sutomo ternyata bukan di situ inzani bangke. Di SB ini kuliat ini Dhea red flag nya ew. Tpi seru bahas podcast horror"
+    firstCaption:
+      "Lamaku menunggu di SB Sutomo ternyata bukan di situ inzani bangke. Di SB ini kuliat ini Dhea red flag nya ew. Tpi seru bahas podcast horror"
   },
   {
     title: "Chatan lewat email",
     dateNumber: "25",
     dateMonth: "Juni, 2024",
     imageList: [i4, i4b],
-    firstCaption: "Mulai chatan lewat email karna ada org yg posesif skali pacarnya. Awalnya bahas podcast ujung2nya bahas random"
+    firstCaption:
+      "Mulai chatan lewat email karna ada org yg posesif skali pacarnya. Awalnya bahas podcast ujung2nya bahas random"
   },
   {
     title: "Lanjut di WA",
@@ -76,14 +79,16 @@ export const OUR_TIMELINE: IFDTimelineStepComp[] = [
     dateNumber: "30",
     dateMonth: "Juli, 2024",
     imageList: [i6, i6b],
-    firstCaption: "Di sini tambah dekat dengan Dhea. Mulai dri sini setiap hari kita sleep call. Saya juga suka2 krn ada temanika cerita gaje malam2"
+    firstCaption:
+      "Di sini tambah dekat dengan Dhea. Mulai dri sini setiap hari kita sleep call. Saya juga suka2 krn ada temanika cerita gaje malam2"
   },
   {
     title: "Panti Asuhan",
     dateNumber: "1",
     dateMonth: "Agustus, 2024",
     imageList: [i7, i7b],
-    firstCaption: "7 hari mamanya Dhea."
+    firstCaption:
+      "7 hari mamanya Dhea. Ditemani ke panti asuhan, agak shock dikit liat bocah panti diteriak2i. Pulangnya makan raca mangga :). Mulai dri sini janjian nobar malam2"
   },
   // {
   //   title: "Kopter",
@@ -95,79 +100,90 @@ export const OUR_TIMELINE: IFDTimelineStepComp[] = [
     title: "Nobar Era",
     dateNumber: "2",
     dateMonth: "Agustus, 2024",
-    imageList: [i9, i9b]
+    imageList: [i9, i9b],
+    firstCaption:
+      "Mulai dri sini selalu nobar film malam2, klo habis filmnya gosip dikit bru tidur. Btw om Setya bgst"
   },
   {
     title: "Pergi Lelong",
     dateNumber: "6",
     dateMonth: "Agustus, 2024",
-    imageList: [i10, i10b]
+    imageList: [i10, i10b],
+    firstCaption:
+      "Kenangan yg banyak first time nya. First time jemput & bonceng dhea, first time dicubit dhea, first time dibelikan makanan Dhea (buroncong). Besoknya first time dimasakkan makanan sama Dhea"
   },
   {
     title: "Became Closer!",
     dateNumber: "24",
     dateMonth: "Agustus, 2024",
-    imageList: [i11, i11b]
+    imageList: [i11, i11b],
+    firstCaption:
+      "Abis dri lelong kita tambah dekat, chat tambah lancar, vc setiap hari. H-2 Dhea pergi Jkt kutemani ke Agung, abis itu kita ke Mari main hockey meja, bowling, beli minuman di Fore n lanjut ngegosip di luar mall. Jujur di sini mulai kuantisipasi arah hubungan ta"
   },
   {
     title: "Dhea ke Jkt :(",
     dateNumber: "26",
     dateMonth: "Agustus, 2024",
-    imageList: [i12, i13]
+    imageList: [i12, i13],
+    firstCaption:
+      "Momen yg bikinka mulai rindu sm Dhea. Di sini kita vc bukan cuma pas malam saja, tapi pagi siang sore malam"
   },
   {
     title: "Dhea lale anjir",
     dateNumber: "3",
     dateMonth: "September, 2024",
-    imageList: [i15]
+    imageList: [i15],
+    firstCaption:
+      "Dhea ngirim chat yg risky, jujur di sini kurasa inimi momennya untuk dekati Dhea. Jadi habis ini kita baku vc, mulaimi saling flirting. Salting abang diflirting ama Dhea :v"
   },
   {
     title: "Foto Ikonik",
     dateNumber: "4",
     dateMonth: "September, 2024",
-    imageList: [i14, i14b]
+    imageList: [i14, i14b],
+    firstCaption:
+      "Pas Dhea sholat kufoto dan Masyaa Allah Tabarakallah cantiknyaa Dhea, langsung kukasi jadi sticker mukanya.Inimi sweet times awal hubungan sama Dhea. Di sini juga Dhea rencana mau belikanka kado ultah yg bikin senang tiada tara"
   },
   {
     title: "Dhea balik mks yey",
     dateNumber: "11",
     dateMonth: "September, 2024",
-    imageList: [i16b, i16]
+    imageList: [i16b, i16],
+    firstCaption: "H-1 Ultahku Dhea balik ke Makassar, makasih sayang kado ultahnyaa. Di hari itu sumpah semangat sekalika ketemu ayang jdi belumpi apa2 Dhea adama sampai di rumahnya. Tapi sampai di sana kenapa kita malah canggung hahaha, walau di dalam hati wanna hug her so bad!"
   },
   {
     title: "Ultah Ucup",
     dateNumber: "12",
     dateMonth: "September, 2024",
-    imageList: [i17]
+    imageList: [i17],
+    firstCaption: "12 September kita nongkrong di Taobun, sekali lagi jadi canggung ka depannya Dhea padahal klo di vc lancar. Tapi pas karaokean pertama kali ngerasa gigit dan peluknya Dhea hahaha, serasa kalau matika sekarang nda ada penyesalanku"
   },
   {
     title: "Our First Photobooth",
     dateNumber: "15",
     dateMonth: "September, 2024",
-    imageList: [i18, i18b]
+    imageList: [i18, i18b],
+    firstCaption: "Ke Darkop berempat dengan Apri dan Inzani. Di sini betul2 kunikmati ngiht ride dengan Dhea, dari pergi sampai pulang rasa senang di hari nd berhenti2. Di darkop kita foto di photobooth, and we experience our first kiss >..< . Photobooth yang pertama dari ribuan photobooth mendatang :)"
   },
   {
     title: "The Sweet Times",
     dateNumber: "17",
     dateMonth: "September, 2024",
-    imageList: [i19, i19b]
+    imageList: [i19, i19b],
+    firstCaption: "Spend times dengan Dhea sebelum berangkat kerja di kapal :)). Temani ayang ke kampus, ziarah kubur, jogging, makan dll."
   },
   {
     title: 'Yahh LDR :"))',
     dateNumber: "24",
     dateMonth: "September, 2024",
-    imageList: [i20]
+    imageList: [i20],
+    firstCaption: "24 September akhirnya Dhea berangkat ke Jkt. Sedihnya harus berpisah dengan ayang :(( Mau kurasa peluk erat2 nda kulepas."
   },
   {
     title: "Rindunya ya Allah",
     dateNumber: "25",
     dateMonth: "October, 2024",
-    imageList: [i21]
+    imageList: [i21],
+    firstCaption: "Hope we can meet in person again next year :)"
   }
 ];
-
-const a = {
-  title: "#",
-  dateNumber: "#",
-  dateMonth: "Juni, 2024",
-  imageList: [i3]
-};

@@ -31,12 +31,12 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
         opened={isMailClicked}
         setOpened={setIsMailClicked}
         title={"Untuk Bintangku, Dhea"}
+        yesButtonLabel="Tutup"
         minWidth={400}
         children={
           <Stack className=" gap-2">
             <Text className="text-primary-text-2 font-semibold tracking-5 text-lg mx-6">
-              Selamat ulang tahun yang ke-23 Dhea sayang. Di hari spesial ini,
-              Ucup ingin mengingatkan betapa berharganya dirimu bagiku.
+              Selamat ulang tahun yang ke-23 Dhea sayang.
             </Text>
 
             <div className="mt-6 mb-6 mx-6">
@@ -49,13 +49,13 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
                 menjengkelkan dan banyak kekurangannya
               </Text>
               <Text className="text-primary-text-2 tracking-5 text-lg mx-6">
-                Terima kasih sudah mengisi hidupku dengan senyum, tawa, dan
-                cinta yang tak ternilai. Semoga setiap langkahmu di tahun ini
+                Makasih sudah sudah kasika cinta, senyum dan tawa, dan
+                yang tidak ada duanya. Semoga setiap langkahmu di tahun ini
                 dipenuhi kebahagiaan dan kesuksesan yang kamu impikan.
               </Text>
               <Text className="text-primary-text-2 tracking-5 text-lg mx-6">
-                Ucup mencintaimu lebih dari yang bisa dijelaskan kata-kata, dan
-                Ucup berjanji akan selalu ada di sampingmu, hari ini dan
+                Sayangku ke kau lebih dari yang bisa dijelaskan kata-kata, dan
+                berjanjika akan selalu ada di sampingmu, hari ini dan
                 selamanya ❤️
               </Text>
               <Text className="font-semibold text-primary-text-2 mx-6 mt-4 text-end">

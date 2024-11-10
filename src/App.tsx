@@ -10,6 +10,10 @@ import FDHomePage from "./pages/home/jumbotron/fd/pages/home/FDHome.page";
 import FDTimelinePage from "./pages/home/jumbotron/fd/pages/timeline/FDTimeline.page";
 import { FDROUTES } from "./pages/home/jumbotron/fd/utils/const";
 import FDMutolPage from "./pages/home/jumbotron/fd/pages/mutol/FDMutol.page";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { PortoContext, PortoProvider } from "./context/PortoContext.context";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
@@ -163,7 +167,7 @@ function App() {
             "#000000",
             "#000000"
           ],
-          "cream": [
+          cream: [
             "#F7E987",
             "#F7E987",
             "#F7E987",
@@ -234,18 +238,22 @@ function App() {
             "#F7418F",
             "#F7418F",
             "#F7418F"
-          ],
+          ]
         }
       }}
     >
-      <BrowserRouter>
-        <Routes>
-          <Route path={MAINROUTES.home} element={<HomePage />} />
-          <Route path={FDROUTES.fd} element={<FDHomePage />} />
-          <Route path={FDROUTES.fdTimeline} element={<FDTimelinePage />} />
-          <Route path={FDROUTES.fdGalleryOne} element={<FDMutolPage />} />
-        </Routes>
-      </BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <PortoProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path={MAINROUTES.home} element={<HomePage />} />
+              <Route path={FDROUTES.fd} element={<FDHomePage />} />
+              <Route path={FDROUTES.fdTimeline} element={<FDTimelinePage />} />
+              <Route path={FDROUTES.fdGalleryOne} element={<FDMutolPage />} />
+            </Routes>
+          </BrowserRouter>
+        </PortoProvider>
+      </QueryClientProvider>
     </MantineProvider>
   );
 }

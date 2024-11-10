@@ -84,7 +84,7 @@ const FDModal = ({
             disabled={disableYesButton}
             onClick={onSubmit}
           >
-            Tutup
+            {yesButtonLabel}
           </SmallButton>
         </Group>
       </Stack>
