@@ -1,6 +1,6 @@
 import { MantineProvider } from "@mantine/core";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import {  HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { PortoProvider } from "./context/PortoContext.context";
 import HomePage from "./pages/home/Home.page";
