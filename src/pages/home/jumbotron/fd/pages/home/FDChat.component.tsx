@@ -1,5 +1,5 @@
+import { Text, useMantineTheme } from "@mantine/core";
 import React from "react";
-import { Stack, Text, useMantineTheme } from "@mantine/core";
 import { TFDColor } from "../../utils/const";
 
 export interface IFDChat {

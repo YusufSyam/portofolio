@@ -8,7 +8,7 @@ export interface IFDMainLayout {
   children: JSX.Element;
   activePage?: TPageName;
 }
-const FDMainLayout: React.FC<IFDMainLayout> = ({ activePage, children }) => {
+const FDMainLayout: React.FC<IFDMainLayout> = ({ children }) => {
   return (
     <AppShell
       header={<HeaderLayout />}

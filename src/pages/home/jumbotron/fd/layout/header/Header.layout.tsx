@@ -1,9 +1,8 @@
 import { Group, Text, useMantineTheme } from "@mantine/core";
 import React from "react";
-import HeaderNavigationComp from "./HeaderNavigation.component";
-import { MAINROUTES } from "../../../../../../utils/const/routes";
+import { IconExplosion, IconHeartFilled } from "../../../../../../assets/icons/Fluent";
 import { FDROUTES } from "../../utils/const";
-import { IconExplosion, IconHeartFilled, IconShareWindowsOutline } from "../../../../../../assets/icons/Fluent";
+import HeaderNavigationComp from "./HeaderNavigation.component";
 
 export interface IFDHeaderLayout {}
 

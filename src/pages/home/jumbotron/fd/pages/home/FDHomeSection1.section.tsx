@@ -6,13 +6,11 @@ import {
   Text,
   useMantineTheme
 } from "@mantine/core";
-import React, { useState } from "react";
-import dhea from "../../assets/images/dhea-jumbotron.png";
-import jumbotron from "../../assets/images/jumbotron.png";
-import mail from "../../assets/images/mail2.png";
-import fullMail from "../../assets/images/mail.png";
-import FDModal from "../../../../../../components/FDModal.component";
+import React from "react";
 import { IconHeartFilled } from "../../../../../../assets/icons/Fluent";
+import FDModal from "../../../../../../components/FDModal.component";
+import jumbotron from "../../assets/images/jumbotron.png";
+import fullMail from "../../assets/images/mail.png";
 import FDChat from "./FDChat.component";
 
 export interface IFDHomeSection1 {

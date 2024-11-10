@@ -6,9 +6,9 @@ import {
   useMantineTheme
 } from "@mantine/core";
 import React from "react";
-import { IconInformationCircleFilled, IconHeartOutlined, IconHeartFilled } from "../assets/icons/Fluent";
-import Modal from "./MyModal.component";
+import { IconHeartFilled } from "../assets/icons/Fluent";
 import { SmallButton } from "./MyButton";
+import Modal from "./MyModal.component";
 
 interface IFDModal {
   opened: boolean;

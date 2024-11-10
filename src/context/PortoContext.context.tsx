@@ -1,5 +1,4 @@
-import React, { createContext, useState, useEffect, ReactNode } from "react";
-import { useQuery } from "react-query";
+import React, { ReactNode, createContext, useState } from "react";
 
 interface PortoContextType {
   isAnsweredQuestion: boolean;
@@ -28,3 +27,4 @@ const PortoProvider: React.FC<PortoProviderProps> = ({ children }) => {
 };
 
 export { PortoContext, PortoProvider };
+

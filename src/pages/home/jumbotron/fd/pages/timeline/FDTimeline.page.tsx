@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { Grid, Stack, Text, useMantineTheme } from "@mantine/core";
+import React from "react";
+import { IconCalendarLtrOutline } from "../../../../../../assets/icons/Fluent";
 import FDMainLayout from "../../layout/Main.layout";
-import { Grid, Group, Stack, Text, useMantineTheme } from "@mantine/core";
+import { OUR_TIMELINE } from "./FDTimelineConst.const";
 import FDTimelineStepComp, {
   IFDTimelineStepComp
 } from "./FDTimelineStep.component";
-import { IconCalendarLtrOutline } from "../../../../../../assets/icons/Fluent";
-import { OUR_TIMELINE } from "./FDTimelineConst.const";
 
 export interface IFDTimelinePage {}
 

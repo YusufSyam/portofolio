@@ -1,16 +1,14 @@
 import { Grid, Stack, Text } from "@mantine/core";
-import React from "react";
-import dhea1 from "../../assets/images/dhea1.jpg";
-import FDNavigateCardComp from "./FDNavigateCard.component";
-import { MAINROUTES } from "../../../../../../utils/const/routes";
-import { useNavigate } from "react-router-dom";
-import { FDROUTES } from "../../utils/const";
 import { useScrollIntoView } from "@mantine/hooks";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import ourGalleryImage from "../../../../../../assets/images/bg.jpg";
+import storyOfUsImage from "../../assets/images/storyOfUs.jpg";
+import ucupMessageImage from "../../assets/images/ucupMessage.jpg";
+import { FDROUTES } from "../../utils/const";
+import countdownImage from "../timeline/timeline-images/20.jpg";
 import FDHomeCountdownComp from "./FDHomeCountdown.component";
-import storyOfUsImage from "../../assets/images/storyOfUs.jpg"
-import countdownImage from "../timeline/timeline-images/20.jpg"
-import ourGalleryImage from "../../../../../../assets/images/bg.jpg"
-import ucupMessageImage from "../../assets/images/ucupMessage.jpg"
+import FDNavigateCardComp from "./FDNavigateCard.component";
 
 export interface IFDHomeSection2 {
   isMailClicked: boolean;
@@ -18,7 +16,6 @@ export interface IFDHomeSection2 {
 }
 
 const FDHomeSection2: React.FC<IFDHomeSection2> = ({
-  isMailClicked,
   setIsMailClicked
 }) => {
   const navigate = useNavigate();

@@ -1,8 +1,6 @@
-import { Divider, Grid, Group, Stack, Text } from "@mantine/core";
-import jumbotron1 from "../../../assets/images/jumbotron1.jpg";
-import jumbotron2 from "../../../assets/images/jumbotron2.jpg";
-import jumbotron3 from "../../../assets/images/jumbotron3.jpg";
+import { Grid, Stack, Text } from "@mantine/core";
 import React from "react";
+import jumbotron1 from "../../../assets/images/jumbotron1.jpg";
 import MyDividerComp from "../../../components/MyDivider.component";
 
 export interface IHomeJumbotronSection {}

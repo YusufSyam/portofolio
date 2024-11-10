@@ -1,13 +1,12 @@
 import {
   Group,
-  Image,
   Loader,
   Modal,
   Stack,
   Text,
   useMantineTheme
 } from "@mantine/core";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import {
   BackIconBold,
@@ -15,21 +14,17 @@ import {
   ForwardIconBold,
   UpArrowNoTailOutlineBold
 } from "../../../../../../assets/icons/Fluent";
-import camera from "../../assets/images/dhea-jumbotron.png";
+import VerticalDivider from "../../../../../../components/VerticalDivider.component";
 import logoBantaeng from "../../assets/images/mail.png";
 import useArray from "../../hooks/useArray";
 import FDMainLayout from "../../layout/Main.layout";
-import VerticalDivider from "../../../../../../components/VerticalDivider.component";
 import { Pictures } from "./FDGallery.const";
 
 export interface IFDMutolPage {}
 
 const FDMutolPage: React.FC<IFDMutolPage> = ({}) => {
   const {
-    array: galleryImages,
-    set: setGalleryImages,
-    clear,
-    push
+    array: galleryImages
   } = useArray(Pictures);
 
   const [isGalleryModalOpened, setIsGalleryModalOpened] = useState(false);

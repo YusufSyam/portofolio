@@ -8,7 +8,7 @@ export interface IMainLayout {
   children: JSX.Element;
   activePage?: TPageName;
 }
-const MainLayout: React.FC<IMainLayout> = ({ activePage, children }) => {
+const MainLayout: React.FC<IMainLayout> = ({children }) => {
   return (
     <AppShell
       header={<HeaderLayout/>}

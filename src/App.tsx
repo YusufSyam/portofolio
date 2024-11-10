@@ -1,17 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
 import { MantineProvider } from "@mantine/core";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { MAINROUTES } from "./utils/const/routes";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import { PortoProvider } from "./context/PortoContext.context";
 import HomePage from "./pages/home/Home.page";
 import FDHomePage from "./pages/home/jumbotron/fd/pages/home/FDHome.page";
+import FDMutolPage from "./pages/home/jumbotron/fd/pages/mutol/FDMutol.page";
 import FDTimelinePage from "./pages/home/jumbotron/fd/pages/timeline/FDTimeline.page";
 import { FDROUTES } from "./pages/home/jumbotron/fd/utils/const";
-import FDMutolPage from "./pages/home/jumbotron/fd/pages/mutol/FDMutol.page";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { PortoContext, PortoProvider } from "./context/PortoContext.context";
+import { MAINROUTES } from "./utils/const/routes";
 
 const queryClient = new QueryClient();
 
