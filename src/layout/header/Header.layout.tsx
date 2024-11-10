@@ -14,7 +14,7 @@ const HeaderLayout: React.FC<IHeaderLayout> = ({ }) => {
         <HeaderNavigationComp label='Home' />
         <HeaderNavigationComp label='Portfolio' />
         <HeaderNavigationComp label='Contact' />
-        <HeaderNavigationComp label='About' />
+        <HeaderNavigationComp label='About' href={"/fd"} />
       </Group>
     </Group>
   )
