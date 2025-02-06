@@ -6,6 +6,8 @@ import HomeJumbotronSection from "./jumbotron/Home-Jumbotron.section";
 export interface IHomePage {}
 
 const HomePage: React.FC<IHomePage> = ({}) => {
+
+  console.log('semoga saya rajin kerja ya Allah Aamiinn')
   return (
     <MainLayout>
       <Stack className="mt-10">
