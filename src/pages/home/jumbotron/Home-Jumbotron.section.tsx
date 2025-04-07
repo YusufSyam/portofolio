@@ -1,65 +1,66 @@
-import { Grid, Stack, Text } from "@mantine/core";
+import { Grid, Group, Stack, Text } from "@mantine/core";
 import React from "react";
 import jumbotron1 from "../../../assets/images/jumbotron1.jpg";
+import jumbotron4 from "../../../assets/images/jumbotron4.jpg";
 import MyDividerComp from "../../../components/MyDivider.component";
+import InfoWithNumber from "../../../components/InfoWithNumber.component";
+import MyCircleDividerComp from "../../../components/MyDivider.component copy";
 
-export interface IHomeJumbotronSection {}
+export interface IHomeJumbotronSection { }
 
-const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({}) => {
+const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({ }) => {
   return (
-    <Grid>
-      <Grid.Col span={7}>
-        <Stack className="gap-2 relative w-fit">
-          <Text className="text-white text-2xl font-alkatra">
-            Hello There, I am
-          </Text>
-          <Stack className="gap-0">
-            <Text className="font-poppins text-white text-[54px] -mb-2 z-50 [text-shadow:_0_2px_18px_rgb(0_0_0_/_60%)]">
-              Muh. Yusuf Syam
-            </Text>
-            <Text className="font-poppins text-white/[0.75] text-xl">
-              Data Scientist
-            </Text>
-            <div className="mt-1">
-              <MyDividerComp />
+    <Stack className="gap-20">
+      <Grid gutter={54} columns={24}>
+        <Grid.Col span={7} className="flex">
+          <Stack className="w-full items-end relative mt-8">
+            <div className="w-[340px] rounded-full overflow-hidden z-10">
+              <img
+                src={jumbotron4}
+                alt="Gambar Item"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="bg-cream absolute w-[350px] h-[340px] rounded-full right-1 ">
+
             </div>
           </Stack>
-          <Text className="absolute w-2/3 text-white -bottom-60 tracking-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            soluta fuga nemo hic facere, sequi voluptatum necessitatibus debitis
-            odit. Consectetur eum consequuntur unde suscipit dolore, odit
-            laborum rerum aliquam ab earum ut nulla, perspiciatis debitis!
-            Corrupti optio omnis enim nihil atque facere vero, non architecto
-            eos earum aspernatur neque assumenda!
-          </Text>
-          <div className="w-[340px] rounded-md overflow-hidden absolute z-10 -right-64 -top-6">
-            <img
-              src={jumbotron1}
-              alt="Gambar Item"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </Stack>
-      </Grid.Col>
-      <Grid.Col span={5} className="">
-        <Stack className="w-full mx-8 gap-8">
-          <Stack className="bg-white/10 backdrop-blur-3xl rounded-lg p-8 bg-white">
-            <Text className="text-white font-poppins text-3xl">
-              Let's Connect
-            </Text>
-            <Text>Let's Connect</Text>
-            <Text>Let's Connect</Text>
+        </Grid.Col>
+        <Grid.Col span={17} className="">
+          <Stack className="gap-14">
+            <Stack className="mt-6 w-fit">
+              <Stack className="gap-0">
+                <Text className="font-quicksand-semibold text-6xl text-white tracking-5 text-center">
+                  HELLO THERE, I'M <span className="text-cream">YUSUF SYAM</span>
+                </Text>
+                <Text className="font-quicksand-semibold text-5xl text-white tracking-5 text-center">
+                  <span className="text-cream">Data Scientist</span> & Front-end Web Developer
+                </Text>
+              </Stack>
+            </Stack>
+            {/* <Group className="w-[90%]">
+              <Text className="text-white text-md text-justify bg-black/15 py-4 pr-6 pl-12 border-l-4 border-grey">
+                Information System graduate specializing in Artificial Intelligence,
+                particularly in Computer Vision and Natural Language Processing (NLP). With
+                experience leading projects such as a license plate detection system using
+                YOLOv8.
+
+              </Text>
+            </Group> */}
+            <Group className="gap-16 self-center mr-20">
+              <InfoWithNumber info="Years of experience" number={<>2<sup>+</sup></>} />
+              <MyCircleDividerComp/>
+              <InfoWithNumber info="Projects" number={<>10<sup>+</sup></>} />
+              <MyCircleDividerComp/>
+              <InfoWithNumber info="Certificates" number={<>6<sup>+</sup></>} />
+            </Group>
           </Stack>
-          <Stack className="bg-white/10 backdrop-blur-3xl rounded-lg p-8 bg-white">
-            <Text className="text-white font-poppins text-3xl">
-              Let's Connect
-            </Text>
-            <Text>Let's Connect</Text>
-            <Text>Let's Connect</Text>
-          </Stack>
-        </Stack>
-      </Grid.Col>
-    </Grid>
+        </Grid.Col>
+      </Grid >
+
+
+    </Stack>
   );
 };
 export default HomeJumbotronSection;
+

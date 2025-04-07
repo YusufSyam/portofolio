@@ -78,6 +78,10 @@ export default {
       xl: 20,
       "2xl": 24,
       "3xl": 28,
+      "4xl": 32,
+      "5xl": 40,
+      "6xl": 48,
+      "8xl": 54,
       "10xl": 80
     },
     letterSpacing: {
