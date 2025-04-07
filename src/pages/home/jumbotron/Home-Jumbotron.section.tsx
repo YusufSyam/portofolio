@@ -21,7 +21,7 @@ const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({ }) => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="bg-grey absolute w-[365px] h-[365px] rounded-full right-1 ">
+            <div className="bg-cream absolute w-[372px] h-[372px] rounded-full right-[-2px] top-[-2px] ">
 
             </div>
           </Stack>
