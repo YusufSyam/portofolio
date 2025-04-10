@@ -558,8 +558,8 @@ export function IconSendOutline({
 }: IFluentProps) {
   return (
     <svg
-      width={size+`px`}
-      height={size+`px`}
+      width={size + `px`}
+      height={size + `px`}
       viewBox={`0 -960 960 960`}
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -567,8 +567,8 @@ export function IconSendOutline({
       className={className}
     >
       <path
-      d='M112.59-152.35v-655.3L889.57-480 112.59-152.35ZM200-283.59 665.15-480 200-676.41v132.82L443.59-480 200-416.41v132.82Zm0 0v-392.82 392.82Z'
-      fill={color}
+        d='M112.59-152.35v-655.3L889.57-480 112.59-152.35ZM200-283.59 665.15-480 200-676.41v132.82L443.59-480 200-416.41v132.82Zm0 0v-392.82 392.82Z'
+        fill={color}
       />
     </svg>
   );
@@ -582,8 +582,8 @@ export function IconReplyOutline({
 }: IFluentProps) {
   return (
     <svg
-      width={size+`px`}
-      height={size+`px`}
+      width={size + `px`}
+      height={size + `px`}
       viewBox={`0 -960 960 960`}
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -591,8 +591,8 @@ export function IconReplyOutline({
       className={className}
     >
       <path
-      d='M757.13-191.87V-360q0-47.85-33.33-81.17-33.32-33.33-81.17-33.33H285.44L423.93-336l-64.41 63.65L111.87-520l247.65-247.65L423.93-704 285.44-565.5h357.19q85.15 0 145.33 60.17 60.17 60.18 60.17 145.33v168.13h-91Z'
-      fill={color}
+        d='M757.13-191.87V-360q0-47.85-33.33-81.17-33.32-33.33-81.17-33.33H285.44L423.93-336l-64.41 63.65L111.87-520l247.65-247.65L423.93-704 285.44-565.5h357.19q85.15 0 145.33 60.17 60.17 60.18 60.17 145.33v168.13h-91Z'
+        fill={color}
       />
     </svg>
   );
@@ -606,8 +606,8 @@ export function IconShareWindowsOutline({
 }: IFluentProps) {
   return (
     <svg
-      width={size+`px`}
-      height={size+`px`}
+      width={size + `px`}
+      height={size + `px`}
       viewBox={`0 -960 960 960`}
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -615,8 +615,8 @@ export function IconShareWindowsOutline({
       className={className}
     >
       <path
-      d='M280-360v-240q0-33 23.5-56.5T360-680h326L583-783l57-57 200 200-200 200-57-56 103-104H360v240h-80Zm-80 240q-33 0-56.5-23.5T120-200v-600h80v600h480v-160h80v160q0 33-23.5 56.5T680-120H200Z'
-      fill={color}
+        d='M280-360v-240q0-33 23.5-56.5T360-680h326L583-783l57-57 200 200-200 200-57-56 103-104H360v240h-80Zm-80 240q-33 0-56.5-23.5T120-200v-600h80v600h480v-160h80v160q0 33-23.5 56.5T680-120H200Z'
+        fill={color}
       />
     </svg>
   );
@@ -630,8 +630,8 @@ export function IconLoginOutline({
 }: IFluentProps) {
   return (
     <svg
-      width={size+`px`}
-      height={size+`px`}
+      width={size + `px`}
+      height={size + `px`}
       viewBox={`0 -960 960 960`}
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -639,8 +639,8 @@ export function IconLoginOutline({
       className={className}
     >
       <path
-      d='M475.48-100.78v-106h277.74v-546.44H475.48v-106h277.74q44.3 0 75.15 30.85 30.85 30.85 30.85 75.15v546.44q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H475.48Zm-97.52-152.09-73.66-75.52L402.91-427H100.78v-106h302.13l-98.61-98.61 73.66-75.52L604.52-480 377.96-252.87Z'
-      fill={color}
+        d='M475.48-100.78v-106h277.74v-546.44H475.48v-106h277.74q44.3 0 75.15 30.85 30.85 30.85 30.85 75.15v546.44q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H475.48Zm-97.52-152.09-73.66-75.52L402.91-427H100.78v-106h302.13l-98.61-98.61 73.66-75.52L604.52-480 377.96-252.87Z'
+        fill={color}
       />
     </svg>
   );
@@ -702,8 +702,8 @@ export function IconHeartFilled({
 }: IFluentProps) {
   return (
     <svg
-      width={size+`px`}
-      height={size+`px`}
+      width={size + `px`}
+      height={size + `px`}
       viewBox={`0 -960 960 960`}
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -711,8 +711,8 @@ export function IconHeartFilled({
       className={className}
     >
       <path
-      d='m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z'
-      fill={color}
+        d='m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z'
+        fill={color}
       />
     </svg>
   );
@@ -726,8 +726,8 @@ export function IconHeartOutlined({
 }: IFluentProps) {
   return (
     <svg
-      width={size+`px`}
-      height={size+`px`}
+      width={size + `px`}
+      height={size + `px`}
       viewBox={`0 -960 960 960`}
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -735,8 +735,8 @@ export function IconHeartOutlined({
       className={className}
     >
       <path
-      d='m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z'
-      fill={color}
+        d='m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z'
+        fill={color}
       />
     </svg>
   );
@@ -750,8 +750,8 @@ export function IconExplosion({
 }: IFluentProps) {
   return (
     <svg
-      width={size+`px`}
-      height={size+`px`}
+      width={size + `px`}
+      height={size + `px`}
       viewBox={`0 -960 960 960`}
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -759,8 +759,8 @@ export function IconExplosion({
       className={className}
     >
       <path
-      d='m480-294.08 55.12-55.12h75.68v-75.68L665.92-480l-55.12-55.12v-75.68h-75.68L480-665.92l-55.12 55.12H349.2v75.68L294.08-480l55.12 55.12v75.68h75.68L480-294.08Zm0 210.7L362.75-200H200v-162.75L83.38-480 200-597.25V-760h162.75L480-876.62 597.25-760H760v162.75L876.62-480 760-362.75V-200H597.25L480-83.38Zm0-56.62 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z'
-      fill={color}
+        d='m480-294.08 55.12-55.12h75.68v-75.68L665.92-480l-55.12-55.12v-75.68h-75.68L480-665.92l-55.12 55.12H349.2v75.68L294.08-480l55.12 55.12v75.68h75.68L480-294.08Zm0 210.7L362.75-200H200v-162.75L83.38-480 200-597.25V-760h162.75L480-876.62 597.25-760H760v162.75L876.62-480 760-362.75V-200H597.25L480-83.38Zm0-56.62 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z'
+        fill={color}
       />
     </svg>
   );
@@ -834,6 +834,78 @@ export function BackIconBold({
     >
       <path
         d="M24 40.55 7.45 24 24 7.45l3.35 3.3-10.85 10.9h24.05v4.7H16.5L27.35 37.2Z"
+        fill={color}
+      />
+    </svg>
+  );
+}
+
+export function IconWorkFilled({
+  size = 24,
+  color = "black",
+  onClick,
+  className
+}: IFluentProps) {
+  return (
+    <svg
+      width={size + `px`}
+      height={size + `px`}
+      viewBox={`0 -960 960 960`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
+      className={className}
+    >
+      <path
+        d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Z"
+        fill={color}
+      />
+    </svg>
+  );
+}
+
+export function IconDownload({
+  size = 24,
+  color = "black",
+  onClick,
+  className
+}: IFluentProps) {
+  return (
+    <svg
+      width={size + `px`}
+      height={size + `px`}
+      viewBox={`0 -960 960 960`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
+      className={className}
+    >
+      <path
+        d="M479-336q-10.57 0-19.82-3.41T442-351L276-517q-16-16.09-15.5-37.55Q261-576 277-592q16-16 37.5-16t37.5 16l74 75v-262q0-22 15.5-37.5T479-832q22 0 37.5 15.5T532-779v262l75-75q15.73-16 37.37-15.5Q666-607 682-591q16 16 16 37.5T682-516L516-351q-7.93 8.18-17.18 11.59T479-336ZM234-128q-43.73 0-74.86-31.14Q128-190.27 128-234v-67q0-22 15.5-37.5T181-354q22 0 37.5 15.5T234-301v67h492v-67q0-22 15.5-37.5T779-354q22 0 37.5 15.5T832-301v67q0 43.73-31.14 74.86Q769.72-128 726-128H234Z"
+        fill={color}
+      />
+    </svg>
+  );
+}
+
+export function IconSearchFilledRounded({
+  size = 24,
+  color = "black",
+  onClick,
+  className
+}: IFluentProps) {
+  return (
+    <svg
+      width={size + `px`}
+      height={size + `px`}
+      viewBox={`0 -960 960 960`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
+      className={className}
+    >
+      <path
+        d="M377-298q-119 0-201.5-82.5T93-582q0-119 82.5-201.5T377-866q119 0 201.5 82.5T661-582q0 45-12.5 86T612-423l218 218q15 15 15 37t-15 37q-15 15-37 15t-37-15L539-348q-30 23-73.5 36.5T377-298Zm0-106q75 0 126.5-51.5T555-582q0-75-51.5-126.5T377-760q-75 0-126.5 51.5T199-582q0 75 51.5 126.5T377-404Z"
         fill={color}
       />
     </svg>
