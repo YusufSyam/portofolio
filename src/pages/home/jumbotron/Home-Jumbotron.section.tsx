@@ -9,7 +9,7 @@ export interface IHomeJumbotronSection { }
 
 const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({ }) => {
   return (
-    <Stack className="gap-20">
+    <Stack className="gap-20 mb-16">
       <Grid gutter={54} columns={24} className="">
         <Grid.Col span={8} className="flex">
           <Stack className="w-full items-end relative">
