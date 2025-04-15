@@ -1,8 +1,9 @@
 import { Button, Grid, Group, Stack, Text } from "@mantine/core";
 import React from "react";
 import jumbotron4 from "../../../assets/images/jumbotron4.jpg";
-import { DownArrowNoTailOutlineBold, IconDownload, IconSearchFilledRounded, IconSearchOutlined, IconWorkFilled } from "../../../assets/icons/Fluent";
+import { DownArrowNoTailOutlineBold, IconDownload, IconGithubColoured, IconGmailColored, IconGmailColored2, IconGmailFilled, IconInstagramColoured, IconInstagramFilled, IconLinkedinColoured, IconLinkedinFilled, IconSearchFilledRounded, IconSearchOutlined, IconWorkFilled } from "../../../assets/icons/Fluent";
 import Button1 from "../../../components/Button1.component";
+import Button2 from "../../../components/Button2.component";
 
 export interface IHomeJumbotronSection { }
 
@@ -39,12 +40,25 @@ const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({ }) => {
             <Stack className="w-[85%] mt-4">
               <Group className=" relative">
                 <Text className="text-white text-[17px] text-start py-4  tracking-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corrupti eius quod? Eius repudiandae optio at excepturi quia voluptas, obcaecati ex assumenda omnis mollitia, doloremque corrupti?
+                  {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corrupti eius quod? Eius repudiandae optio at excepturi quia voluptas, obcaecati ex assumenda omnis mollitia, doloremque corrupti? */}
+                  Information Systems graduate focused on AI and Computer Vision. Curious, driven, and always eager to learn and build impactful solutions
                 </Text>
               </Group>
-              <Group className="self-start mr-6">
-                <Button1 label="cv" icon={<IconDownload color="white" className="self-center mt-[2px]" size={22} />} />
-                <Button1 label="more" icon={<IconSearchFilledRounded color="white" className="self-center" size={21} />} />
+              <Group className="justify-between mr-6 ">
+                <Group>
+                  <Button1 label="cv" icon={<IconDownload color="white" className="self-center mt-[2px]" size={22} />} />
+                  <Button1 label="more" icon={<IconSearchFilledRounded color="white" className="self-center mt-[2px]" size={21} />} />
+                </Group>
+                <Group>
+                  <Text className="font-quicksand-semibold text-xl text-white self-end">
+                    contacts :
+                  </Text>
+                  <Group className="bg-white/[0.1] rounded-full px-6 py-2 gap-6">
+                    <IconGmailFilled color="white" size={24} className="cursor-pointer duration-200 ease-in-out transition-all hover:translate-x-[2px] hover:translate-y-[-2px] " />
+                    <IconLinkedinFilled color="white" size={26} className="cursor-pointer duration-200 ease-in-out transition-all hover:translate-x-[2px] hover:translate-y-[-2px] " />
+                    <IconInstagramFilled color="white" size={28} className="cursor-pointer duration-200 ease-in-out transition-all hover:translate-x-[2px] hover:translate-y-[-2px] " />
+                  </Group>
+                </Group>
               </Group>
             </Stack>
             {/* <Group className="gap-16 self-center mr-20">

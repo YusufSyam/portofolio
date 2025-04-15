@@ -12,9 +12,9 @@ const HomeAboutMeSection: React.FC<IHomeAboutMeSection> = ({ }) => {
                 about me
             </Text>
             <Group className="gap-32 self-center w-fit">
-              <InfoWithNumber info="Years of experience" number={<>2<sup>+</sup></>} />
-              <InfoWithNumber info="Projects" number={<>10<sup>+</sup></>} />
-              <InfoWithNumber info="Certificates" number={<>6<sup>+</sup></>} />
+              <InfoWithNumber info="Years of experience" number={2} />
+              <InfoWithNumber info="Projects" number={10} />
+              <InfoWithNumber info="Certificates" number={6} />
             </Group>
         </Stack>
     );
