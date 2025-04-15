@@ -13,7 +13,8 @@ export enum IconColorScheme {
   secondary = "#deddf1",
   error = "#ff2c56",
   background = "#ffffff",
-  divider = "#b5c2d1"
+  divider = "#b5c2d1",
+  cream = "#F7E987"
 }
 export function IconLogoutOutline({
   size = 24,

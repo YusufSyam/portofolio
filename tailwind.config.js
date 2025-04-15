@@ -75,6 +75,7 @@ export default {
       sm: 12,
       md: 14,
       lg: 16,
+      lgp: 17,
       xl: 20,
       "2xl": 24,
       "3xl": 28,
