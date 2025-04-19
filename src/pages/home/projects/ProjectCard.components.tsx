@@ -2,6 +2,8 @@ import { Grid, Group, Stack, Text } from '@mantine/core';
 import dummyImage from '../../../../src/assets/images/camera.jpg'
 import React from 'react';
 import { techStackChip } from '../../../components/TechStackChipIcon.component';
+import Button2 from '../../../components/Button2.component';
+import { IconGithubColoured, IconGithubFilled, IconRightArrowNoTail } from '../../../assets/icons/Fluent';
 
 export interface IProjectCard { }
 
@@ -21,7 +23,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ }) => {
                     <Text className='font-quicksand-semibold text-white'>
                         Bachelor Project: Implementation of Odd-Even System
                     </Text><Text className='font-light text-[14px] text-white'>
-                        a machine learning project
+                        a machine learning project (click for detail)
                     </Text>
                 </Stack>
                 <Stack className='gap-1'>
@@ -47,14 +49,15 @@ const ProjectCard: React.FC<IProjectCard> = ({ }) => {
                         <div>{techStackChip["typescript"]}</div> */}
                     </Group>
                 </Stack>
-                <Stack className=''>
+                <Stack className='gap-1'>
                     <Text className='font-semibold text-white'>
                         Links
                     </Text>
+                    <Group className='gap-2'>
+                        <Button2 label={'github'} icon={<IconGithubFilled size={22} color='white' />} bgColor='dark' />
+                        <Button2 label={'project link'} icon={<IconRightArrowNoTail color='white' className='mt-[2px]' />} bgColor='grey' />
+                    </Group>
                 </Stack>
-                <Text className='font-semibold text-white'>
-                    Details
-                </Text>
             </Stack>
         </Stack>
     )
