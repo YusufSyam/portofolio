@@ -9,4 +9,5 @@ export interface ICProjects {
     projectLink?: string | null;
     articleLink?: string | null;
     summary: string;
+    role?: string | Array<String>
 }
