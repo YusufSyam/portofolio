@@ -1,7 +1,6 @@
-import React from "react";
 import { Group, Stack, Text } from "@mantine/core";
-import InfoWithNumber from "../../../components/InfoWithNumber.component";
-import { IconCPPFilled, IconGitFilled, IconJavaFilled, IconJavascriptFilled, IconKerasFilled, IconNextJSFilled, IconPandasOutline, IconPythonFilled, IconPytorchOutline, IconReactOutline, IconRStudioFilled, IconSearchFilledRounded, IconTableauOutline, IconTailwindOutline, IconTensorflowFilled, IconTypescriptFilled } from "../../../assets/icons/Fluent";
+import React from "react";
+import { IconCPPFilled, IconGitFilled, IconJavaFilled, IconJavascriptFilled, IconKerasFilled, IconNextJSFilled, IconPandasOutline, IconPythonFilled, IconPytorchOutline, IconReactOutline, IconRStudioFilled, IconTableauOutline, IconTailwindOutline, IconTensorflowFilled, IconTypescriptFilled } from "../../../assets/icons/Fluent";
 
 export interface IHomeTechStackSection { }
 
@@ -11,7 +10,7 @@ const HomeTechStackSection: React.FC<IHomeTechStackSection> = ({ }) => {
             <Text className="font-quicksand-semibold text-5xl text-white tracking-5 text-center">
                 tech stack
             </Text>
-            <Text className="text-white text-center text-lgp tracking-4 -mt-4 mb-2">
+            <Text className="text-white text-center text-lgp tracking-4 -mt-4">
                 Programming languages, frameworks and tools i used
             </Text>
             <Group className="gap-8 self-center w-fit mt-4">
