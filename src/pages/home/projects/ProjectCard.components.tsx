@@ -3,7 +3,7 @@ import dummyImage from '../../../../src/assets/images/camera.jpg'
 import React from 'react';
 import { techStackChip, TTechStack } from '../../../components/TechStackChipIcon.component';
 import Button2 from '../../../components/Button2.component';
-import { IconGithubColoured, IconGithubFilled, IconRightArrowNoTail } from '../../../assets/icons/Fluent';
+import { IconGithubColoured, IconGithubFilled, IconMachineLearningFilled, IconRightArrowNoTail, IconWebsiteFilled } from '../../../assets/icons/Fluent';
 import { ArticleProjectLink, GithubProjectLink, ProjectProjectLink } from './ProjectLinkButton.component';
 import { ICProjects } from '../../../utils/const/interfaces';
 
@@ -16,11 +16,11 @@ const ProjectCard: React.FC<ICProjects> = ({
     githubLink,
     image = dummyImage,
     projectLink,
-    role
+    role,
+    shortSummary = ""
 }) => {
     return (
-
-        <Stack className='bg-white/[0.1] backdrop-blur-md rounded-2xl p-2'>
+        <Stack className='bg-white/[0.1] backdrop-blur-md rounded-2xl p-2 h-full relative overflow-hidden'>
             <div className="w-full rounded-xl overflow-hidden z-10">
                 <img
                     src={image}
@@ -30,10 +30,15 @@ const ProjectCard: React.FC<ICProjects> = ({
             </div>
             <Stack className='mx-2 pb-2'>
                 <Stack className=' gap-1'>
-                    <Text className='font-quicksand-semibold text-white'>
+                    <Text className='font-quicksand-bold text-white'>
                         {name}
-                    </Text><Text className='font-light text-[14px] text-white'>
-                        a {projectType} project
+                    </Text>
+                    <Text className='font-light text-[14px] text-white tracking-4'>
+                        {shortSummary + ". " || " "}A
+                        <span className='font-semibold text-cream'>
+                            {" " + projectType + " "}
+                        </span>
+                        project
                     </Text>
                 </Stack>
                 <Stack className='gap-1'>
@@ -58,12 +63,12 @@ const ProjectCard: React.FC<ICProjects> = ({
                     </Text>
                     <Group className='gap-2'>
                         {
-                            githubLink &&
-                            <GithubProjectLink href={githubLink} />
-                        }
-                        {
                             projectLink &&
                             <ProjectProjectLink href={projectLink} />
+                        }
+                        {
+                            githubLink &&
+                            <GithubProjectLink href={githubLink} />
                         }
                         {
                             articleLink &&
@@ -72,6 +77,19 @@ const ProjectCard: React.FC<ICProjects> = ({
                     </Group>
                 </Stack>
             </Stack>
+            {
+                ["data science", "machine learning", "iot"].includes(projectType) ?
+                    <>
+                        <IconMachineLearningFilled size={120} color='#FFFFFF0A' className='blur-[1px] absolute -right-10 bottom-4 -z-10' />
+                        <IconMachineLearningFilled size={44} color='#FFFFFF0A' className='blur-[1px] absolute right-[72px] bottom-2 -z-10' />
+                    </>
+                    :
+                    <>
+                        <IconWebsiteFilled size={100} color='#FFFFFF0A' className='blur-[1px] absolute right-10 bottom-14 -z-10' />
+                        <IconWebsiteFilled size={56} color='#FFFFFF0A' className='blur-[1px] absolute right-4 bottom-2 -z-10' />
+                        <IconWebsiteFilled size={56} color='#FFFFFF0A' className='blur-[1px] absolute -right-5 bottom-16 -z-10' />
+                    </>
+            }
         </Stack>
     )
 }

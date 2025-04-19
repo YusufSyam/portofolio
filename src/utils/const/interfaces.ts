@@ -1,13 +1,16 @@
 import { TTechStack } from "../../components/TechStackChipIcon.component";
 
+export type TProjectType= "data science" | "machine learning" | "iot" | "website" | "desktop" | "mobile" | "etc"
+
 export interface ICProjects {
     name: string;
     image?: string;
-    projectType: "data science" | "machine learning" | "iot" | "website" | "desktop app" | "etc",
+    projectType: TProjectType,
     techs: Array<TTechStack>;
     githubLink?: string | null;
     projectLink?: string | null;
     articleLink?: string | null;
     summary: string;
+    shortSummary?: string;
     role?: string | Array<String>
 }

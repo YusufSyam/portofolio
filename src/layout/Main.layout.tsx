@@ -19,7 +19,7 @@ const MainLayout: React.FC<IMainLayout> = ({children }) => {
       //   </Stack>
       // }
       // padding={"0px"}
-      className="bg-gradient-to-br from-dark-grey/[0.9] via-dark-grey to-navy px-12"
+      className="bg-gradient-to-br from-dark-grey to-grey via-navy px-12"
     >
       <div>{children}</div>
     </AppShell>

@@ -11,7 +11,7 @@ export interface IProjectLinkButton {
 
 export const GithubProjectLink: React.FC<IProjectLinkButton> = ({ href = "#" }) => {
     return (
-        <Link to={href}>
+        <Link to={href} target="_blank">
             <Button2 label={'github'} icon={<IconGithubFilled size={22} color='white' />} bgColor='dark' />
         </Link>
     )
@@ -19,16 +19,16 @@ export const GithubProjectLink: React.FC<IProjectLinkButton> = ({ href = "#" }) 
 
 export const ProjectProjectLink: React.FC<IProjectLinkButton> = ({ href = "#" }) => {
     return (
-        <Link to={href}>
-            <Button2 label={'project link'} icon={<IconRightArrowNoTail color='white' className='mt-[2px]' />} bgColor='grey' />
+        <Link to={href} target="_blank">
+            <Button2 label={'project link'} icon={<IconRightArrowNoTail size={20} color='white' className='mt-[2px]' />} bgColor='grey' />
         </Link>
     )
 }
 
 export const ArticleProjectLink: React.FC<IProjectLinkButton> = ({ href = "#" }) => {
     return (
-        <Link to={href}>
-            <Button2 label={'article'} icon={<IconRightArrowNoTail color='black' className='mt-[2px]' />} bgColor='cream' />
+        <Link to={href} target="_blank">
+            <Button2 label={'article'} icon={<IconRightArrowNoTail size={20} color='black' className='mt-[2px]' />} bgColor='cream' />
         </Link>
     )
 }
