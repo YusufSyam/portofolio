@@ -26,6 +26,15 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({ }) => {
                 <Grid.Col span={4}>
                     <ProjectCard />
                 </Grid.Col>
+                <Grid.Col span={4}>
+                    <ProjectCard />
+                </Grid.Col>
+                <Grid.Col span={4}>
+                    <ProjectCard />
+                </Grid.Col>
+                <Grid.Col span={4}>
+                    <ProjectCard />
+                </Grid.Col>
             </Grid>
         </Stack>
     )

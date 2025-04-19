@@ -4,13 +4,14 @@ import React from 'react';
 import { techStackChip } from '../../../components/TechStackChipIcon.component';
 import Button2 from '../../../components/Button2.component';
 import { IconGithubColoured, IconGithubFilled, IconRightArrowNoTail } from '../../../assets/icons/Fluent';
+import { ArticleProjectLink, GithubProjectLink, ProjectProjectLink } from './ProjectLinkButton.component';
 
 export interface IProjectCard { }
 
 const ProjectCard: React.FC<IProjectCard> = ({ }) => {
     return (
 
-        <Stack className='bg-white/[0.15] backdrop-blur-md rounded-2xl p-2'>
+        <Stack className='bg-white/[0.1] backdrop-blur-md rounded-2xl p-2'>
             <div className="w-full rounded-xl overflow-hidden z-10">
                 <img
                     src={dummyImage}
@@ -54,8 +55,8 @@ const ProjectCard: React.FC<IProjectCard> = ({ }) => {
                         Links
                     </Text>
                     <Group className='gap-2'>
-                        <Button2 label={'github'} icon={<IconGithubFilled size={22} color='white' />} bgColor='dark' />
-                        <Button2 label={'project link'} icon={<IconRightArrowNoTail color='white' className='mt-[2px]' />} bgColor='grey' />
+                        <GithubProjectLink />
+                        <ProjectProjectLink />
                     </Group>
                 </Stack>
             </Stack>
