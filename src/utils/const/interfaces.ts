@@ -4,7 +4,7 @@ export type TProjectType= "data science" | "machine learning" | "iot" | "website
 
 export interface ICProjects {
     name: string;
-    image?: string;
+    image?: string | null;
     projectType: TProjectType,
     techs: Array<TTechStack>;
     githubLink?: string | null;
@@ -12,5 +12,6 @@ export interface ICProjects {
     articleLink?: string | null;
     summary: string;
     shortSummary?: string;
-    role?: string | Array<String>
+    role?: string | Array<String>;
+    contribution?: "part" | "whole";
 }
