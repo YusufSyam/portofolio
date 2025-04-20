@@ -3,6 +3,7 @@ import React from "react";
 import { IconDownload, IconSearchFilledRounded } from "../../../assets/icons/Fluent";
 import jumbotron4 from "../../../assets/images/jumbotron4.jpg";
 import Button1 from "../../../components/Button1.component";
+import Contacts from "../../../components/Contacts.component";
 
 export interface IHomeJumbotronSection { }
 
@@ -48,7 +49,7 @@ const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({ }) => {
                   <Button1 label="cv" icon={<IconDownload color="white" className="self-center mt-[2px]" size={22} />} />
                   <Button1 label="more" icon={<IconSearchFilledRounded color="white" className="self-center mt-[2px]" size={21} />} />
                 </Group>
-                
+                <Contacts />
               </Group>
             </Stack>
             {/* <Group className="gap-16 self-center mr-20">
