@@ -61,7 +61,7 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({ }) => {
                         setSearchInput(event.target.value)
                     }
                     w={240}
-                    placeholder="ketik python..."
+                    placeholder="search name, techs.."
                 />
 
             </div>
@@ -74,7 +74,7 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({ }) => {
                             (activePage - 1) * dataPerPageAmount + dataPerPageAmount
                         )?.map((data: ICProjects, idx: number) => {
                             return (
-                                <Grid.Col id={'' + idx} span={4} className=''>
+                                <Grid.Col id={'' + idx}     span={4} className=''>
                                     <ProjectCard {...data} />
                                 </Grid.Col>
                             )
@@ -98,7 +98,7 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({ }) => {
                             fontFamily: "poppins",
                             backgroundColor: "#FFFFFF1F",
                             ":active": {
-                                color: theme.colors["dark-grey"][5] + " !important"
+                                color: theme.colors["cream"][5] + " !important"
                             },
                             ":hover": {
                                 backgroundColor:

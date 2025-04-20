@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
-import { IconCPPFilled, IconGitFilled, IconJavaFilled, IconJavascriptFilled, IconKerasFilled, IconNextJSFilled, IconPandasOutline, IconPythonFilled, IconPytorchOutline, IconReactOutline, IconRStudioFilled, IconTableauOutline, IconTailwindOutline, IconTensorflowFilled, IconTypescriptFilled } from '../assets/icons/Fluent';
+import { IconCPPFilled, IconGitFilled, IconJavaFilled, IconJavascriptFilled, IconKerasFilled, IconNextJSFilled, IconPandasOutline, IconPythonFilled, IconPytorchOutline, IconReactOutline, IconRStudioFilled, IconTableauOutline, IconTailwindOutline, IconTensorflowFilled, IconTypescriptFilled, IconWordpressFilled } from '../assets/icons/Fluent';
 
 // export type TTechStack= "cpp"
-export type TTechStack= "tensorflow" | "python" | "typescript" | "javascript" | "java" | "cpp" | "r" | "keras" | "pandas" | "pytorch" | "tableau" | "reactjs" | "nextjs" | "tailwind" | "git"
+export type TTechStack= "tensorflow" | "python" | "typescript" | "javascript" | "java" | "cpp" | "r" | "keras" | "pandas" | "pytorch" | "tableau" | "reactjs" | "nextjs" | "tailwind" | "git" | "wordpress"
 
 export interface ITechStackIcon {
     techIcon: TTechStack;
@@ -23,6 +23,6 @@ export const techStackChip : Record<TTechStack, ReactNode> = {
     "tableau": <IconTableauOutline size={22} className='' color='white' />,
     "tailwind": <IconTailwindOutline size={24} className='' color='white' />,
     "tensorflow": <IconTensorflowFilled size={22} className='' color='white' />,
-    "typescript": <IconTypescriptFilled size={24} className='' color='white' />
-    
+    "typescript": <IconTypescriptFilled size={24} className='' color='white' />,
+    "wordpress": <IconWordpressFilled size={22} className='' color='white' />,
 }

@@ -1,6 +1,6 @@
 import { Group, Stack, Text } from "@mantine/core";
 import React from "react";
-import { IconCPPFilled, IconGitFilled, IconJavaFilled, IconJavascriptFilled, IconKerasFilled, IconNextJSFilled, IconPandasOutline, IconPythonFilled, IconPytorchOutline, IconReactOutline, IconRStudioFilled, IconTableauOutline, IconTailwindOutline, IconTensorflowFilled, IconTypescriptFilled } from "../../../assets/icons/Fluent";
+import { IconCPPFilled, IconGitFilled, IconJavaFilled, IconJavascriptFilled, IconKerasFilled, IconNextJSFilled, IconPandasOutline, IconPythonFilled, IconPytorchOutline, IconReactOutline, IconRStudioFilled, IconTableauOutline, IconTailwindOutline, IconTensorflowFilled, IconTypescriptFilled, IconWordpressFilled } from "../../../assets/icons/Fluent";
 
 export interface IHomeTechStackSection { }
 
@@ -31,6 +31,7 @@ const HomeTechStackSection: React.FC<IHomeTechStackSection> = ({ }) => {
                 <IconNextJSFilled size={42} color="white"/>
                 <IconTailwindOutline size={44} color="white"/>
                 <IconGitFilled size={44} color="white"/>
+                <IconWordpressFilled size={42} color="white"/>
             </Group>
         </Stack>
     );
