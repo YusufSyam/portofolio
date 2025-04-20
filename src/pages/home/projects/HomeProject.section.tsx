@@ -46,7 +46,7 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({ }) => {
 
     console.log('asd', projectData)
     return (
-        <Stack className="mx-24">
+        <Stack className="mx-20">
             <Stack className='mb-8 mx-16'>
                 <Text className="font-quicksand-semibold text-5xl text-white tracking-5 text-center">
                     projects
@@ -67,7 +67,7 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({ }) => {
             </div>
             <Stack>
 
-                <Grid gutter={48} className='items-stretch'>
+                <Grid gutter={36} className='items-stretch'>
                     {
                         displayedData?.slice(
                             (activePage - 1) * dataPerPageAmount,
@@ -88,18 +88,15 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({ }) => {
                     disabled={pageAmount == 0}
                     withEdges
                     color='dark-grey'
-                    className='self-center mt-4'
+                    className='self-center mt-8'
                     styles={{
                         control: {
                             color: theme.colors["white"][5],
                             borderRadius: "999px",
                             padding: "18px 14px",
-                            border: "0px solid #d4d3e7",
+                            border: "1px solid #FFFFFF",
                             fontFamily: "poppins",
                             backgroundColor: "#FFFFFF1F",
-                            ":active": {
-                                color: theme.colors["cream"][5] + " !important"
-                            },
                             ":hover": {
                                 backgroundColor:
                                     theme.colors["dark-grey"][5] + " !important",

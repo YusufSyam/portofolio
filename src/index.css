@@ -101,10 +101,12 @@ body {
   font-size: 14px;
   font-weight: normal;
   /* background-color: #FFE6E6 !important; */
+  /* margin: 0 !important;
+  padding: 0 !important; */
 }
 
 #root{
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   /* background-color: "#FFE6E6"; */
 }

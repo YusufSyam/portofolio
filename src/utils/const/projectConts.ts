@@ -56,7 +56,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: 'Mobile application to detect dangerous animals in tourist spots'
     },
     {
-        name: "SIFA",
+        name: "SI-FA",
         projectType: "website",
         techs: ["typescript","reactjs","tailwind"],
         githubLink: "https://github.com/NPEDigiHouse/sifa-unhas",
