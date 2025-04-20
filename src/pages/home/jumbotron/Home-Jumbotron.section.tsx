@@ -41,7 +41,7 @@ const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({ }) => {
               <Group className=" relative">
                 <Text className="text-white text-[17px] text-start py-4  tracking-4">
                   {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corrupti eius quod? Eius repudiandae optio at excepturi quia voluptas, obcaecati ex assumenda omnis mollitia, doloremque corrupti? */}
-                  Information Systems graduate focused on AI and Computer Vision. Curious, driven, and always eager to learn and build impactful solutions
+                  I am an Information Systems graduate focused on AI and Computer Vision. Curious, driven, and always eager to learn and build impactful solutions
                 </Text>
               </Group>
               <Group className="justify-between mr-6 ">
