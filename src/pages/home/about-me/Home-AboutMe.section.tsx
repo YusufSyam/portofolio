@@ -8,7 +8,7 @@ export interface IHomeAboutMeSection { }
 
 const HomeAboutMeSection: React.FC<IHomeAboutMeSection> = ({ }) => {
     return (
-        <Stack className="mx-40">
+        <Stack id="section-aboutMe" className="mx-40">
             <Text className="font-quicksand-semibold text-5xl text-white tracking-5 text-center">
                 about me
             </Text>

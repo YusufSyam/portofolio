@@ -5,12 +5,14 @@ import HomeJumbotronSection from "./jumbotron/Home-Jumbotron.section";
 import HomeAboutMeSection from "./about-me/Home-AboutMe.section";
 import HomeTechStackSection from "./teach-stack/Home-TechStack.section";
 import HomeProjectSection from "./projects/HomeProject.section";
+import { useScrollIntoView } from "@mantine/hooks";
 
 export interface IHomePage {}
 
 const HomePage: React.FC<IHomePage> = ({}) => {
 
-  console.log('semoga saya rajin kerja ya Allah Aamiinn')
+
+
   return (
     <MainLayout>
       <Stack className="mt-10 gap-32 pb-20">

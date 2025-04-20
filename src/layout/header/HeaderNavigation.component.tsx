@@ -1,19 +1,22 @@
-import { Text } from '@mantine/core';
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Text } from "@mantine/core";
+import React from "react";
+import { Link } from "react-router-dom";
 
 export interface IHeaderNavigationComp {
-  href?: string;
+  onClick?: () => void;
   label?: string;
 }
 
-const HeaderNavigationComp: React.FC<IHeaderNavigationComp> = ({href='', label='label' }) => {
+const HeaderNavigationComp: React.FC<IHeaderNavigationComp> = ({
+  onClick = () => {},
+  label = "label",
+}) => {
   return (
-    <Link to={href}>
-      <Text className='text-white font-quicksand-semibold tracking-5'>
+    <div onClick={onClick} className="cursor-pointer">
+      <Text className="text-white font-quicksand-semibold tracking-5">
         {label}
       </Text>
-    </Link>
-  )
-}
+    </div>
+  );
+};
 export default HeaderNavigationComp;

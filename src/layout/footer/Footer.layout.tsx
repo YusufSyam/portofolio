@@ -14,7 +14,7 @@ export interface IFooterLayout {}
 const FooterLayout: React.FC<IFooterLayout> = ({}) => {
   const navigate = useNavigate();
   return (
-    <Stack className="bg-dark-grey pt-12 pb-4 px-24 gap-6">
+    <Stack id="section-contacts" className="bg-dark-grey pt-12 pb-4 px-24 gap-6">
       <Group className="gap-0 justify-between">
         <Group className="self-start ">
           <WebsiteIcon />
