@@ -1,18 +1,15 @@
 import { Group, Stack, Text } from "@mantine/core";
 import React from "react";
-import WebsiteIcon from "../../components/WebsiteIcon.component";
-import Contacts from "../../components/Contacts.component";
 import {
   IconGmailFilled,
   IconInstagramFilled,
   IconLinkedinFilled,
 } from "../../assets/icons/Fluent";
-import { useNavigate } from "react-router-dom";
+import WebsiteIcon from "../../components/WebsiteIcon.component";
 
 export interface IFooterLayout {}
 
 const FooterLayout: React.FC<IFooterLayout> = ({}) => {
-  const navigate = useNavigate();
   return (
     <Stack id="section-contacts" className="bg-dark-grey pt-12 pb-4 px-24 gap-6">
       <Group className="gap-0 justify-between">

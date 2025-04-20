@@ -1,6 +1,5 @@
 import { Group, Text } from "@mantine/core";
 import React from "react";
-import { IconWorkFilled } from "../assets/icons/Fluent";
 
 export interface IButton1 {
   icon?: string | JSX.Element;

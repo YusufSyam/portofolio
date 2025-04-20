@@ -1,22 +1,19 @@
-import { Grid, Group, Stack, Text } from '@mantine/core';
-import NoImage from '../../../../src/assets/images/no_image.png'
+import { Group, Stack, Text } from '@mantine/core';
 import React from 'react';
+import NoImage from '../../../../src/assets/images/no_image.png';
+import { IconMachineLearningFilled, IconWebsiteFilled } from '../../../assets/icons/Fluent';
 import { techStackChip, TTechStack } from '../../../components/TechStackChipIcon.component';
-import Button2 from '../../../components/Button2.component';
-import { IconGithubColoured, IconGithubFilled, IconMachineLearningFilled, IconRightArrowNoTail, IconWebsiteFilled } from '../../../assets/icons/Fluent';
-import { ArticleProjectLink, GithubProjectLink, ProjectProjectLink } from './ProjectLinkButton.component';
 import { ICProjects } from '../../../utils/const/interfaces';
+import { ArticleProjectLink, GithubProjectLink, ProjectProjectLink } from './ProjectLinkButton.component';
 
 const ProjectCard: React.FC<ICProjects> = ({
     name,
     projectType,
-    summary,
     techs,
     articleLink,
     githubLink,
     image,
     projectLink,
-    role,
     shortSummary = "",
     contribution
 }) => {

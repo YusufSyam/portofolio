@@ -1,16 +1,15 @@
 import { ICProjects } from "./interfaces";
 
-import ProjectImage1 from "./../../assets/images/pj_img_1_2.png"
-import ProjectImage2 from "./../../assets/images/pj_img_2.png"
-import ProjectImage3 from "./../../assets/images/pj_img_3.png"
-import ProjectImage4 from "./../../assets/images/pj_img_4.png"
-import ProjectImage5 from "./../../assets/images/pj_img_5.png"
-import ProjectImage6 from "./../../assets/images/pj_img_6.png"
-import ProjectImage8 from "./../../assets/images/pj_img_8.png"
-import ProjectImage9 from "./../../assets/images/pj_img_9.png"
-import ProjectImage12 from "./../../assets/images/pj_img_12.png"
-import ProjectImage14 from "./../../assets/images/pj_img_14.jpg"
-import DummyImage from "./../../assets/images/camera.jpg"
+import ProjectImage12 from "./../../assets/images/pj_img_12.png";
+import ProjectImage14 from "./../../assets/images/pj_img_14.jpg";
+import ProjectImage1 from "./../../assets/images/pj_img_1_2.png";
+import ProjectImage2 from "./../../assets/images/pj_img_2.png";
+import ProjectImage3 from "./../../assets/images/pj_img_3.png";
+import ProjectImage4 from "./../../assets/images/pj_img_4.png";
+import ProjectImage5 from "./../../assets/images/pj_img_5.png";
+import ProjectImage6 from "./../../assets/images/pj_img_6.png";
+import ProjectImage8 from "./../../assets/images/pj_img_8.png";
+import ProjectImage9 from "./../../assets/images/pj_img_9.png";
 
 
 const CProjectsImageArray = [

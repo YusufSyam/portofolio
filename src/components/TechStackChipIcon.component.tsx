@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { IconCPPFilled, IconGitFilled, IconJavaFilled, IconJavascriptFilled, IconKerasFilled, IconNextJSFilled, IconPandasOutline, IconPythonFilled, IconPytorchOutline, IconReactOutline, IconRStudioFilled, IconTableauOutline, IconTailwindOutline, IconTensorflowFilled, IconTypescriptFilled, IconWordpressFilled } from '../assets/icons/Fluent';
 
 // export type TTechStack= "cpp"

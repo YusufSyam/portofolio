@@ -1,17 +1,16 @@
 import { Grid, Pagination, Stack, Text, useMantineTheme } from "@mantine/core";
-import dummyImage from "../../../../src/assets/images/camera.jpg";
-import React, { useEffect, useState } from "react";
-import ProjectCard from "./ProjectCard.components";
-import { CProjects } from "../../../utils/const/projectConts";
-import { ICProjects } from "../../../utils/const/interfaces";
 import { useDebouncedValue } from "@mantine/hooks";
+import React, { useEffect, useState } from "react";
 import { MySearchInput } from "../../../components/FormInput.component";
+import { ICProjects } from "../../../utils/const/interfaces";
+import { CProjects } from "../../../utils/const/projectConts";
+import ProjectCard from "./ProjectCard.components";
 
 export interface IHomeProjectSection {}
 
 const HomeProjectSection: React.FC<IHomeProjectSection> = ({}) => {
   const theme = useMantineTheme();
-  const [projectData, setProjectData] = useState<Array<ICProjects>>(CProjects);
+  const [projectData] = useState<Array<ICProjects>>(CProjects);
   const [activePage, setActivePage] = useState<number>(1);
 
   const [displayedData, setDisplayedData] =

@@ -1,8 +1,7 @@
-import React from "react";
 import { Group, Stack, Text } from "@mantine/core";
-import InfoWithNumber from "../../../components/InfoWithNumber.component";
-import MyCircleDividerComp from "../../../components/MyDivider.component copy";
+import React from "react";
 import { IconSearchFilledRounded } from "../../../assets/icons/Fluent";
+import InfoWithNumber from "../../../components/InfoWithNumber.component";
 
 export interface IHomeAboutMeSection { }
 
