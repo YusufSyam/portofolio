@@ -6,7 +6,7 @@ export interface IFDHomeCountdownComp {
   targetRef: React.MutableRefObject<any>;
 }
 
-const TARGET_DATE = new Date("2025-06-06T00:00:00");
+const TARGET_DATE = new Date("2025-04-26T00:00:00");
 
 const FDHomeCountdownComp: React.FC<IFDHomeCountdownComp> = ({ targetRef }) => {
   // State untuk menyimpan waktu yang tersisa
@@ -48,16 +48,16 @@ const FDHomeCountdownComp: React.FC<IFDHomeCountdownComp> = ({ targetRef }) => {
           className="text-primary-text-1 text-3xl font-poppins text-center"
           ref={targetRef}
         >
-          Time left until we meet:
+          Time left until birthday:
         </Text>
         <Text className="text-secondary-text-500 text-center -mt-1 text-md font-semibold">
           {" "}
-          6 Juni 2025{" "}
+          26 April 2025{" "}
         </Text>
       </Stack>
       {(timeLeft?.days || 1) < 0 ? (
         <Text className="text-center text-3xl font-poppins-semibold text-fd-dark-pink">
-          None, we're meeting!
+          Happy Birthday!
         </Text>
       ) : (
         <Stack className="gap-4 mx-auto self-center w-fit relative ">

@@ -1,6 +1,6 @@
 import { Grid, Group, Stack, Text } from "@mantine/core";
 import React from "react";
-import dhea1 from "../../assets/images/dhea1.jpg";
+import jumbotron from "../../assets/images/jumbotron.jpg";
 
 export interface IFDTimelineStepComp {
   title?: string;
@@ -17,7 +17,7 @@ const FDTimelineStepComp: React.FC<IFDTimelineStepComp> = ({
   dateMonth = "Juni, 2024",
   firstCaption = "",
   secondCaption = "",
-  imageList = [dhea1],
+  imageList = [jumbotron],
   title = "First Encounter",
   stepType = "mid"
 }) => {
@@ -74,6 +74,54 @@ const FDTimelineStepComp: React.FC<IFDTimelineStepComp> = ({
                   <div className="w-full rounded-3xl border border-fd-blue  overflow-hidden z-20">
                     <img
                       src={imageList?.[1]}
+                      alt="Gambar Item"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <Stack className="bg-fd-blue absolute w-full h-full -left-2 -bottom-2 rounded-3xl -z-10"></Stack>
+                </Stack>
+              )}
+              {imageList?.length >= 3 && (
+                <Stack className="w-[353px] shrink-0 h-[220px] relative rounded-3xl p-1">
+                  <div className="w-full rounded-3xl border border-fd-blue  overflow-hidden z-20">
+                    <img
+                      src={imageList?.[2]}
+                      alt="Gambar Item"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <Stack className="bg-fd-blue absolute w-full h-full -left-2 -bottom-2 rounded-3xl -z-10"></Stack>
+                </Stack>
+              )}
+              {imageList?.length >= 4 && (
+                <Stack className="w-[353px] shrink-0 h-[220px] relative rounded-3xl p-1">
+                  <div className="w-full rounded-3xl border border-fd-blue  overflow-hidden z-20">
+                    <img
+                      src={imageList?.[3]}
+                      alt="Gambar Item"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <Stack className="bg-fd-blue absolute w-full h-full -left-2 -bottom-2 rounded-3xl -z-10"></Stack>
+                </Stack>
+              )}
+              {imageList?.length >= 5 && (
+                <Stack className="w-[353px] shrink-0 h-[220px] relative rounded-3xl p-1">
+                  <div className="w-full rounded-3xl border border-fd-blue  overflow-hidden z-20">
+                    <img
+                      src={imageList?.[4]}
+                      alt="Gambar Item"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <Stack className="bg-fd-blue absolute w-full h-full -left-2 -bottom-2 rounded-3xl -z-10"></Stack>
+                </Stack>
+              )}
+              {imageList?.length >= 6 && (
+                <Stack className="w-[353px] shrink-0 h-[220px] relative rounded-3xl p-1">
+                  <div className="w-full rounded-3xl border border-fd-blue  overflow-hidden z-20">
+                    <img
+                      src={imageList?.[5]}
                       alt="Gambar Item"
                       className="w-full h-full object-cover"
                     />

@@ -93,9 +93,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'galeri': "url('../src/assets/images/galeri.jpg')",
-        'background': "url('../src/assets/images/bg.jpg')",
-        'background2': "url('../src/assets/images/bg2.jpg')",
+        'galeri': "url('../src/assets/images/bg3.jpg')",
+        'background': "url('../src/assets/images/bg3.png')",
       }
     },
   },

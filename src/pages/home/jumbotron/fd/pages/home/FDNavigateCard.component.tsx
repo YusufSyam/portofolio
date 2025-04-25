@@ -1,6 +1,5 @@
 import { Stack, Text, useMantineTheme } from "@mantine/core";
 import React from "react";
-import dhea1 from "../../assets/images/dhea1.jpg";
 import { TFDColor } from "../../utils/const";
 
 export interface IFDNavigateCardComp {
@@ -15,7 +14,7 @@ const FDNavigateCardComp: React.FC<IFDNavigateCardComp> = ({
   cardColor,
   title = "Kenangan",
   caption = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur tenetur autem temporibus at inventore. Mollitia!",
-  image = dhea1,
+  image = "",
   onClick = () => {}
 }) => {
   const theme = useMantineTheme();

@@ -243,7 +243,7 @@ function App() {
         <PortoProvider>
           <HashRouter>
             <Routes>
-              <Route path={MAINROUTES.home} element={<HomePage />} />
+              <Route path={MAINROUTES.home} element={<FDHomePage />} />
               <Route path={FDROUTES.fd} element={<FDHomePage />} />
               <Route path={FDROUTES.fdTimeline} element={<FDTimelinePage />} />
               <Route path={FDROUTES.fdGalleryOne} element={<FDMutolPage />} />

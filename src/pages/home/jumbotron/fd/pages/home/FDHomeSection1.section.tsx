@@ -9,7 +9,7 @@ import {
 import React from "react";
 import { IconHeartFilled } from "../../../../../../assets/icons/Fluent";
 import FDModal from "../../../../../../components/FDModal.component";
-import jumbotron from "../../assets/images/jumbotron.png";
+import jumbotron from "../../assets/images/jumbotron.jpg";
 import fullMail from "../../assets/images/mail.png";
 import FDChat from "./FDChat.component";
 
@@ -28,13 +28,13 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
       <FDModal
         opened={isMailClicked}
         setOpened={setIsMailClicked}
-        title={"Untuk Bintangku, Dhea"}
+        title={"Untuk Nessa"}
         yesButtonLabel="Tutup"
         minWidth={400}
         children={
           <Stack className=" gap-2">
             <Text className="text-primary-text-2 font-semibold tracking-5 text-lg mx-6">
-              Selamat ulang tahun yang ke-23 Dhea sayang.
+              selamat ulang tahun annisa anderila alwadina andalangkuuu
             </Text>
 
             <div className="mt-6 mb-6 mx-6">
@@ -42,22 +42,17 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
             </div>
             <Stack className="gap-4">
               <Text className="text-primary-text-2 tracking-5 text-lg mx-6">
-                Maaf yaa, hanya ini yang bisa Ucup lakukan untuk merayakan ulang
-                tahunmu dari jauh :"). Maaf juga ya kalau selama ini Ucup
-                menjengkelkan dan banyak kekurangannya
+                bemanaaa rasanya jadii dewasaa? enak tidakkk? jiakhh 23 mii toaa mkoo dek . yaa semogaa diumur yang 23 ini nesaa panjang umur sehat selalu murah rezeki dilancarkan urusanyaa dan berbakti kepada orang tua semoga punya tanah 1000 hektar kandang walet emas 14 kg mobil kicil yang listrik wara pink satu mall tsm satuu tambak ikan juga. intinya wish u all the best 
               </Text>
               <Text className="text-primary-text-2 tracking-5 text-lg mx-6">
-                Makasih sudah sudah kasika cinta, senyum dan tawa, dan
-                yang tidak ada duanya. Semoga setiap langkahmu di tahun ini
-                dipenuhi kebahagiaan dan kesuksesan yang kamu impikan.
+                thank uu for all, arigatou gozaimasuu, syukron, kamsamidaaah sudah terimaa reski anugra yang pakbal ini terima kasih sudah sabar sama kiki yang perhatianya kek cctv 24 jam, dan selaluu bikin senang reski anugra sekalii lagii happy birthday sayanggg. 
               </Text>
               <Text className="text-primary-text-2 tracking-5 text-lg mx-6">
-                Sayangku ke kau lebih dari yang bisa dijelaskan kata-kata, dan
-                berjanjika akan selalu ada di sampingmu, hari ini dan
-                selamanya ❤️
+                Sayangku ke kitaaa  lebih dari yang bisa dijelaskan kata-kata,This is the only thing I can do for you right now
+                 ❤️
               </Text>
               <Text className="font-semibold text-primary-text-2 mx-6 mt-4 text-end">
-                Ucup, 03 November 2024
+                kiki
               </Text>
             </Stack>
           </Stack>
@@ -67,12 +62,12 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
           setIsMailClicked(false);
         }}
       />
-      <Stack className="bg-background bg-cover rounded-3xl px-4 pt-6 pb-14 sm:pb-8 relative ">
+      <Stack className="rounded-3xl px-4 pt-6 pb-14 sm:pb-8 relative ">
         <div className="absolute w-full h-full bg-fd-dark-pink/70 left-0 top-0 rounded-3xl"></div>
         <Grid gutter={"xl"} columns={24}>
-          <Grid.Col span={24} md={11} className="z-50">
-            <Stack className="w-full mx-auto gap-0">
-              <div className="w-full sm:w-[95%] mx-auto self-center">
+          <Grid.Col span={24} md={9} className="z-50">
+            <Stack className="w-full gap-0">
+              <div className="w-full sm:w-[95%] self-end rounded-full overflow-hidden">
                 <img
                   src={jumbotron}
                   alt="Gambar Item"
@@ -94,7 +89,7 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
                 </Text>
                 <Group className="-mt-4 gap-2 md:self-start self-center">
                   <Text className="text-white font-roboto text-[56px] sm:text-[64px] md:text-[72px] tracking-5 ">
-                    Ardhiyah
+                    Annisa
                   </Text>
                   <IconHeartFilled
                     size={72}
@@ -108,11 +103,11 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
                   />
                 </Group>
                 <Text className="text-white font-roboto text-[24px] sm:text-[36px] md:self-start self-end sm:mr-0 mr-8 sm:self-center sm:ml-4 md:ml-56 -mt-4 sm:-mt-6 tracking-5">
-                  Regita Iriani
+                  Andrila Alwadina
                 </Text>
               </Stack>
               <Stack>
-                <FDChat caption="Selamat datang di website yang dibuat Ucup yang dibuat untuk Dhea tercintaa" />
+                <FDChat caption="Welcome! This site was created by Kiki, just for Nessa" />
                 <FDChat
                   cardColor="fd-cream"
                   caption="Hope you enjoy and appreciate my work"
@@ -139,81 +134,7 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
           />
         </div>
       </Stack>
-      {/* <Grid gutter={"xl"} className="mx-4 mt-8">
-        <Grid.Col span={8}>
-          <Stack className="">
-            <Text className="font-poppins text-[36px] text-primary-text-1 text-start">
-              Untuk Bintangku, <span className="text-fd-dark-pink">Dhea</span>{" "}
-              ✨
-            </Text>
-            <Text className="text-xl text-secondary-text-500 font-poppins">
-              Sebuah pesan singkat yang ditulis ucup untuk istri masa depannya.
-              Klik Mail-nya untuk membuka pesan {"->"}
-            </Text>
-          </Stack>
-        </Grid.Col>
-        <Grid.Col span={4}>
-          <Stack
-            className="overflow-hidden"
-            onClick={() => {
-              setIsMailClicked(!isMailClicked);
-              // setIsMailClicked(true);
-            }}
-          >
-            {!false ? (
-              <div className="relative  w-full">
-                <div className="w-full cursor-pointer z-10">
-                  <img
-                    src={fullMail}
-                    alt="Gambar Item"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <Stack className="absolute z-20 gap-0 bottom-6 left-0 right-0">
-                  <Text className="font-poppins text-fd-dark-pink text-lg text-center">
-                    Dari Ucup
-                  </Text>
-                  <Text className="text-secondary-text-500 text-md tracking-5 text-center -mt-2">
-                    (Klik untuk membuka)
-                  </Text>
-                </Stack>
-              </div>
-            ) : (
-              // <div className="mx-auto p-2 rounded-[30px] bg-fd-dark-pink w-fit"></div>
-              <Stack className="bg-secondary/40 rounded-3xl gap-2 border-fd-dark-pink border-2">
-                <Text className="text-primary-text-2 font-semibold tracking-5 text-lg mx-6 mt-6">
-                  Selamat ulang tahun yang ke-23 Dhea sayang. Di hari spesial
-                  ini, Ucup ingin mengingatkan betapa berharganya dirimu bagiku.
-                </Text>
-
-                <div className="mt-6 mb-6 mx-6">
-                  <Divider className="" />
-                </div>
-                <Stack className="gap-2">
-                  <Text className="text-primary-text-2 tracking-5 text-lg mx-6">
-                    Maaf yaa, hanya ini yang bisa Ucup lakukan untuk merayakan
-                    ulang tahunmu dari jauh :"). Maaf juga ya kalau selama ini
-                    Ucup menjengkelkan dan banyak kekurangannya
-                  </Text>
-                  <Text className="text-primary-text-2 tracking-5 text-lg mx-6">
-                    Terima kasih sudah mengisi hidupku dengan senyum, tawa, dan
-                    cinta yang tak ternilai. Semoga setiap langkahmu di tahun
-                    ini dipenuhi kebahagiaan dan kesuksesan yang kamu impikan.
-                  </Text>
-                  <Text className="text-primary-text-2 tracking-5 text-lg mx-6">
-                    Ucup mencintaimu lebih dari yang bisa dijelaskan kata-kata,
-                    dan Ucup berjanji akan selalu ada di sampingmu, hari ini dan
-                    selamanya ❤️
-                  </Text>
-                  <Text className="font-semibold text-primary-text-2 mx-6 mt-4 mb-6 text-end">
-                    Ucup, 03 November 2024
-                  </Text>
-                </Stack>
-              </Stack>
-            )}
-          </Stack>
-        </Grid.Col>
-      </Grid> */}
+      
     </Stack>
   );
 };

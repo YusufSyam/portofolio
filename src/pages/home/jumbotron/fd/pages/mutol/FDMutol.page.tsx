@@ -176,7 +176,7 @@ const FDMutolPage: React.FC<IFDMutolPage> = ({}) => {
               </Text>
             </Group>
             <Text className="text-lg text-white text-justify mt-4 font-semibold">
-              Halaman ini isinya foto2 berdua Ucup dan Dhea yang jumlahnya secuil karena memang sesingkat itu hubungannya di Makassar. Sisanya LDR bangke
+              Halaman ini isinya foto2 berdua Kiki dan Nessa
             </Text>
           </Stack>
           {/* <div className="absolute -bottom-6 -right-6 h-full w-full bg-gradient-to-r from-fd-dark-pink to-fd-blue"></div> */}

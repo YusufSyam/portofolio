@@ -31,7 +31,7 @@ const FDHomePage: React.FC<IFDHomePage> = ({}) => {
           minWidth={400}
           yesButtonLabel="Jawab"
           onSubmit={()=>{
-            if(passwordInput=='15'){
+            if(passwordInput=='12'){
               setIsAnsweredQuestion(true)
               console.log('ke sini')
             }
@@ -40,7 +40,7 @@ const FDHomePage: React.FC<IFDHomePage> = ({}) => {
           }}
         >
           <Stack>
-            <Text>Password = Tanggal ultahku + tanggal ultah Dhea</Text>
+            <Text>Password = Tanggal ultahku</Text>
             <TextInput
               value={passwordInput}
               onChange={(e) => {

@@ -2,11 +2,11 @@ import { Grid, Stack, Text } from "@mantine/core";
 import { useScrollIntoView } from "@mantine/hooks";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ourGalleryImage from "../../../../../../assets/images/bg.jpg";
+import ourGalleryImage from "../../../../../../assets/images/bg3.png";
 import storyOfUsImage from "../../assets/images/storyOfUs.jpg";
 import ucupMessageImage from "../../assets/images/ucupMessage.jpg";
 import { FDROUTES } from "../../utils/const";
-import countdownImage from "../timeline/timeline-images/20.jpg";
+import countdownImage from "../timeline/timeline-images/i6.jpg";
 import FDHomeCountdownComp from "./FDHomeCountdown.component";
 import FDNavigateCardComp from "./FDNavigateCard.component";
 
@@ -35,7 +35,7 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
           <FDNavigateCardComp
             cardColor="fd-blue"
             title="Story of Us"
-            caption="Timeline hubungan Dhea dan Ucup. First encounter, menjadi teman VC sleep call, from close friend to lover, until now"
+            caption="Timeline hubungan Kiki dan Nessa"
             onClick={() => {
               navigate(FDROUTES.fdTimeline);
             }}
@@ -48,14 +48,14 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
             title="Our Gallery"
             onClick={onClickMutolDhea}
             image={ourGalleryImage}
-            caption="Halaman yang berisi gambar dan foto yang mengabadikan momen-momen penting Ucup dan Dhea :)"
+            caption="Halaman yang berisi gambar dan foto yang mengabadikan momen-momen penting Kiki dan Nessa :)"
           />
         </Grid.Col>
         <Grid.Col span={12} sm={6}>
           <FDNavigateCardComp
             cardColor="fd-light-pink"
-            title="Pesan dari Ucup"
-            caption="Sebuah pesan singkat yang ditulis ucup untuk istri masa depannya"
+            title="Pesan dari Kiki"
+            caption="Sebuah pesan singkat yang ditulis kiki untuk istri masa depannya"
             onClick={() => {
               setIsMailClicked(true);
             }}
@@ -65,9 +65,9 @@ const FDHomeSection2: React.FC<IFDHomeSection2> = ({
         <Grid.Col span={12} sm={6}>
           <FDNavigateCardComp
             cardColor="fd-cream"
-            title="Our meeting 'countdown'"
+            title="Hitung Mundur Ultah Nessa"
             image={countdownImage}
-            caption="Countdown atau hitungan mundur 6 Juni 2025 AKA 'pertemuan pelepas rindu' di mana Dhea (mungkin?) pulang ke Makassar dan akhirnya bisa memecah celengan rindu anjirr"
+            caption="Countdown ultahhh"
             onClick={() => {
               scrollIntoView({
                 alignment: "center"

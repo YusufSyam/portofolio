@@ -35,8 +35,7 @@ const FDTimelinePage: React.FC<IFDTimelinePage> = ({}) => {
                 Our Timeline
               </Text>
               <Text className="text-secondary-text-500 -mt-2 ml-1 text-md sm:text-lg">
-                Timeline hubungan Dhea dan Ucup. First encounter, menjadi teman
-                VC sleep call, from close friend to lover till now.
+                Timeline hubungan Kiki dan Nessa. First encounter, menjadi teman, from close friend to lover till now.
               </Text>
             </Stack>
           </Grid.Col>

@@ -11,7 +11,7 @@ const FDHeaderLayout: React.FC<IFDHeaderLayout> = ({}) => {
   return (
     <Group className="justify-between px-4 sm:px-8 py-4 sm:py-5 bg-fd-pink mx-8 rounded-full mt-6">
       <Text className='font-alkatra-semibold text-white text-xl sm:text-2xl'>
-        Dhea's
+        Nessa's
       </Text>
       <Group className="gap-4 sm:gap-6 md:gap-12">
         <HeaderNavigationComp label="Home" href={FDROUTES.fd} />

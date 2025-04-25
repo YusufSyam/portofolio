@@ -1,189 +1,191 @@
 import { IFDTimelineStepComp } from "./FDTimelineStep.component";
-import i1 from "./timeline-images/1a.jpg";
-import i1b from "./timeline-images/1b.jpg";
-import i2 from "./timeline-images/2.jpg";
-import i3 from "./timeline-images/3.jpg";
-import i4 from "./timeline-images/4a.jpg";
-import i4b from "./timeline-images/4b.jpg";
-import i6 from "./timeline-images/6a.jpg";
-import i6b from "./timeline-images/6b.jpg";
-import i7 from "./timeline-images/7a.jpg";
-import i7b from "./timeline-images/7b.jpg";
-import i9 from "./timeline-images/9a.jpg";
-import i9b from "./timeline-images/9b.jpg";
-import i10 from "./timeline-images/10a.jpg";
-import i10b from "./timeline-images/10b.jpg";
-import i11 from "./timeline-images/11a.jpg";
-import i11b from "./timeline-images/11b.jpg";
-import i14 from "./timeline-images/14a.jpg";
-import i14b from "./timeline-images/14b.jpg";
-import i16 from "./timeline-images/16a.jpg";
-import i16b from "./timeline-images/16b.jpg";
-import i18 from "./timeline-images/18a.jpg";
-import i18b from "./timeline-images/18b.jpg";
-import i19 from "./timeline-images/19a.jpg";
-import i19b from "./timeline-images/19b.jpg";
-import i5 from "./timeline-images/5.jpg";
-// import i8 from "./timeline-images/8.jpg"
-import i12 from "./timeline-images/12.jpg";
-import i13 from "./timeline-images/13.jpg";
-import i15 from "./timeline-images/15.jpg";
-import i17 from "./timeline-images/17.jpg";
-import i20 from "./timeline-images/20.jpg";
-import i21 from "./timeline-images/21a.jpg";
-// import i22 from "./timeline-images/22.jpg"
-// import i1 from "./timeline-images/"
-// import i1b from "./timeline-images/1b.jpg"
+import i1 from "./timeline-images/i1.jpg";
+import i2 from "./timeline-images/i2.jpg";
+import i2b from "./timeline-images/i2b.jpg";
+import i2c from "./timeline-images/i2c.jpg";
+import i3 from "./timeline-images/i3.jpg";
+import i3b from "./timeline-images/i3b.jpg";
+import i4 from "./timeline-images/i4.jpg";
+import i4b from "./timeline-images/i4b.jpg";
+import i5 from "./timeline-images/i5.jpg";
+import i5a from "./timeline-images/i5a.jpg";
+import i6 from "./timeline-images/i6.jpg";
+import i6a from "./timeline-images/i6a.jpg";
+import i6b from "./timeline-images/i6b.jpg";
+import i6c from "./timeline-images/i6c.jpg";
+import i6d from "./timeline-images/i6d.jpg";
+import i7 from "./timeline-images/i7a.jpg";
+import i7a from "./timeline-images/i7a.jpg";
+import i7b from "./timeline-images/i7b.jpg";
+import i7c from "./timeline-images/i7c.jpg";
+import i7d from "./timeline-images/i7d.jpg";
+import i8 from "./timeline-images/i8a.jpg";
+import i8a from "./timeline-images/i8a.jpg";
+import i8b from "./timeline-images/i8b.jpg";
+import i8c from "./timeline-images/i8c.jpg";
+import i8d from "./timeline-images/i8d.jpg";
+import i8e from "./timeline-images/i8e.jpg";
+import i9 from "./timeline-images/i9a.jpg";
+import i9a from "./timeline-images/i9a.jpg";
+import i9b from "./timeline-images/i9b.jpg";
+import i9c from "./timeline-images/i9c.jpg";
+import i9d from "./timeline-images/i9d.jpg";
+import i10 from "./timeline-images/i10a.jpg";
+import i10a from "./timeline-images/i10a.jpg";
+import i10b from "./timeline-images/i10b.jpg";
+import i10c from "./timeline-images/i10c.jpg";
+import i10d from "./timeline-images/i10d.jpg";
+import i10e from "./timeline-images/i10e.jpg";
+import i11 from "./timeline-images/i11.jpg";
+import i12 from "./timeline-images/i12.jpg";
+import i12a from "./timeline-images/i12a.jpg";
+import i13 from "./timeline-images/i13a.jpg";
+import i13a from "./timeline-images/i13a.jpg";
+import i13b from "./timeline-images/i13b.jpg";
+import i14 from "./timeline-images/i14a.jpg";
+import i14a from "./timeline-images/i14a.jpg";
+import i14b from "./timeline-images/i14b.jpg";
+import i15 from "./timeline-images/i15a.jpg";
+import i15a from "./timeline-images/i15a.jpg";
+import i15b from "./timeline-images/i14b.jpg";
+import i16 from "./timeline-images/i16a.jpg";
+import i16a from "./timeline-images/i16a.jpg";
+import i16b from "./timeline-images/i16b.jpg";
+import i16c from "./timeline-images/i16c.jpg";
+import i17 from "./timeline-images/i17a.jpg";
+import i17a from "./timeline-images/i17a.jpg";
+import i17b from "./timeline-images/i17b.jpg";
+import i17c from "./timeline-images/i17c.jpg";
+
 
 export const OUR_TIMELINE: IFDTimelineStepComp[] = [
   {
     title: "First Encounter",
-    dateNumber: "9",
-    dateMonth: "Mei, 2024",
-    imageList: [i1b, i1],
+    dateNumber: "28",
+    dateMonth: "september, 2024",
+    imageList: [i1],
     firstCaption:
-      "Tiba2 diajak nongki sm iis n inzani. Ketemu org random yg cerewet sekali, namanya Dhea. Belum apa2 langsung mauka naramal, jadi kufotokan tanganku seperti pada gambar :)"
+      "tiba tiba DM soal rate kepuasan web kartjis HAHAHAHAHAHA padahal belumpi pernah pake kartjis alias jarang nonton konser:("
   },
   {
-    title: "Second Encounter",
-    dateNumber: "21",
-    dateMonth: "Mei, 2024",
-    imageList: [i2],
+    title: "sushi date",
+    dateNumber: "13",
+    dateMonth: "November, 2024",
+    imageList: [i2, i2b, i2c],
     firstCaption:
-      "Ketemu lagi sama ini org di Goal Cafe. Satu yg kunotice ini org knp pke baju tidur trs nongkrong cok."
+      "tanggal 13 sushi date pertama kaliku pegang your hand anjaai dengan 14 ribu kali berpikir pas di pegang tangannya ada orang salting meliat kekiri terus"
   },
   {
-    title: "Insiden Social Barn",
-    dateNumber: "24",
-    dateMonth: "Juni, 2024",
-    imageList: [i3],
+    title: "Insiden taichan salpic",
+    dateNumber: "31",
+    dateMonth: "oktober, 2024",
+    imageList: [i3, i3b],
     firstCaption:
-      "Lamaku menunggu di SB Sutomo ternyata bukan di situ inzani bangke. Di SB ini kuliat ini Dhea red flag nya ew. Tpi seru bahas podcast horror"
+      "WEHAHAHAH ASLI dsni salpic abizzz karna taduata porsi sateee wee ,baru kaconaa harus dikasih habisss"
   },
   {
-    title: "Chatan lewat email",
-    dateNumber: "25",
-    dateMonth: "Juni, 2024",
+    title: "pipo date",
+    dateNumber: "16",
+    dateMonth: "November, 2024",
     imageList: [i4, i4b],
     firstCaption:
-      "Mulai chatan lewat email karna ada org yg posesif skali pacarnya. Awalnya bahas podcast ujung2nya bahas random"
+      "dsni random skli lgsg pergi pipo cari jajanann",
   },
   {
-    title: "Lanjut di WA",
-    dateNumber: "19",
-    dateMonth: "Juli, 2024",
-    imageList: [i5]
-  },
-  {
-    title: "Teman VC",
-    dateNumber: "30",
-    dateMonth: "Juli, 2024",
-    imageList: [i6, i6b],
-    firstCaption:
-      "Di sini tambah dekat dengan Dhea. Mulai dri sini setiap hari kita sleep call. Saya juga suka2 krn ada temanika cerita gaje malam2"
-  },
-  {
-    title: "Panti Asuhan",
-    dateNumber: "1",
-    dateMonth: "Agustus, 2024",
-    imageList: [i7, i7b],
-    firstCaption:
-      "7 hari mamanya Dhea. Ditemani ke panti asuhan, agak shock dikit liat bocah panti diteriak2i. Pulangnya makan raca mangga :). Mulai dri sini janjian nobar malam2"
-  },
-  // {
-  //   title: "Kopter",
-  //   dateNumber: "2",
-  //   dateMonth: "Agustus, 2024",
-  //   imageList: [i8]
-  // },
-  {
-    title: "Nobar Era",
-    dateNumber: "2",
-    dateMonth: "Agustus, 2024",
-    imageList: [i9, i9b],
-    firstCaption:
-      "Mulai dri sini selalu nobar film malam2, klo habis filmnya gosip dikit bru tidur. Btw om Setya bgst"
-  },
-  {
-    title: "Pergi Lelong",
-    dateNumber: "6",
-    dateMonth: "Agustus, 2024",
-    imageList: [i10, i10b],
-    firstCaption:
-      "Kenangan yg banyak first time nya. First time jemput & bonceng dhea, first time dicubit dhea, first time dibelikan makanan Dhea (buroncong). Besoknya first time dimasakkan makanan sama Dhea"
-  },
-  {
-    title: "Became Closer!",
-    dateNumber: "24",
-    dateMonth: "Agustus, 2024",
-    imageList: [i11, i11b],
-    firstCaption:
-      "Abis dri lelong kita tambah dekat, chat tambah lancar, vc setiap hari. H-2 Dhea pergi Jkt kutemani ke Agung, abis itu kita ke Mari main hockey meja, bowling, beli minuman di Fore n lanjut ngegosip di luar mall. Jujur di sini mulai kuantisipasi arah hubungan ta"
-  },
-  {
-    title: "Dhea ke Jkt :(",
-    dateNumber: "26",
-    dateMonth: "Agustus, 2024",
-    imageList: [i12, i13],
-    firstCaption:
-      "Momen yg bikinka mulai rindu sm Dhea. Di sini kita vc bukan cuma pas malam saja, tapi pagi siang sore malam"
-  },
-  {
-    title: "Dhea lale anjir",
-    dateNumber: "3",
-    dateMonth: "September, 2024",
-    imageList: [i15],
-    firstCaption:
-      "Dhea ngirim chat yg risky, jujur di sini kurasa inimi momennya untuk dekati Dhea. Jadi habis ini kita baku vc, mulaimi saling flirting. Salting abang diflirting ama Dhea :v"
-  },
-  {
-    title: "Foto Ikonik",
-    dateNumber: "4",
-    dateMonth: "September, 2024",
-    imageList: [i14, i14b],
-    firstCaption:
-      "Pas Dhea sholat kufoto dan Masyaa Allah Tabarakallah cantiknyaa Dhea, langsung kukasi jadi sticker mukanya.Inimi sweet times awal hubungan sama Dhea. Di sini juga Dhea rencana mau belikanka kado ultah yg bikin senang tiada tara"
-  },
-  {
-    title: "Dhea balik mks yey",
-    dateNumber: "11",
-    dateMonth: "September, 2024",
-    imageList: [i16b, i16],
-    firstCaption: "H-1 Ultahku Dhea balik ke Makassar, makasih sayang kado ultahnyaa. Di hari itu sumpah semangat sekalika ketemu ayang jdi belumpi apa2 Dhea adama sampai di rumahnya. Tapi sampai di sana kenapa kita malah canggung hahaha, walau di dalam hati wanna hug her so bad!"
-  },
-  {
-    title: "Ultah Ucup",
-    dateNumber: "12",
-    dateMonth: "September, 2024",
-    imageList: [i17],
-    firstCaption: "12 September kita nongkrong di Taobun, sekali lagi jadi canggung ka depannya Dhea padahal klo di vc lancar. Tapi pas karaokean pertama kali ngerasa gigit dan peluknya Dhea hahaha, serasa kalau matika sekarang nda ada penyesalanku"
-  },
-  {
-    title: "Our First Photobooth",
-    dateNumber: "15",
-    dateMonth: "September, 2024",
-    imageList: [i18, i18b],
-    firstCaption: "Ke Darkop berempat dengan Apri dan Inzani. Di sini betul2 kunikmati ngiht ride dengan Dhea, dari pergi sampai pulang rasa senang di hari nd berhenti2. Di darkop kita foto di photobooth, and we experience our first kiss >..< . Photobooth yang pertama dari ribuan photobooth mendatang :)"
-  },
-  {
-    title: "The Sweet Times",
+    title: "mas botak",
     dateNumber: "17",
-    dateMonth: "September, 2024",
-    imageList: [i19, i19b],
-    firstCaption: "Spend times dengan Dhea sebelum berangkat kerja di kapal :)). Temani ayang ke kampus, ziarah kubur, jogging, makan dll."
+    dateMonth: "November, 2024",
+    imageList: [i5, i5a]
   },
   {
-    title: 'Yahh LDR :"))',
+    title: "the day (19) at anomali",
+    dateNumber: "18",
+    dateMonth: "Juli, 2024",
+    imageList: [i6, i6a, i6b, i6c, i6d],
+    firstCaption:
+      "berawal dari ayo cari cafe yang bisa dipke kerja dann ternyata di anomali, dianomali mauma confess tapii masi malua HAHAHAHA tpi setelah dipikir pikir dimotor mo deh HAHAHAHAHAHA yaa dstumi ditembak anaknya orang dan da nda maupii balas jadi da tgg dlu lewat hari trss deep talk dijalanan dengan pertanyaan serius jko gahh?"
+  },
+  {
+    title: "teseng date (pacaran)",
+    dateNumber: "7",
+    dateMonth: "Desember, 2024",
+    imageList: [i7, i7a, i7b, i7c, i7d],
+    firstCaption:
+      "dsnii meyakinkan diri karna sudah terlambat pergi ke tsm terus pergi makan di restoran thai dan keknya nesa salpic menu dehh HAHAHAHAHA bis ituu pergi beli boost karna ada uda sama chelsea bis tuu balik kermh"
+  },
+  {
+    title: "night frive with nesa",
+    dateNumber: "11",
+    dateMonth: "Desember, 2024",
+    imageList: [i8, i8a, i8b, i8c, i8d, i8e],
+    firstCaption:
+      "dsnii kita lagi gabut dan nda tau kemana dan akhirnya berakhir di pisang igor dan sempat makan juga di sambel ijooo"
+  },
+  {
+    title: "nipah date",
+    dateNumber: "27",
+    dateMonth: "Desember, 2024",
+    imageList: [i9, i9a, i9b, i9c, i9d],
+    firstCaption:
+      "disini kita pergi nonton gaes dan ada orang mau pingsan karana da paksa alhasil keringat dingin dan akhirnyaa kita sempat marahan karna reski marah karna nesa paksa jalannn dan dsnii our frist photoboxx"
+  },
+  {
+    title: "laku date!",
+    dateNumber: "3",
+    dateMonth: "januari, 2025",
+    imageList: [i10, i10a, i10b, i10c, i10d, i10e],
+    firstCaption:
+      "dsniii kita keluar sore okelahh makann waffle dan apa lagi namana itu nesa yang ku pesan croisant klo nda salahh dan dsni ada photoboxtaaa lagiii"
+  },
+  {
+    title: "marah besar",
     dateNumber: "24",
-    dateMonth: "September, 2024",
-    imageList: [i20],
-    firstCaption: "24 September akhirnya Dhea berangkat ke Jkt. Sedihnya harus berpisah dengan ayang :(( Mau kurasa peluk erat2 nda kulepas."
+    dateMonth: "januari, 2025",
+    imageList: [i11],
+    firstCaption:
+      "dsni reski lagi jabee tapi nda kusuka mmg nah wee -_- HAHAHAHAHAH dsni kiki di blok trss lama lost contact dan tiba tiba ada orang kirim crepes siapa itu di?"
   },
   {
-    title: "Rindunya ya Allah",
-    dateNumber: "25",
-    dateMonth: "October, 2024",
-    imageList: [i21],
-    firstCaption: "Hope we can meet in person again next year :)"
+    title: "ada orang mau dikasi pulang kermhnya tapi tidak mau",
+    dateNumber: "4",
+    dateMonth: "february, 2025",
+    imageList: [i12, i12a],
+    firstCaption:
+      "HAHAHAHAHA DSNII HABIS MARAHAN LAGI jadi yang betul betul dijalan baku cuek apakahhh pas jalan masuk kepipo ditanya mau apa ada orang tidak jawab jadi emosimi reski karna nda jelas dan ambi keputusan mau dideportasi ini anak kecil HAHAHAHAH, pas dekat rumahnya HAHAHAHAHAH langsungki napeluk bilangmi ayomi jalannn baaru mauki nacakar hebat bahh"
+  },
+  {
+    title: "insiden anak jalanan jembatan layang hujan hujan",
+    dateNumber: "26",
+    dateMonth: "januari, 2025",
+    imageList: [i13, i13a, i13b],
+    firstCaption:
+      "keknyaa drama hujan hujanan ini di, dsni banyak orang berteduh baru nesa selfi baru da kasi nyala flashnyaa"
+  },
+  {
+    title: "ati raja",
+    dateNumber: "9",
+    dateMonth: "februari, 2025",
+    imageList: [i14, i14a, i14b],
+    firstCaption:
+     "ujang ujang makan atik raja rasanya ahhh mantap"
+  },{
+    title: "jajan part 2 pipo",
+    dateNumber: "15",
+    dateMonth: "februari, 2025",
+    imageList: [i15, i15a, i15b],
+    firstCaption: "dsni kita pergi jajan banyak sam ituu mesin capit anj nda dapa dapakka cokkkk"
+  },
+  {
+    title: "Our First iftar",
+    dateNumber: "19",
+    dateMonth: "maret, 2025",
+    imageList: [i16, i16a, i16b, i16c],
+    firstCaption: "dsni saya terima kasih kepada annisa anderila alwadina karna mengenalkan saya kepada jangekk dsni buka puasa bersamataa yang pertama skli ketemuki gilang di pancious"
+  },{
+    title: "pipo nontong pilengg",
+    dateNumber: "7",
+    dateMonth: "april, 2025",
+    imageList: [i17, i17a, i17b, i17c],
+    firstCaption: "dsnii nontong yang diakhir pergi makan naci goreng."
   }
 ];
