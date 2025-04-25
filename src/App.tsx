@@ -1,9 +1,8 @@
 import { MantineProvider } from "@mantine/core";
 import { QueryClient, QueryClientProvider } from "react-query";
-import {  HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { PortoProvider } from "./context/PortoContext.context";
-import HomePage from "./pages/home/Home.page";
 import FDHomePage from "./pages/home/jumbotron/fd/pages/home/FDHome.page";
 import FDMutolPage from "./pages/home/jumbotron/fd/pages/mutol/FDMutol.page";
 import FDTimelinePage from "./pages/home/jumbotron/fd/pages/timeline/FDTimeline.page";

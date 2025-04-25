@@ -1,4 +1,23 @@
 import i1 from "../timeline/timeline-images/i1.jpg";
+import { default as i10, default as i10a } from "../timeline/timeline-images/i10a.jpg";
+import i10b from "../timeline/timeline-images/i10b.jpg";
+import i10c from "../timeline/timeline-images/i10c.jpg";
+import i10d from "../timeline/timeline-images/i10d.jpg";
+import i10e from "../timeline/timeline-images/i10e.jpg";
+import i11 from "../timeline/timeline-images/i11.jpg";
+import i12 from "../timeline/timeline-images/i12.jpg";
+import i12a from "../timeline/timeline-images/i12a.jpg";
+import { default as i13, default as i13a } from "../timeline/timeline-images/i13a.jpg";
+import i13b from "../timeline/timeline-images/i13b.jpg";
+import { default as i14, default as i14a } from "../timeline/timeline-images/i14a.jpg";
+import { default as i14b, default as i15b } from "../timeline/timeline-images/i14b.jpg";
+import { default as i15, default as i15a } from "../timeline/timeline-images/i15a.jpg";
+import { default as i16, default as i16a } from "../timeline/timeline-images/i16a.jpg";
+import i16b from "../timeline/timeline-images/i16b.jpg";
+import i16c from "../timeline/timeline-images/i16c.jpg";
+import { default as i17, default as i17a } from "../timeline/timeline-images/i17a.jpg";
+import i17b from "../timeline/timeline-images/i17b.jpg";
+import i17c from "../timeline/timeline-images/i17c.jpg";
 import i2 from "../timeline/timeline-images/i2.jpg";
 import i2b from "../timeline/timeline-images/i2b.jpg";
 import i2c from "../timeline/timeline-images/i2c.jpg";
@@ -13,59 +32,22 @@ import i6a from "../timeline/timeline-images/i6a.jpg";
 import i6b from "../timeline/timeline-images/i6b.jpg";
 import i6c from "../timeline/timeline-images/i6c.jpg";
 import i6d from "../timeline/timeline-images/i6d.jpg";
-import i7 from "../timeline/timeline-images/i7a.jpg";
-import i7a from "../timeline/timeline-images/i7a.jpg";
+import { default as i7, default as i7a } from "../timeline/timeline-images/i7a.jpg";
 import i7b from "../timeline/timeline-images/i7b.jpg";
 import i7c from "../timeline/timeline-images/i7c.jpg";
 import i7d from "../timeline/timeline-images/i7d.jpg";
-import i8 from "../timeline/timeline-images/i8a.jpg";
-import i8a from "../timeline/timeline-images/i8a.jpg";
+import { default as i8, default as i8a } from "../timeline/timeline-images/i8a.jpg";
 import i8b from "../timeline/timeline-images/i8b.jpg";
 import i8c from "../timeline/timeline-images/i8c.jpg";
 import i8d from "../timeline/timeline-images/i8d.jpg";
 import i8e from "../timeline/timeline-images/i8e.jpg";
-import i9 from "../timeline/timeline-images/i9a.jpg";
-import i9a from "../timeline/timeline-images/i9a.jpg";
+import { default as i9, default as i9a } from "../timeline/timeline-images/i9a.jpg";
 import i9b from "../timeline/timeline-images/i9b.jpg";
 import i9c from "../timeline/timeline-images/i9c.jpg";
 import i9d from "../timeline/timeline-images/i9d.jpg";
-import i10 from "../timeline/timeline-images/i10a.jpg";
-import i10a from "../timeline/timeline-images/i10a.jpg";
-import i10b from "../timeline/timeline-images/i10b.jpg";
-import i10c from "../timeline/timeline-images/i10c.jpg";
-import i10d from "../timeline/timeline-images/i10d.jpg";
-import i10e from "../timeline/timeline-images/i10e.jpg";
-import i11 from "../timeline/timeline-images/i11.jpg";
-import i12 from "../timeline/timeline-images/i12.jpg";
-import i12a from "../timeline/timeline-images/i12a.jpg";
-import i13 from "../timeline/timeline-images/i13a.jpg";
-import i13a from "../timeline/timeline-images/i13a.jpg";
-import i13b from "../timeline/timeline-images/i13b.jpg";
-import i14 from "../timeline/timeline-images/i14a.jpg";
-import i14a from "../timeline/timeline-images/i14a.jpg";
-import i14b from "../timeline/timeline-images/i14b.jpg";
-import i15 from "../timeline/timeline-images/i15a.jpg";
-import i15a from "../timeline/timeline-images/i15a.jpg";
-import i15b from "../timeline/timeline-images/i14b.jpg";
-import i16 from "../timeline/timeline-images/i16a.jpg";
-import i16a from "../timeline/timeline-images/i16a.jpg";
-import i16b from "../timeline/timeline-images/i16b.jpg";
-import i16c from "../timeline/timeline-images/i16c.jpg";
-import i17 from "../timeline/timeline-images/i17a.jpg";
-import i17a from "../timeline/timeline-images/i17a.jpg";
-import i17b from "../timeline/timeline-images/i17b.jpg";
-import i17c from "../timeline/timeline-images/i17c.jpg";
 
-import p2 from "./photos/p1.jpg"
-import p2b from "./photos/p1b.jpg"
-import p1b from "./photos/p2b.jpg"
-import p1 from "./photos/p2.jpg"
-import p3 from "./photos/p3.jpg"
-import p4 from "./photos/p4.jpg"
 
-import bg2 from "../../../../../../assets/images/bg2.jpg"
 
-import t1 from "../../assets/images/storyOfUs.jpg"
 
 export interface IGalleryImages {
   src: string;
