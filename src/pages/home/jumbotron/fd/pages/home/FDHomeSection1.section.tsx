@@ -151,7 +151,7 @@ export default FDHomeSection1;
 //     </div>
 //     <Stack className="absolute z-20 gap-0 bottom-2 left-0 right-0">
 //       <Text className="font-poppins text-fd-dark-pink text-xl text-center">
-//         Dari Ucup
+//         Dari Kiki
 //       </Text>
 //       <Text className="text-secondary-text-500 text-md tracking-5 text-center -mt-2">
 //         (Klik untuk membuka)
