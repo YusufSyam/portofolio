@@ -103,7 +103,7 @@ const FDHomeSection1: React.FC<IFDHomeSection1> = ({
                   />
                 </Group>
                 <Text className="text-white font-roboto text-[24px] sm:text-[36px] md:self-start self-end sm:mr-0 mr-8 sm:self-center sm:ml-4 md:ml-56 -mt-4 sm:-mt-6 tracking-5">
-                  Andrila Alwadina
+                  Anderila Alwadina
                 </Text>
               </Stack>
               <Stack>
