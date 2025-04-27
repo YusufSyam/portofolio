@@ -3,7 +3,7 @@ import React from "react";
 import MainLayout from "../../layout/Main.layout";
 import HomeAboutMeSection from "./about-me/Home-AboutMe.section";
 import HomeJumbotronSection from "./jumbotron/Home-Jumbotron.section";
-import HomeProjectSection from "./projects/HomeProject.section";
+import HomeProjectSection from "./projects/Home-Project.section";
 import HomeTechStackSection from "./teach-stack/Home-TechStack.section";
 
 export interface IHomePage {}

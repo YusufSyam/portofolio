@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   IconGithubFilled,
+  IconLibraryBookFilled,
   IconRightArrowNoTail,
+  IconRightArrowTailedOutlinedRounded,
 } from "../../../assets/icons/Fluent";
 import Button2 from "../../../components/Button2.component";
 
@@ -32,7 +34,7 @@ export const ProjectProjectLink: React.FC<IProjectLinkButton> = ({
       <Button2
         label={"project link"}
         icon={
-          <IconRightArrowNoTail size={20} color="white" className="mt-[2px]" />
+          <IconRightArrowTailedOutlinedRounded size={20} color="white" className="mt-[2px]" />
         }
         bgColor="grey"
       />
@@ -48,9 +50,9 @@ export const ArticleProjectLink: React.FC<IProjectLinkButton> = ({
       <Button2
         label={"article"}
         icon={
-          <IconRightArrowNoTail size={20} color="black" className="mt-[2px]" />
+          <IconLibraryBookFilled size={18} color="white" className="mt-[2px]" />
         }
-        bgColor="cream"
+        bgColor="dark"
       />
     </Link>
   );

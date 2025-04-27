@@ -1,23 +1,17 @@
 import {
-  Button,
   Group,
-  useMantineTheme,
-  Text,
-  ButtonProps,
-  Stack,
   ModalProps,
+  Stack,
+  Text,
+  useMantineTheme
 } from "@mantine/core";
 import React from "react";
-import Modal from "./Modal.component";
-import { SmallButton } from "./MyButton";
 import {
   IconBackArrowOutlineRounded,
-  IconCloseOutline,
-  IconReportFilled,
-  IconReportOutlined,
-  IconSearchFilledRounded,
+  IconSearchFilledRounded
 } from "../assets/icons/Fluent";
 import Button2 from "./Button2.component";
+import Modal from "./Modal.component";
 
 interface IInfoModal {
   opened: boolean;

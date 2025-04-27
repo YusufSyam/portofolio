@@ -5,6 +5,8 @@ import { MySearchInput } from "../../../components/FormInput.component";
 import { ICProjects } from "../../../utils/const/interfaces";
 import { CProjects } from "../../../utils/const/projectConts";
 import ProjectCard from "./ProjectCard.components";
+import InfoModal from "../../../components/InfoModal.component";
+import ProjectInfoModal from "./ProjectInfoModal.component";
 
 export interface IHomeProjectSection {}
 
@@ -12,9 +14,14 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({}) => {
   const theme = useMantineTheme();
   const [projectData] = useState<Array<ICProjects>>(CProjects);
   const [activePage, setActivePage] = useState<number>(1);
+  const [openModal, setOpenModal] = useState(false);
 
   const [displayedData, setDisplayedData] =
     useState<Array<ICProjects>>(projectData);
+  const [selectedDataIndex, setSelectedDataIndex] = useState<number | null>(
+    null
+  );
+
   // const [filter, setFilter] = useState<TDetectionFilter>("semua");
   const [searchInput, setSearchInput] = useState<string>("");
   const [query] = useDebouncedValue(searchInput, 500);
@@ -47,15 +54,32 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({}) => {
     setActivePage(1);
   }, [query]);
 
+  useEffect(()=>{
+    if(!openModal){
+      setSelectedDataIndex(null)
+    }
+  }, [openModal])
+
+  useEffect(() => {
+    if (selectedDataIndex != null) {
+      setOpenModal(true);
+    }
+  }, [selectedDataIndex]);
+
   console.log("asd", projectData);
   return (
     <Stack id="section-projects" className="mx-20">
+      <ProjectInfoModal
+        opened={openModal}
+        setOpened={setOpenModal}
+        selectedDataIndex={selectedDataIndex}
+      />
       <Stack className="mb-8 mx-16">
         <Text className="font-quicksand-semibold text-5xl text-white tracking-5 text-center">
           projects
         </Text>
         <Text className="text-white text-center text-lgp tracking-4 -mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum.
+          A collection of my works across web development and machine learning
         </Text>
       </Stack>
       <div className="self-end">
@@ -76,8 +100,13 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({}) => {
             )
             ?.map((data: ICProjects, idx: number) => {
               return (
-                <Grid.Col id={"" + idx} span={4} className="">
-                  <ProjectCard {...data} />
+                <Grid.Col id={"" + idx} span={4}>
+                  <ProjectCard
+                    {...data}
+                    onClickDetails={(idx: number) => {
+                      setSelectedDataIndex(idx);
+                    }}
+                  />
                 </Grid.Col>
               );
             })}

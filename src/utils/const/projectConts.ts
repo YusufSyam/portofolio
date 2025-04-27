@@ -32,6 +32,7 @@ const CProjectsImageArray = [
 
 export const CProjects : Array<ICProjects> = [
     {
+        idx: 0,
         name: "PlateWatch",
         projectType: "machine learning",
         techs: ["python","pytorch","pandas","typescript","reactjs","tailwind"],
@@ -44,6 +45,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "Odd-even vehicle plate detection system using YOLOv8 and web display"
     },
     {
+        idx: 1,
         name: "Danitor",
         projectType: "machine learning",
         techs: ["python","pytorch","pandas"],
@@ -55,6 +57,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: 'Mobile application to detect dangerous animals in tourist spots'
     },
     {
+        idx: 2,
         name: "SI-FA",
         projectType: "website",
         techs: ["typescript","reactjs","tailwind"],
@@ -67,6 +70,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: 'Comprehensive thesis management platform for students and faculty'
     },
     {
+        idx: 3,
         name: "Departmental Inventory Loan Information System",
         projectType: "website",
         techs: ["typescript","reactjs","tailwind"],
@@ -78,6 +82,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: 'Borrowing system for shared departmental academic equipment'
     },
     {
+        idx: 4,
         name: "Anxiety Test",
         projectType: "website",
         techs: ["typescript","reactjs","tailwind"],
@@ -88,6 +93,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "Anxiety self-assessment tool for better mental awareness"
     },
     {
+        idx: 5,
         name: "Dzikry Baby Shop",
         projectType: "website",
         techs: ["typescript","reactjs","tailwind"],
@@ -99,6 +105,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: 'Online store for baby essentials and everyday parenting needs'
     },
     {
+        idx: 6,
         name: "Vehicle Recommendations",
         projectType: "machine learning",
         techs: ["python", "tensorflow", "keras"],
@@ -110,6 +117,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "Web-based system for personalized car recommendations"
     },
     {
+        idx: 7,
         name: "Banyorang Village Portal",
         projectType: "website",
         techs: ["typescript","reactjs","tailwind"],
@@ -121,6 +129,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "Official website for promoting and informing Banyorang village"
     },
     {
+        idx: 8,
         name: "Self Esteem",
         projectType: "website",
         techs: ["typescript","reactjs","tailwind"],
@@ -131,6 +140,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "Web-based self-esteem test with instant personalized feedback"
     },
     {
+        idx: 9,
         name: "Piece of Cake",
         projectType: "website",
         techs: ["javascript"],
@@ -141,6 +151,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "Cake shop web app with playful, game-inspired ordering experience"
     },
     {
+        idx: 10,
         name: "CodeGrader",
         projectType: "desktop",
         techs: ["python"],
@@ -151,6 +162,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "Automated Python code grader for student assignments"
     },
     {
+        idx: 11,
         name: "DrugSyn Website",
         projectType: "website",
         techs: ["wordpress"],
@@ -161,6 +173,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "Central hub for pharmacy research at Hasanuddin University"
     },
     {
+        idx: 12,
         name: "Python Visualization Snippet",
         projectType: "website",
         techs: ["python", "pandas"],
@@ -171,6 +184,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "A small collection of python code that I created to make visualization easier"
     },
     {
+        idx: 13,
         name: "Top Rated Movies and TV Shows",
         projectType: "mobile",
         techs: ["java"],
@@ -181,6 +195,7 @@ export const CProjects : Array<ICProjects> = [
         shortSummary: "Android app to show the best tv-shows and movies"
     },
     {
+        idx: 14,
         name: "Portfolio Website",
         projectType: "website",
         techs: ["typescript","reactjs","tailwind"],
