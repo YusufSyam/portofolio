@@ -8,6 +8,7 @@ import jumbotron4 from "../../../assets/images/jumbotron4.jpg";
 import Button1 from "../../../components/Button1.component";
 import Contacts from "../../../components/Contacts.component";
 import { scrollToAboutMe } from "../../../utils/functions/scroll";
+import { CLinks } from "../../../utils/const/links";
 
 export interface IHomeJumbotronSection {}
 
@@ -58,7 +59,7 @@ const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({}) => {
                     label="cv"
                     onClick={() => {
                       window.open(
-                        "https://drive.google.com/file/d/1cTJ34j-X8wxA6Svk-vqLtmD8K_QPzauN/view?usp=sharing",
+                        CLinks.cv,
                         "_blank",
                         "noopener,noreferrer"
                       );
