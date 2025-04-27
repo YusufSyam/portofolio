@@ -2,9 +2,10 @@ import { Group, Stack, Text } from '@mantine/core';
 import React from 'react';
 import NoImage from '../../../../src/assets/images/no_image.png';
 import { IconMachineLearningFilled, IconWebsiteFilled } from '../../../assets/icons/Fluent';
-import { techStackChip, TTechStack } from '../../../components/TechStackChipIcon.component';
+import { techStackChip } from '../../../components/TechStackChipIcon.component';
 import { ICProjects } from '../../../utils/const/interfaces';
 import { ArticleProjectLink, GithubProjectLink, ProjectProjectLink } from './ProjectLinkButton.component';
+import { TTechStack } from '../../../utils/const/types';
 
 const ProjectCard: React.FC<ICProjects> = ({
     name,

@@ -6,6 +6,7 @@ import {
   IconLinkedinFilled,
 } from "../../assets/icons/Fluent";
 import WebsiteIcon from "../../components/WebsiteIcon.component";
+import { CLinks } from "../../utils/const/links";
 
 export interface IFooterLayout {}
 
@@ -34,7 +35,7 @@ const FooterLayout: React.FC<IFooterLayout> = ({}) => {
               <IconGmailFilled
                 onClick={() => {
                   window.open(
-                    "https://mail.google.com/mail/?view=cm&to=muhyusufsyamsyam@gmail.com",
+                    CLinks.gmail,
                     "_blank"
                   );
                 }}
@@ -45,7 +46,7 @@ const FooterLayout: React.FC<IFooterLayout> = ({}) => {
               <IconLinkedinFilled
                 onClick={() => {
                   window.open(
-                    "https://www.linkedin.com/in/muh-yusuf-syam/",
+                    CLinks.linkedin,
                     "_blank",
                     "noopener,noreferrer"
                   );
@@ -57,7 +58,7 @@ const FooterLayout: React.FC<IFooterLayout> = ({}) => {
               <IconInstagramFilled
                 onClick={() => {
                   window.open(
-                    "https://www.instagram.com/ysf_syam/",
+                    CLinks.ig,
                     "_blank",
                     "noopener,noreferrer"
                   );
@@ -71,7 +72,7 @@ const FooterLayout: React.FC<IFooterLayout> = ({}) => {
               <Text
                 onClick={() => {
                   window.open(
-                    "https://github.com/YusufSyam/",
+                    CLinks.github,
                     "_blank",
                     "noopener,noreferrer"
                   );
@@ -86,7 +87,7 @@ const FooterLayout: React.FC<IFooterLayout> = ({}) => {
               <Text
                 onClick={() => {
                   window.open(
-                    "https://stackoverflow.com/users/16920789/yusuf-syam",
+                    CLinks.sof,
                     "_blank",
                     "noopener,noreferrer"
                   );
@@ -101,7 +102,7 @@ const FooterLayout: React.FC<IFooterLayout> = ({}) => {
               <Text
                 onClick={() => {
                   window.open(
-                    "https://www.kaggle.com/yusufsyam",
+                    CLinks.kaggle,
                     "_blank",
                     "noopener,noreferrer"
                   );

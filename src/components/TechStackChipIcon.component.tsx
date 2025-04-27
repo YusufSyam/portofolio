@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 import { IconCPPFilled, IconGitFilled, IconJavaFilled, IconJavascriptFilled, IconKerasFilled, IconNextJSFilled, IconPandasOutline, IconPythonFilled, IconPytorchOutline, IconReactOutline, IconRStudioFilled, IconTableauOutline, IconTailwindOutline, IconTensorflowFilled, IconTypescriptFilled, IconWordpressFilled } from '../assets/icons/Fluent';
+import { TTechStack } from '../utils/const/types';
 
 // export type TTechStack= "cpp"
-export type TTechStack= "tensorflow" | "python" | "typescript" | "javascript" | "java" | "cpp" | "r" | "keras" | "pandas" | "pytorch" | "tableau" | "reactjs" | "nextjs" | "tailwind" | "git" | "wordpress"
 
 export interface ITechStackIcon {
     techIcon: TTechStack;

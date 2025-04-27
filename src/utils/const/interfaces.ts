@@ -1,6 +1,4 @@
-import { TTechStack } from "../../components/TechStackChipIcon.component";
-
-export type TProjectType= "data science" | "machine learning" | "iot" | "website" | "desktop" | "mobile" | "etc"
+import { TProjectType, TTechStack } from "./types";
 
 export interface ICProjects {
     name: string;
