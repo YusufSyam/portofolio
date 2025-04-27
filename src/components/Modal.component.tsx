@@ -1,9 +1,8 @@
 import {
   Modal as MantineModal,
+  ModalProps,
   Stack,
-  useMantineTheme,
-  Text,
-  ModalProps
+  Text
 } from "@mantine/core";
 import React from "react";
 
@@ -32,8 +31,6 @@ const Modal = ({
   additionalPaddingRight = 0,
   ...props
 }: IModalProps & ModalProps) => {
-  const theme = useMantineTheme();
-
   return (
     <MantineModal
       {...props}

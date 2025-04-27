@@ -5,7 +5,6 @@ import { MySearchInput } from "../../../components/FormInput.component";
 import { ICProjects } from "../../../utils/const/interfaces";
 import { CProjects } from "../../../utils/const/projectConts";
 import ProjectCard from "./ProjectCard.components";
-import InfoModal from "../../../components/InfoModal.component";
 import ProjectInfoModal from "./ProjectInfoModal.component";
 
 export interface IHomeProjectSection {}

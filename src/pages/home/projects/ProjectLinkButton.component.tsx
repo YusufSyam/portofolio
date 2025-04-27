@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import {
   IconGithubFilled,
   IconLibraryBookFilled,
-  IconRightArrowNoTail,
-  IconRightArrowTailedOutlinedRounded,
+  IconRightArrowTailedOutlinedRounded
 } from "../../../assets/icons/Fluent";
 import Button2 from "../../../components/Button2.component";
 
