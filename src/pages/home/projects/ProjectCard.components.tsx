@@ -20,7 +20,6 @@ const ProjectCard: React.FC<ICProjects & { onClickDetails: (e:number) => void }>
   name,
   projectType,
   techs,
-  articleLink,
   githubLink,
   image,
   projectLink,
