@@ -50,7 +50,7 @@ const ProjectInfoModal: React.FC<IProjectInfoModal> = ({
       <Stack>
         <div className="w-full rounded-xl overflow-hidden z-10">
           {selectedProject?.image == null ? (
-            <div className="w-full h-48 bg-white/[0.5] p-4">
+            <div className="w-full h-48 bg-black/[0.2] p-4">
               <img
                 src={NoImage}
                 alt="Gambar Item"
@@ -65,7 +65,7 @@ const ProjectInfoModal: React.FC<IProjectInfoModal> = ({
             />
           )}
         </div>
-        <Text className="text-dark-grey text-justify tracking-4">
+        <Text className="text-dark-grey text-justify tracking-4 mt-4">
           {selectedProject?.summary}
         </Text>
         <Stack className="gap-0">

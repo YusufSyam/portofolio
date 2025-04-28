@@ -4,6 +4,7 @@ import {
   IconCodeOutlinedRounded,
   IconGithubFilled,
   IconLibraryBookFilled,
+  IconListViewFilledRounded,
   IconRightArrowTailedOutlinedRounded,
 } from "../../../assets/icons/Fluent";
 import Button2 from "../../../components/Button2.component";
@@ -76,7 +77,7 @@ export const ProjectAnotherLink: React.FC<
           ) : type == "code" ? (
             <IconCodeOutlinedRounded size={22} color="white" />
           ) : (
-            <IconGithubFilled size={22} color="white" />
+            <IconListViewFilledRounded size={18} color="white" />
           )
         }
         bgColor="navy"

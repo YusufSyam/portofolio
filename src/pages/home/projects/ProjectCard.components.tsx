@@ -2,18 +2,17 @@ import { Group, Stack, Text } from "@mantine/core";
 import React from "react";
 import NoImage from "../../../../src/assets/images/no_image.png";
 import {
-    IconMachineLearningFilled,
-    IconSearchFilledRounded,
-    IconWebsiteFilled,
+  IconMachineLearningFilled,
+  IconSearchFilledRounded,
+  IconWebsiteFilled,
 } from "../../../assets/icons/Fluent";
 import Button2 from "../../../components/Button2.component";
 import { techStackChip } from "../../../components/TechStackChipIcon.component";
 import { ICProjects } from "../../../utils/const/interfaces";
 import { TTechStack } from "../../../utils/const/types";
 import {
-    ArticleProjectLink,
-    GithubProjectLink,
-    ProjectProjectLink,
+  GithubProjectLink,
+  ProjectProjectLink
 } from "./ProjectLinkButton.component";
 
 const ProjectCard: React.FC<ICProjects & { onClickDetails: (e:number) => void }> = ({
