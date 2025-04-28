@@ -1960,3 +1960,27 @@ export function IconRightArrowTailedOutlinedRounded({
     </svg>
   );
 }
+
+export function IconCodeOutlinedRounded({
+  size = 24,
+  color = 'black',
+  onClick,
+  className
+}: IFluentProps) {
+  return (
+    <svg
+      width={size+`px`}
+      height={size+`px`}
+      viewBox={`0 -960 960 960`}
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      onClick={onClick}
+      className={className}
+    >
+      <path
+      d='M311.49-219.71 49.54-481.77l264.29-264.29 68.85 68.96L188.14-482l193.11 192.54-69.76 69.75Zm335.68 1.9-68.71-69.29 195.21-195.2-193.1-193.11 67.94-67.75 262.62 261.39-263.96 263.96Z'
+      fill={color}
+      />
+    </svg>
+  );
+}

@@ -42,7 +42,24 @@ export const CProjects : Array<ICProjects> = [
         role: ['Frontend Developer', 'Backend Developer', 'Machine Learning Engineer', 'IOT Engineer'],
         image: CProjectsImageArray?.[0],
         contribution: "whole",
-        shortSummary: "Odd-even vehicle plate detection system using YOLOv8 and web display"
+        shortSummary: "Odd-even vehicle plate detection system using YOLOv8 and web display",
+        anotherLinks: [
+            {
+                linkName: "frontend repository",
+                href: "https://github.com/YusufSyam/Odd_Even_Vehicle_Restriction_Policy-Front-End",
+                type: "repo"
+            },
+            {
+                linkName: "model training code",
+                href: "https://colab.research.google.com/drive/1AgM65ML3gKzinxU7wh7cSYINlbo7Z89B?usp=sharing",
+                type: "code"
+            },
+            {
+                linkName: "esp32-cam code",
+                href: "https://github.com/YusufSyam/Kode-SKripsi-ESP32-CAM",
+                type: "repo"
+            },
+        ]
     },
     {
         idx: 1,
@@ -64,7 +81,7 @@ export const CProjects : Array<ICProjects> = [
         githubLink: "https://github.com/NPEDigiHouse/sifa-unhas",
         projectLink: "https://sifa.unhas.ac.id/",
         summary: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro temporibus necessitatibus eos, quam doloribus odit voluptate quidem rerum illo molestias perferendis ex nisi tempora unde magni earum voluptatibus enim molestiae.",
-        role: ['Project Manager', 'Frontend Developer'],
+        role: ['Frontend Developer', 'Project Manager'],
         image: CProjectsImageArray?.[2],
         contribution: "part",
         shortSummary: 'Comprehensive thesis management platform for students and faculty'
@@ -76,7 +93,7 @@ export const CProjects : Array<ICProjects> = [
         techs: ["typescript","reactjs","tailwind"],
         githubLink: "https://github.com/YusufSyam/website-peminjaman-barang-departemen",
         summary: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro temporibus necessitatibus eos, quam doloribus odit voluptate quidem rerum illo molestias perferendis ex nisi tempora unde magni earum voluptatibus enim molestiae.",
-        role: 'Frontend Developer',
+        role: ['Frontend Developer'],
         image: CProjectsImageArray?.[3],
         contribution: "part",
         shortSummary: 'Borrowing system for shared departmental academic equipment'
@@ -99,7 +116,7 @@ export const CProjects : Array<ICProjects> = [
         techs: ["typescript","reactjs","tailwind"],
         githubLink: "https://github.com/YusufSyam/baby-equipment-shop",
         summary: "DzikriBabyShop is an e-commerce website built to serve parents and caregivers in finding essential baby products with ease. Designed with a user-friendly interface and clean layout, the platform allows customers to browse various categories of baby needs—from daily care items to clothing and feeding tools. Features include product listing, shopping cart, order management, and a simple admin panel to manage inventory. It was built as a real-world project to strengthen frontend engineering skills while exploring e-commerce logic and user-centric design.",
-        role: 'Frontend Developer',
+        role: ['Frontend Developer'],
         image: CProjectsImageArray?.[5],
         contribution: "part",
         shortSummary: 'Online store for baby essentials and everyday parenting needs'

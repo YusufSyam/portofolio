@@ -97,7 +97,7 @@ const ProjectCard: React.FC<ICProjects & { onClickDetails: (e:number) => void }>
             />
             {projectLink && <ProjectProjectLink href={projectLink} />}
             {githubLink && <GithubProjectLink href={githubLink} />}
-            {articleLink && <ArticleProjectLink href={articleLink} />}
+            {/* {articleLink && <ArticleProjectLink href={articleLink} />} */}
           </Group>
         </Stack>
         {/* <Stack className="gap-1">

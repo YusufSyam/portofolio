@@ -53,7 +53,7 @@ const InfoModal = ({
       minWidth={minWidth}
       subTitle={subTitle}
       title={
-        <Group className="gap-3 ">
+        <Group className="gap-3 flex-nowrap">
           {leftTitleIcon == null ? (
             <IconSearchFilledRounded
               color={theme.colors["dark-grey"][5]}

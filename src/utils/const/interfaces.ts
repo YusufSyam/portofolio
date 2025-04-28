@@ -11,6 +11,15 @@ export interface ICProjects {
     articleLink?: string | null;
     summary: string;
     shortSummary?: string;
-    role?: string | Array<String>;
+    role?: Array<String>;
     contribution?: "part" | "whole";
+    anotherLinks?: Array<IAnotherProjectLink>
+}
+export type IAnotherProjectLinkType= "repo" | "code" | "other"
+
+export interface IAnotherProjectLink {
+    linkName: string;
+    href: string;
+    type?: IAnotherProjectLinkType;
+    description?: string;
 }

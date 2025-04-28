@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from "react";
 import InfoModal from "../../../components/InfoModal.component";
-import { ICProjects } from "../../../utils/const/interfaces";
-import { Stack, Text } from "@mantine/core";
+import {
+  IAnotherProjectLink,
+  ICProjects,
+} from "../../../utils/const/interfaces";
+import { Group, Stack, Text } from "@mantine/core";
 import { CProjects } from "../../../utils/const/projectConts";
+import { toTitleCase } from "../../../utils/functions/string";
+import {
+  ProjectProjectLink,
+  GithubProjectLink,
+  ArticleProjectLink,
+  ProjectAnotherLink,
+} from "./ProjectLinkButton.component";
 
 export interface IProjectInfoModal {
   opened: boolean;
@@ -37,7 +47,62 @@ const ProjectInfoModal: React.FC<IProjectInfoModal> = ({
       minWidth={1000}
     >
       <Stack>
-        <Text>{"Working on this :))"}</Text>
+        <Text className="text-dark-grey text-justify tracking-4">
+          {selectedProject?.summary}
+        </Text>
+        <Stack className="gap-0">
+          <Text className="text-dark-grey text-justify tracking-4 font-bold">
+            Role
+          </Text>
+          <Text className="text-dark-grey text-justify tracking-4">
+            {selectedProject?.role?.map((e: String, idx: number) => {
+              return idx == selectedProject?.role!.length - 1 ? e : `${e}, `;
+            })}
+          </Text>
+        </Stack>
+        <Stack className="gap-0">
+          <Text className="text-dark-grey text-justify tracking-4 font-bold">
+            Techs
+          </Text>
+          <Text className="text-dark-grey text-justify tracking-4">
+            {selectedProject?.techs?.map((e: String, idx: number) => {
+              return toTitleCase(
+                idx == selectedProject?.techs!.length - 1 ? e : `${e}, `
+              );
+            })}
+          </Text>
+        </Stack>
+        <Stack className="gap-1">
+          <Text className="text-dark-grey text-justify tracking-4 font-bold">
+            Links
+          </Text>
+          <Group className="gap-2">
+            {selectedProject?.projectLink && (
+              <ProjectProjectLink href={selectedProject?.projectLink} />
+            )}
+            {selectedProject?.githubLink && (
+              <GithubProjectLink href={selectedProject?.githubLink} />
+            )}
+            {selectedProject?.articleLink && (
+              <ArticleProjectLink href={selectedProject?.articleLink} />
+            )}
+            {selectedProject?.anotherLinks && (
+              <>
+                {selectedProject?.anotherLinks?.map(
+                  (data: IAnotherProjectLink) => {
+                    return (
+                      <ProjectAnotherLink
+                        href={data?.href}
+                        label={data?.linkName}
+                        type={data?.type || "other"}
+                      />
+                    );
+                  }
+                )}
+              </>
+            )}
+          </Group>
+        </Stack>
       </Stack>
     </InfoModal>
   );
