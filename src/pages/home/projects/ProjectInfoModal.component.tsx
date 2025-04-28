@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import InfoModal from "../../../components/InfoModal.component";
+import NoImage from "../../../../src/assets/images/no_image.png";
 import {
   IAnotherProjectLink,
   ICProjects,
@@ -47,6 +48,23 @@ const ProjectInfoModal: React.FC<IProjectInfoModal> = ({
       minWidth={1000}
     >
       <Stack>
+        <div className="w-full rounded-xl overflow-hidden z-10">
+          {selectedProject?.image == null ? (
+            <div className="w-full h-48 bg-white/[0.5] p-4">
+              <img
+                src={NoImage}
+                alt="Gambar Item"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          ) : (
+            <img
+              src={selectedProject?.image}
+              alt="Gambar Item"
+              className="w-full h-72 object-cover"
+            />
+          )}
+        </div>
         <Text className="text-dark-grey text-justify tracking-4">
           {selectedProject?.summary}
         </Text>
