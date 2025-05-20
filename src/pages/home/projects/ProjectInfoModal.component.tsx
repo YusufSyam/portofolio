@@ -89,9 +89,9 @@ const ProjectInfoModal: React.FC<IProjectInfoModal> = ({
               );
             })}
             {selectedProject?.additionalTechs && (
-              <span className="text-secondary-text-500">{", "}
+              <span className="">{", "}
                 {selectedProject?.additionalTechs?.map((e: String, idx: number) => {
-                  return toTitleCase(
+                  return (
                     idx == selectedProject?.additionalTechs!.length - 1 ? e : `${e}, `
                   );
                 })}

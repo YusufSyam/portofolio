@@ -67,7 +67,7 @@ export const CProjects: Array<ICProjects> = [
         type: "repo",
       },
     ],
-    additionalTechs: ['OCR', 'ESP32', 'Arduino']
+    additionalTechs: ['YOLO', 'OCR', 'ESP32', 'Arduino']
   },
   {
     idx: 1,
@@ -104,6 +104,7 @@ export const CProjects: Array<ICProjects> = [
         type: "other",
       },
     ],
+    additionalTechs: ['YOLO', 'Roboflow']
   },
   {
     idx: 2,
@@ -119,6 +120,7 @@ export const CProjects: Array<ICProjects> = [
     contribution: "part",
     shortSummary:
       "Comprehensive thesis management platform for students and faculty",
+    additionalTechs: ['MantineUI']
   },
   {
     idx: 3,
@@ -128,11 +130,12 @@ export const CProjects: Array<ICProjects> = [
     githubLink:
       "https://github.com/YusufSyam/website-peminjaman-barang-departemen",
     summary:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro temporibus necessitatibus eos, quam doloribus odit voluptate quidem rerum illo molestias perferendis ex nisi tempora unde magni earum voluptatibus enim molestiae.",
+      "Department Inventory Borrowing System is a web-based application designed to manage and facilitate the borrowing of academic equipment within the Mathematics Department. The system allows students to browse a list of available inventory items, such as projectors, markers, microphones, and other teaching aids, each with a visible stock count. If an item is in stock, students can request a loan by entering their student ID (NIM) through the system. Once the request is made, the item can then be picked up directly at the department office. This system helps streamline the borrowing process, minimize administrative overhead, and improve transparency and accountability in inventory management.",
     role: ["Frontend Developer"],
     image: CProjectsImageArray?.[3],
     contribution: "part",
     shortSummary: "Borrowing system for shared departmental academic equipment",
+    additionalTechs: ['MantineUI']
   },
   {
     idx: 4,
@@ -140,7 +143,7 @@ export const CProjects: Array<ICProjects> = [
     projectType: "website",
     techs: ["typescript", "reactjs", "tailwind"],
     githubLink: "https://github.com/NPEDigiHouse/anxiety-test",
-    summary: "",
+    summary: "A web-based questionnaire system developed to measure the level of social anxiety among high school students. The platform presents a series of carefully designed statements related to social anxiety, to which students respond on a scale ranging from “Strongly Disagree” to “Strongly Agree.” The primary objective of this project is to support a research study aimed at validating the reliability and effectiveness of this web-based inventory. Additionally, it seeks to gain insights into the prevalence and degree of social anxiety experienced by students. All responses are confidential and used solely for academic and scientific purposes, with no impact on students' academic performance. By digitizing the assessment process, this tool makes it easier to collect and analyze data efficiently while ensuring participant privacy and encouraging honest self-reflection",
     image: CProjectsImageArray?.[4],
     contribution: "whole",
     shortSummary: "Anxiety self-assessment tool for better mental awareness",
@@ -153,25 +156,27 @@ export const CProjects: Array<ICProjects> = [
     techs: ["typescript", "reactjs", "tailwind"],
     githubLink: "https://github.com/YusufSyam/baby-equipment-shop",
     summary:
-      "DzikriBabyShop is an e-commerce website built to serve parents and caregivers in finding essential baby products with ease. Designed with a user-friendly interface and clean layout, the platform allows customers to browse various categories of baby needs—from daily care items to clothing and feeding tools. Features include product listing, shopping cart, order management, and a simple admin panel to manage inventory. It was built as a real-world project to strengthen frontend engineering skills while exploring e-commerce logic and user-centric design.",
+      "DzikriBabyShop is an e-commerce website built to serve parents and caregivers in finding essential baby products with ease. Designed with a user-friendly interface and clean layout, the platform allows customers to browse various categories of baby needs, from daily care items to clothing and feeding tools. Features include product listing, shopping cart, order management, and a simple admin panel to manage inventory. It was built as a real-world project to strengthen frontend engineering skills while exploring e-commerce logic and user-centric design.",
     role: ["Frontend Developer"],
     image: CProjectsImageArray?.[5],
     contribution: "part",
     shortSummary:
       "Online store for baby essentials and everyday parenting needs",
+    additionalTechs: ['MantineUI']
   },
   {
     idx: 6,
     name: "Vehicle Recommendations",
     projectType: "machine learning",
-    techs: ["python", "tensorflow", "keras"],
+    techs: ["python", "tensorflow", "keras", 'pandas'],
     githubLink: "https://github.com/YusufSyam/Rekomendasi-Merk-Mobil",
     projectLink: "https://rekomendasi-merk-mobil.herokuapp.com/",
-    summary: "",
+    summary: "A machine learning-based application designed to suggest suitable car types and brands (vehicles with more than four wheels) based on various technical specifications. Users input parameters such as engine capacity (cc), transmission type, fuel type, tank capacity, weight, number of seats, steering system, number of doors and wheels, and vehicle dimensions (length, width, height). Powered by an XGBoost classification model trained on Gaikindo Car Data, the system analyzes the input features to provide accurate and relevant recommendations. The user interface is implemented as a responsive web application, ensuring an accessible and intuitive user experience. This project aims to assist users—whether individuals or businesses—in finding vehicles that match their specific technical and functional requirements, making the decision-making process more data-driven and efficient",
     image: CProjectsImageArray?.[6],
     contribution: "whole",
     shortSummary: "Web-based system for personalized car recommendations",
     role: ["Machine Learning Engineer", "Frontend Developer"],
+    additionalTechs: ['XGBoost', 'Flask', 'Pickle']
   },
   {
     idx: 7,
