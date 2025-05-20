@@ -6,6 +6,7 @@ export interface ICProjects {
     image?: string | null;
     projectType: TProjectType,
     techs: Array<TTechStack>;
+    additionalTechs?: Array<String>;
     githubLink?: string | null;
     projectLink?: string | null;
     articleLink?: string | null;

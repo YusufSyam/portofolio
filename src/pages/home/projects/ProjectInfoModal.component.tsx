@@ -88,6 +88,15 @@ const ProjectInfoModal: React.FC<IProjectInfoModal> = ({
                 idx == selectedProject?.techs!.length - 1 ? e : `${e}, `
               );
             })}
+            {selectedProject?.additionalTechs && (
+              <span className="text-secondary-text-500">{", "}
+                {selectedProject?.additionalTechs?.map((e: String, idx: number) => {
+                  return toTitleCase(
+                    idx == selectedProject?.additionalTechs!.length - 1 ? e : `${e}, `
+                  );
+                })}
+              </span>
+            )}
           </Text>
         </Stack>
         <Stack className="gap-1">

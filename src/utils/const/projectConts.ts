@@ -67,6 +67,7 @@ export const CProjects: Array<ICProjects> = [
         type: "repo",
       },
     ],
+    additionalTechs: ['OCR', 'ESP32', 'Arduino']
   },
   {
     idx: 1,
@@ -112,7 +113,7 @@ export const CProjects: Array<ICProjects> = [
     githubLink: "https://github.com/NPEDigiHouse/sifa-unhas",
     projectLink: "https://sifa.unhas.ac.id/",
     summary:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro temporibus necessitatibus eos, quam doloribus odit voluptate quidem rerum illo molestias perferendis ex nisi tempora unde magni earum voluptatibus enim molestiae.",
+      "SIFA (Pharmacy Information System) is a comprehensive web-based application developed for the Faculty of Pharmacy at Universitas Hasanuddin. The system streamlines various academic and administrative processes, particularly those related to final project management. Through SIFA, students can submit final project proposals, get supervisor and examiner assignments, manage seminar schedules, and request academic letters and documents, all within a single platform. Additionally, SIFA provides learning outcome data and insights, helping students and faculty track academic progress more effectively. By digitizing and centralizing these essential workflows, the system significantly reduces paperwork, enhances transparency, and improves communication between students, lecturers, and administrative staff..",
     role: ["Frontend Developer", "Project Manager"],
     image: CProjectsImageArray?.[2],
     contribution: "part",
