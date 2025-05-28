@@ -1,6 +1,7 @@
 import { ICProjects } from "./interfaces";
 
 import ProjectImage12 from "./../../assets/images/pj_img_12.png";
+import ProjectImage11 from "./../../assets/images/pj_img_11.jpeg";
 import ProjectImage14 from "./../../assets/images/pj_img_14.jpg";
 import ProjectImage1 from "./../../assets/images/pj_img_1_2.png";
 import ProjectImage2 from "./../../assets/images/pj_img_2.png";
@@ -22,10 +23,11 @@ const CProjectsImageArray = [
   ProjectImage8,
   ProjectImage9,
   null,
-  null,
+  ProjectImage11,
   ProjectImage12,
   null,
   ProjectImage14,
+  null,
   null,
 ];
 
@@ -67,7 +69,7 @@ export const CProjects: Array<ICProjects> = [
         type: "repo",
       },
     ],
-    additionalTechs: ['YOLO', 'OCR', 'ESP32', 'Arduino']
+    additionalTechs: ["YOLO", "OCR", "ESP32", "Arduino"],
   },
   {
     idx: 1,
@@ -104,7 +106,7 @@ export const CProjects: Array<ICProjects> = [
         type: "other",
       },
     ],
-    additionalTechs: ['YOLO', 'Roboflow']
+    additionalTechs: ["YOLO", "Roboflow"],
   },
   {
     idx: 2,
@@ -120,7 +122,7 @@ export const CProjects: Array<ICProjects> = [
     contribution: "part",
     shortSummary:
       "Comprehensive thesis management platform for students and faculty",
-    additionalTechs: ['MantineUI']
+    additionalTechs: ["MantineUI"],
   },
   {
     idx: 3,
@@ -135,7 +137,7 @@ export const CProjects: Array<ICProjects> = [
     image: CProjectsImageArray?.[3],
     contribution: "part",
     shortSummary: "Borrowing system for shared departmental academic equipment",
-    additionalTechs: ['MantineUI']
+    additionalTechs: ["MantineUI"],
   },
   {
     idx: 4,
@@ -143,7 +145,8 @@ export const CProjects: Array<ICProjects> = [
     projectType: "website",
     techs: ["typescript", "reactjs", "tailwind"],
     githubLink: "https://github.com/NPEDigiHouse/anxiety-test",
-    summary: "A web-based questionnaire system developed to measure the level of social anxiety among high school students. The platform presents a series of carefully designed statements related to social anxiety, to which students respond on a scale ranging from “Strongly Disagree” to “Strongly Agree.” The primary objective of this project is to support a research study aimed at validating the reliability and effectiveness of this web-based inventory. Additionally, it seeks to gain insights into the prevalence and degree of social anxiety experienced by students. All responses are confidential and used solely for academic and scientific purposes, with no impact on students' academic performance. By digitizing the assessment process, this tool makes it easier to collect and analyze data efficiently while ensuring participant privacy and encouraging honest self-reflection",
+    summary:
+      "A web-based questionnaire system developed to measure the level of social anxiety among high school students. The platform presents a series of carefully designed statements related to social anxiety, to which students respond on a scale ranging from “Strongly Disagree” to “Strongly Agree.” The primary objective of this project is to support a research study aimed at validating the reliability and effectiveness of this web-based inventory. Additionally, it seeks to gain insights into the prevalence and degree of social anxiety experienced by students. All responses are confidential and used solely for academic and scientific purposes, with no impact on students' academic performance. By digitizing the assessment process, this tool makes it easier to collect and analyze data efficiently while ensuring participant privacy and encouraging honest self-reflection",
     image: CProjectsImageArray?.[4],
     contribution: "whole",
     shortSummary: "Anxiety self-assessment tool for better mental awareness",
@@ -162,21 +165,22 @@ export const CProjects: Array<ICProjects> = [
     contribution: "part",
     shortSummary:
       "Online store for baby essentials and everyday parenting needs",
-    additionalTechs: ['MantineUI']
+    additionalTechs: ["MantineUI"],
   },
   {
     idx: 6,
     name: "Vehicle Recommendations",
     projectType: "machine learning",
-    techs: ["python", "tensorflow", "keras", 'pandas'],
+    techs: ["python", "tensorflow", "keras", "pandas"],
     githubLink: "https://github.com/YusufSyam/Rekomendasi-Merk-Mobil",
     projectLink: "https://rekomendasi-merk-mobil.herokuapp.com/",
-    summary: "A machine learning-based application designed to suggest suitable car types and brands (vehicles with more than four wheels) based on various technical specifications. Users input parameters such as engine capacity (cc), transmission type, fuel type, tank capacity, weight, number of seats, steering system, number of doors and wheels, and vehicle dimensions (length, width, height). Powered by an XGBoost classification model trained on Gaikindo Car Data, the system analyzes the input features to provide accurate and relevant recommendations. The user interface is implemented as a responsive web application, ensuring an accessible and intuitive user experience. This project aims to assist users—whether individuals or businesses—in finding vehicles that match their specific technical and functional requirements, making the decision-making process more data-driven and efficient",
+    summary:
+      "A machine learning-based application designed to suggest suitable car types and brands (vehicles with more than four wheels) based on various technical specifications. Users input parameters such as engine capacity (cc), transmission type, fuel type, tank capacity, weight, number of seats, steering system, number of doors and wheels, and vehicle dimensions (length, width, height). Powered by an XGBoost classification model trained on Gaikindo Car Data, the system analyzes the input features to provide accurate and relevant recommendations. The user interface is implemented as a responsive web application, ensuring an accessible and intuitive user experience. This project aims to assist users—whether individuals or businesses—in finding vehicles that match their specific technical and functional requirements, making the decision-making process more data-driven and efficient",
     image: CProjectsImageArray?.[6],
     contribution: "whole",
     shortSummary: "Web-based system for personalized car recommendations",
     role: ["Machine Learning Engineer", "Frontend Developer"],
-    additionalTechs: ['XGBoost', 'Flask', 'Pickle']
+    additionalTechs: ["XGBoost", "Flask", "Pickle"],
   },
   {
     idx: 7,
@@ -200,7 +204,7 @@ export const CProjects: Array<ICProjects> = [
     techs: ["typescript", "reactjs", "tailwind"],
     githubLink: "https://github.com/NPEDigiHouse/self-esteem",
     summary:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro temporibus necessitatibus eos, quam doloribus odit voluptate quidem rerum illo molestias perferendis ex nisi tempora unde magni earum voluptatibus enim molestiae.",
+      "This web-based application is designed to help users assess and understand their level of self-esteem. It features a carefully crafted questionnaire consisting of 42 items aimed at providing meaningful insights into the user's self-confidence and self-perception. By answering a series of statements, users receive an evaluation of their self-esteem level, offering a deeper awareness of their emotional well-being. The platform is intended for both personal reflection and academic use, with a user-friendly interface that ensures a smooth and accessible self-assessment experience.",
     image: CProjectsImageArray?.[8],
     contribution: "whole",
     shortSummary:
@@ -213,7 +217,7 @@ export const CProjects: Array<ICProjects> = [
     projectType: "website",
     techs: ["javascript"],
     githubLink: "https://github.com/ToKu404/pieceofcake",
-    summary: "",
+    summary: "This bakery web application delivers a playful and nostalgic ordering experience inspired by early 2010s PC cake-making games. Through an interactive, game-like interface, users can customize cakes by virtually baking, decorating, and assembling them using drag-and-drop features and smooth animations. Once finished, the order is processed through WhatsApp, allowing customers to seamlessly send their customized cake requests directly to the shop. This project was developed as part of Universitas Hasanuddin’s 2022 Student Entrepreneurship Program (Program Wirausaha Mahasiswa), aiming to combine creativity, user engagement, and real-world business functionality into a single, memorable platform.",
     image: CProjectsImageArray?.[9],
     contribution: "part",
     shortSummary:
@@ -222,15 +226,15 @@ export const CProjects: Array<ICProjects> = [
   },
   {
     idx: 10,
-    name: "CodeGrader",
-    projectType: "desktop",
-    techs: ["python"],
-    githubLink: "https://github.com/YusufSyam/PTO",
-    summary: "",
+    name: "Asabina Development Centre Profile Website",
+    projectType: "website",
+    techs: ["wordpress"],
+    projectLink: "https://asabinadc.site/",
+    summary: "This WordPress-based community profile website was developed for Asabina Development Centre, a community initiative committed to providing free and accessible training for fresh graduates and job seekers. Asabina focuses on equipping individuals with essential skills such as Excel, basic WordPress, and other technical and soft skills relevant to the professional world. Aimed particularly at underserved communities, including those in remote areas or with limited economic means, Asabina adopts an inclusive, empowerment-based approach to learning. The website serves not only as an online presence but also as a central hub for information about workshops, programs, and community impact. Designed to reflect Asabina’s mission and values, the platform enhances visibility, credibility, and reach, helping the organization inspire and support more individuals toward a competitive and innovative future",
     image: CProjectsImageArray?.[10],
     contribution: "whole",
     shortSummary: "Automated Python code grader for student assignments",
-    role: ["Software Engineer"],
+    role: ["Website Developer"],
   },
   {
     idx: 11,
@@ -238,11 +242,11 @@ export const CProjects: Array<ICProjects> = [
     projectType: "website",
     techs: ["wordpress"],
     projectLink: "https://trg.unhas.ac.id/drugsyn/",
-    summary: "",
+    summary: "This website was developed to serve as the official platform for the Drug Synthesis Research Group at the Faculty of Pharmacy, Universitas Hasanuddin. The platform showcases the group's research activities, projects, publications, and scientific contributions in the field of medicinal chemistry. The group focuses on the design, synthesis, and biological evaluation of novel pharmaceutical compounds targeting diseases. The website provides accessible information on the group’s objectives, ongoing research, and scientific outputs, supporting their mission to advance drug discovery and foster collaboration in the pharmaceutical sciences. While I was not the original developer of the website, I took over its development and currently handle its maintenance and updates.",
     image: CProjectsImageArray?.[11],
     contribution: "part",
     shortSummary: "Central hub for pharmacy research at Hasanuddin University",
-    role: ["Web Administrator"],
+    role: [ "Web Administrator", "Web Developer"],
   },
   {
     idx: 12,
@@ -283,5 +287,17 @@ export const CProjects: Array<ICProjects> = [
     contribution: "whole",
     shortSummary: "This portfolio website itself",
     role: ["Frontend Developer"],
+  },
+  {
+    idx: 15,
+    name: "CodeGrader",
+    projectType: "desktop",
+    techs: ["python"],
+    githubLink: "https://github.com/YusufSyam/PTO",
+    summary: "CodeGrader is an automated grading system designed to evaluate Python programming assignments submitted by students. This tool streamlines the assessment process by automatically executing and testing student code against predefined cases, verifying correctness, and providing immediate feedback and scores. It was developed to reduce the time and effort required for manual grading and ensuring consistency in evaluation. I developed this program during my time as a teaching assistant and lab assistant for undergraduate programming courses, where I frequently encountered the challenges of grading large volumes of student assignments. CodeGrader not only enhanced efficiency for instructors and assistants but also contributed to a more transparent and scalable evaluation process.",
+    image: CProjectsImageArray?.[15],
+    contribution: "whole",
+    shortSummary: "Automated Python code grader for student assignments",
+    role: ["Software Engineer"],
   },
 ];
