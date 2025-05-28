@@ -54,7 +54,7 @@ export const ArticleProjectLink: React.FC<IProjectLinkButton> = ({
   return (
     <Link to={href} target="_blank">
       <Button2
-        label={"article"}
+        label={"thesis"}
         icon={
           <IconLibraryBookFilled size={18} color="white" className="mt-[2px]" />
         }
