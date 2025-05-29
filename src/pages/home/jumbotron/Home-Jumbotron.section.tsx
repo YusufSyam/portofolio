@@ -39,7 +39,7 @@ const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({}) => {
                   <span className="text-cream">YUSUF SYAM</span>
                   {/* hello there, i'm <span className="text-cream">yusuf syam</span> */}
                 </Text>
-                <Text className="font-quicksand-semibold text-3xl text-white tracking-5 text-left">
+                <Text className="font-quicksand-semibold text-2xl md:text-3xl text-white tracking-5 text-left">
                   <span className="text-cream">Data Scientist</span> & Front-end
                   Web Developer
                 </Text>

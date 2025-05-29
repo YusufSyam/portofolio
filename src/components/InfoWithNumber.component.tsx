@@ -15,11 +15,11 @@ const InfoWithNumber: React.FC<IInfoWithNumber> = ({ info, number }) => {
                     +
                 </Text>
             </Text> */}
-           <div className='bg-white/[0.1] !min-w-20 !min-h-20 rounded-full text-white pt-2 relative'>
-                <Text className="font-quicksand-semibold text-5xl w-fit mx-auto">
+           <div className='bg-white/[0.1] min-w-[70px] !md:min-w-20 min-h-[72px] !md:min-h-20 rounded-full text-white pt-2 relative'>
+                <Text className="font-quicksand-semibold text-4xl md:text-5xl w-fit mx-auto">
                     {number}
                 </Text>
-                <Text className='absolute text-2xl top-2 right-2 font-poppins'>
+                <Text className='absolute text-2xl top-1 md:top-2 right-2 font-poppins'>
                     +
                 </Text>
             </div> 
