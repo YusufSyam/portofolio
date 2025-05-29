@@ -1,5 +1,5 @@
 import { Grid, Pagination, Stack, Text, useMantineTheme } from "@mantine/core";
-import { useDebouncedValue } from "@mantine/hooks";
+import { useDebouncedValue, useMediaQuery } from "@mantine/hooks";
 import React, { useEffect, useState } from "react";
 import { MySearchInput } from "../../../components/FormInput.component";
 import { ICProjects } from "../../../utils/const/interfaces";
@@ -14,6 +14,8 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({}) => {
   const [projectData] = useState<Array<ICProjects>>(CProjects);
   const [activePage, setActivePage] = useState<number>(1);
   const [openModal, setOpenModal] = useState(false);
+  
+  const isMdUp = useMediaQuery(`(min-width: ${theme.breakpoints.md})`);
 
   const [displayedData, setDisplayedData] =
     useState<Array<ICProjects>>(projectData);
@@ -25,7 +27,7 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({}) => {
   const [searchInput, setSearchInput] = useState<string>("");
   const [query] = useDebouncedValue(searchInput, 500);
 
-  const dataPerPageAmount = 6;
+  const dataPerPageAmount = isMdUp ? 6 : 4;;
   const [pageAmount, setPageAmount] = useState(
     Math.round(displayedData?.length / dataPerPageAmount + 0.4)
   );
@@ -67,14 +69,14 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({}) => {
 
   console.log("asd", projectData);
   return (
-    <Stack id="section-projects" className="mx-20">
+    <Stack id="section-projects" className="mx-0 lg:mx-20 bg-[#000000] sm:bg-[#999999] md:bg-[#CCCCCC] lg:bg-[#FFFFFF]">
       <ProjectInfoModal
         opened={openModal}
         setOpened={setOpenModal}
         selectedDataIndex={selectedDataIndex}
       />
-      <Stack className="mb-8 mx-16">
-        <Text className="font-quicksand-semibold text-5xl text-white tracking-5 text-center">
+      <Stack className="mb-8 mx-4 md:mx-12 lg:mx-16">
+        <Text className="font-quicksand-semibold text-4xl md:text-5xl text-white tracking-5 text-center">
           projects
         </Text>
         <Text className="text-white text-center text-lgp tracking-4 -mt-4">
@@ -99,7 +101,7 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({}) => {
             )
             ?.map((data: ICProjects, idx: number) => {
               return (
-                <Grid.Col id={"" + idx} span={4}>
+                <Grid.Col id={"" + idx} span={12} sm={6} md={4}>
                   <ProjectCard
                     {...data}
                     onClickDetails={(idx: number) => {
