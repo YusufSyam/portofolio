@@ -96,7 +96,7 @@ const Modal = ({
         title={
           <Stack className="gap-0">
             {typeof title === "string" ? (
-              <Text className="text-[24px] text-primary-text-500 font-poppins-semibold">
+              <Text   className="text-[24px] text-primary-text-500 font-poppins-semibold">
                 {title}
               </Text>
             ) : (
