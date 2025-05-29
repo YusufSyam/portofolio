@@ -89,7 +89,7 @@ const HomeTechStackSection: React.FC<IHomeTechStackSection> = ({}) => {
           className="cursor-pointer"
         />
       </Group>
-      <Group className="justify-evenly md:justify-normal gap:4 md:gap-8  self-center w-fit">
+      <Group className="justify-evenly gap:4 md:gap-8  self-center w-fit">
         <IconTensorflowFilled
           size={42}
           onClick={() => {

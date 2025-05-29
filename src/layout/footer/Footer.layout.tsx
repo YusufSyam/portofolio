@@ -12,7 +12,7 @@ export interface IFooterLayout {}
 
 const FooterLayout: React.FC<IFooterLayout> = ({}) => {
   return (
-    <Stack id="section-contacts" className="bg-dark-grey pt-12 pb-4 px-24 gap-6">
+    <Stack id="section-contacts" className="bg-dark-grey pt-12 pb-4 px-10 sm:px-16 md:px-24 gap-6">
       <Group className="gap-0 justify-between">
         <Group className="self-start ">
           <WebsiteIcon />

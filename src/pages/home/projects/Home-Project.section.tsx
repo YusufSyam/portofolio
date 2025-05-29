@@ -69,7 +69,7 @@ const HomeProjectSection: React.FC<IHomeProjectSection> = ({}) => {
 
   console.log("asd", projectData);
   return (
-    <Stack id="section-projects" className="mx-0 lg:mx-20 bg-[#000000] sm:bg-[#999999] md:bg-[#CCCCCC] lg:bg-[#FFFFFF]">
+    <Stack id="section-projects" className="mx-0 lg:mx-20">
       <ProjectInfoModal
         opened={openModal}
         setOpened={setOpenModal}

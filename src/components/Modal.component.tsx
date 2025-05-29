@@ -2,8 +2,10 @@ import {
   Modal as MantineModal,
   ModalProps,
   Stack,
-  Text
+  Text,
+  useMantineTheme,
 } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import React from "react";
 
 interface IModalProps {
@@ -31,57 +33,112 @@ const Modal = ({
   additionalPaddingRight = 0,
   ...props
 }: IModalProps & ModalProps) => {
-  return (
-    <MantineModal
-      {...props}
-      opened={opened}
-      centered
-      title={
-        <Stack className="gap-0">
-          {typeof title === "string" ? (
-            <Text className="text-[24px] text-primary-text-500 font-poppins-semibold">
-              {title}
+  const theme = useMantineTheme();
+  const isMdUp = useMediaQuery(`(min-width: ${theme.breakpoints.md})`);
+
+  if (isMdUp) {
+    return (
+      <MantineModal
+        {...props}
+        opened={opened}
+        centered
+        title={
+          <Stack className="gap-0">
+            {typeof title === "string" ? (
+              <Text className="text-[24px] text-primary-text-500 font-poppins-semibold">
+                {title}
+              </Text>
+            ) : (
+              <>{title}</>
+            )}
+            <Text className="text-secondary-text-500 font-normal text-md">
+              {subTitle}
             </Text>
-          ) : (
-            <>{title}</>
-          )}
-          <Text className="text-secondary-text-500 font-normal text-md">
-            {subTitle}
-          </Text>
-        </Stack>
-      }
-      padding={28}
-      closeButtonProps={{ size: "md" }}
-      styles={{
-        content: {
-          minWidth: `${minWidth}px`,
-          borderRadius: "12px",
-          paddingLeft: `${additionalPaddingLeft}px`,
-          paddingRight: `${additionalPaddingRight}px`,
-          // overflow: "hidden !important",
-          msOverflowStyle: "none",
-          scrollbarWidth: "none",
-          "-webkit-scrollbar": {
-            display: "none !important"
-          }
-        },
-        header: {
-          // backgroundColor: "#FF0000 !important"
-        },
-        body:{
-          // backgroundColor: "#FF0000 !important",overflow: "hidden !important",
-        },
-        root:{
+          </Stack>
         }
-      }}
-      onClose={() => {
-        setOpened(false);
-        onCloseFunc();
-      }}
-    >
-      <Stack className="">{children}</Stack>
-    </MantineModal>
-  );
+        padding={28}
+        closeButtonProps={{ size: "md" }}
+        styles={{
+          content: {
+            minWidth: `${minWidth}px`,
+            borderRadius: "12px",
+            paddingLeft: `${additionalPaddingLeft}px`,
+            paddingRight: `${additionalPaddingRight}px`,
+            // overflow: "hidden !important",
+            msOverflowStyle: "none",
+            scrollbarWidth: "none",
+            "-webkit-scrollbar": {
+              display: "none !important",
+            },
+          },
+          header: {
+            // backgroundColor: "#FF0000 !important"
+          },
+          body: {
+            // backgroundColor: "#FF0000 !important",overflow: "hidden !important",
+          },
+          root: {},
+        }}
+        onClose={() => {
+          setOpened(false);
+          onCloseFunc();
+        }}
+      >
+        <Stack className="">{children}</Stack>
+      </MantineModal>
+    );
+  } else {
+    return (
+      <MantineModal
+        {...props}
+        opened={opened}
+        centered
+        title={
+          <Stack className="gap-0">
+            {typeof title === "string" ? (
+              <Text className="text-[24px] text-primary-text-500 font-poppins-semibold">
+                {title}
+              </Text>
+            ) : (
+              <>{title}</>
+            )}
+            <Text className="text-secondary-text-500 font-normal text-md">
+              {subTitle}
+            </Text>
+          </Stack>
+        }
+        padding={28}
+        closeButtonProps={{ size: "md" }}
+        styles={{
+          content: {
+            minWidth: "500px",
+            borderRadius: "12px",
+            paddingLeft: `${additionalPaddingLeft}px`,
+            paddingRight: `${additionalPaddingRight}px`,
+            // overflow: "hidden !important",
+            msOverflowStyle: "none",
+            scrollbarWidth: "none",
+            "-webkit-scrollbar": {
+              display: "none !important",
+            },
+          },
+          header: {
+            // backgroundColor: "#FF0000 !important"
+          },
+          body: {
+            // backgroundColor: "#FF0000 !important",overflow: "hidden !important",
+          },
+          root: {},
+        }}
+        onClose={() => {
+          setOpened(false);
+          onCloseFunc();
+        }}
+      >
+        <Stack className="">{children}</Stack>
+      </MantineModal>
+    );
+  }
 };
 
 export default Modal;
