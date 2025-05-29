@@ -25,7 +25,7 @@ const HomeAboutMeSection: React.FC<IHomeAboutMeSection> = ({}) => {
           <Stack className="gap-4">
             <Text className="text-dark-grey text-justify tracking-4">
               I graduated from Hasanuddin University with a Bachelor's degree in
-              Computer Science and a GPA of 3.63. During my undergraduate years,
+              Information Systems and a GPA of 3.63. During my undergraduate years,
               I actively contributed as a teaching assistant, gaining valuable
               experience in both academic teaching and team collaboration. I
               also had the opportunity to work as a frontend engineer, where I
@@ -78,7 +78,7 @@ const HomeAboutMeSection: React.FC<IHomeAboutMeSection> = ({}) => {
             </Stack>
             <Text className="text-dark-grey text-justify tracking-4">
               For more details you can refer to my{" "}
-              <a href={CLinks.cv} target="_blank">
+              <a href={CLinks.cv} className="text-[#5555FE] font-semibold" target="_blank">
                 CV
               </a>
             </Text>
