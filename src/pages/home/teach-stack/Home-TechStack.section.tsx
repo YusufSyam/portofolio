@@ -32,14 +32,14 @@ function openListRepoByTechStack(stack: string, isLang?: boolean) {
 
 const HomeTechStackSection: React.FC<IHomeTechStackSection> = ({}) => {
   return (
-    <Stack className="mx-4 sm:mx-12 md:mx-20 lg:mx-40">
+    <Stack className="sm:mx-12 md:mx-20 lg:mx-40">
       <Text className="font-quicksand-semibold text-4xl md:text-5xl text-white tracking-5 text-center">
         tech stack
       </Text>
       <Text className="text-white text-center text-lgp tracking-4 -mt-4">
         Programming languages, frameworks and tools i used
       </Text>
-      <Group className="justify-between md:justify-normal gap:4 md:gap-8 self-center w-fit mt-4">
+      <Group className="justify-center md:justify-normal gap:4 md:gap-8 self-center w-fit mt-4">
         <IconPythonFilled
           onClick={() => {
             openListRepoByTechStack("python", true);

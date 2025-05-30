@@ -15,19 +15,19 @@ export interface IHomeJumbotronSection {}
 const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({}) => {
   
   return (
-    <Stack className="gap-20 mb-8">
+    <Stack className="gap-20 mb-4 sm:mb-8">
       <Grid gutter={54} columns={24} className="">
         <Grid.Col span={24} sm={8} className="flex">
           <Stack className="w-full items-center md:items-end relative">
-            <div className="w-[290px] rounded-full overflow-hidden z-10">
+            <div className="w-[290px] md:w-[220px] lg:w-[290px] rounded-full overflow-hidden z-10">
               <img
                 src={jumbotron4}
                 alt="Gambar Item"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="bg-cream absolute w-[294px] h-[294px] rounded-full left-1/2 translate-x-[-51%] top-[-1px] md:hidden block"></div>
-            <div className="bg-cream absolute w-[294px] h-[294px] rounded-full right-[-1px] top-[-1px] md:block hidden "></div>
+            <div className="bg-cream absolute w-[294px] h-[294px] md:w-[224px] md:h-[224px] lg:w-[294px] lg:h-[294px] rounded-full left-1/2 translate-x-[-51%] top-[-1px] md:hidden block"></div>
+            <div className="bg-cream absolute w-[294px] h-[294px] md:w-[224px] md:h-[224px] lg:w-[294px] lg:h-[294px] rounded-full right-[-1px] top-[-1px] md:block hidden "></div>
           </Stack>
         </Grid.Col>
         <Grid.Col span={24} sm={16} className="">

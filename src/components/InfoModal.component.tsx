@@ -63,7 +63,7 @@ const InfoModal = ({
           ) : (
             <>{leftTitleIcon}</>
           )}
-          <Text className="text-3xl text-dark-grey font-quicksand-semibold">
+          <Text className="text-xl sm:text-2xl md:text-3xl text-dark-grey font-quicksand-semibold">
             {title}
           </Text>
         </Group>
@@ -73,7 +73,7 @@ const InfoModal = ({
         {typeof children === "string" ? (
           <Text className="text-lg text-dark-grey mx-[48px]">{children}</Text>
         ) : (
-          <div className="text-lg text-dark-grey mx-[48px]">{children}</div>
+          <div className="text-lg text-dark-grey mx-[16px] sm:mx-[30px] md:mx-[40px] lg:mx-[48px]">{children}</div>
         )}
         <Group className="self-end mt-4 gap-6">
           <Button2

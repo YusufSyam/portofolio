@@ -7,7 +7,7 @@ export interface IWebsiteIcon { }
 const WebsiteIcon: React.FC<IWebsiteIcon> = ({ }) => {
     const theme= useMantineTheme();
     return (
-        <Group className='gap-3 flex-nowrap'>
+        <Group className='gap-3 flex-nowrap sm:mx-0'>
             <IconLibraryBookFilled size={40} color={theme.colors['dark-grey'][5]} className='bg-white p-[6px] rounded-full' />
             <Stack className='gap-0'>
                 <Text className='font-quicksand text-white text-md'>

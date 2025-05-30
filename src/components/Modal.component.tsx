@@ -96,7 +96,7 @@ const Modal = ({
         title={
           <Stack className="gap-0">
             {typeof title === "string" ? (
-              <Text   className="text-[24px] text-primary-text-500 font-poppins-semibold">
+              <Text className="text-[24px] text-primary-text-500 font-poppins-semibold">
                 {title}
               </Text>
             ) : (
@@ -107,11 +107,11 @@ const Modal = ({
             </Text>
           </Stack>
         }
-        padding={28}
+        padding={20}
         closeButtonProps={{ size: "md" }}
         styles={{
           content: {
-            minWidth: "500px",
+            minWidth: "100%",
             borderRadius: "12px",
             paddingLeft: `${additionalPaddingLeft}px`,
             paddingRight: `${additionalPaddingRight}px`,
@@ -126,7 +126,6 @@ const Modal = ({
             // backgroundColor: "#FF0000 !important"
           },
           body: {
-            // backgroundColor: "#FF0000 !important",overflow: "hidden !important",
           },
           root: {},
         }}

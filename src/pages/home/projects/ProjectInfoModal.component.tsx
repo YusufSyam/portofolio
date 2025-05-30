@@ -47,10 +47,10 @@ const ProjectInfoModal: React.FC<IProjectInfoModal> = ({
       }}
       minWidth={1000}
     >
-      <Stack>
+      <Stack className="">
         <div className="w-full rounded-xl overflow-hidden z-10">
           {selectedProject?.image == null ? (
-            <div className="w-full h-48 bg-black/[0.2] p-4">
+            <div className="w-full h-48 bg-black/[0.2] p-2 md:p-4">
               <img
                 src={NoImage}
                 alt="Gambar Item"

@@ -10,7 +10,7 @@ export interface IHomeAboutMeSection {}
 const HomeAboutMeSection: React.FC<IHomeAboutMeSection> = ({}) => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <Stack id="section-aboutMe" className="mx-4 sm:mx-12 md:mx-20 lg:mx-40 ">
+    <Stack id="section-aboutMe" className="sm:mx-8 md:mx-16 lg:mx-40 ">
       <InfoModal
         opened={openModal}
         setOpened={setOpenModal}
@@ -107,7 +107,7 @@ const HomeAboutMeSection: React.FC<IHomeAboutMeSection> = ({}) => {
           />
         </span>
       </Text>
-      <Group className="justify-between md:justify-normal gap:4 sm:gap-10 md:gap-16 lg:gap-32 self-center w-fit mt-4">
+      <Group className="justify-center md:justify-normal gap-4 sm:gap-10 md:gap-16 lg:gap-32 self-center w-full md:w-fit mt-4">
         <InfoWithNumber info="Years of experience" number={2} />
         <InfoWithNumber info="Projects" number={10} />
         <InfoWithNumber info="Certificates" number={6} />

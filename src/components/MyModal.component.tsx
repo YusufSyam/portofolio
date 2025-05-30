@@ -64,7 +64,7 @@ const MyModal = ({
           scrollbarWidth: "none",
           "-webkit-scrollbar": {
             display: "none !important"
-          }
+          },
         },
         header: {
           // backgroundColor: "#FF0000 !important"
@@ -76,7 +76,6 @@ const MyModal = ({
         }
       }}
       onClose={() => {
-        console.log('Terclose2')
         setOpened(false);
         onCloseFunc();
       }}

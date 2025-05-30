@@ -8,14 +8,14 @@ export interface IInfoWithNumber {
 
 const InfoWithNumber: React.FC<IInfoWithNumber> = ({ info, number }) => {
     return (
-        <Group className="gap-1 w-40 flex-nowrap">
+        <Group className="gap-1 w-32 md:w-40 flex-nowrap">
             {/* <Text className="relative text-white font-quicksand-semibold text-5xl bg-white/[0.1] !min-w-20 !min-h-20 rounded-full text-center pt-2">
                 {number}
                 <Text className='absolute text-2xl top-0 right-4'>
                     +
                 </Text>
             </Text> */}
-           <div className='bg-white/[0.1] min-w-[72px] md:min-w-20 min-h-[72px] md:min-h-20 rounded-full text-white pt-2 relative'>
+           <div className='bg-white/[0.1] min-w-[68px] md:min-w-20 min-h-[68px] md:min-h-20 rounded-full text-white pt-2 relative'>
                 <Text className="font-quicksand-semibold text-4xl md:text-5xl w-fit mx-auto">
                     {number}
                 </Text>
@@ -23,7 +23,7 @@ const InfoWithNumber: React.FC<IInfoWithNumber> = ({ info, number }) => {
                     +
                 </Text>
             </div> 
-            <Text className="text-white self-center font-quicksand-semibold text-md">
+            <Text className="text-white self-center font-quicksand-semibold text-sm sm:text-md">
                 {info}
             </Text>
         </Group>
