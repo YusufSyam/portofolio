@@ -11,7 +11,7 @@ export interface IHomePage {}
 const HomePage: React.FC<IHomePage> = ({}) => {
   return (
     <MainLayout>
-      <Stack className="mt-10 gap-24 sm:gap-28 md:gap-32 pb-10 sm:pb-16 md:pb-20">
+      <Stack className="mt-10 gap-28 sm:gap-32 pb-10 sm:pb-16 md:pb-20">
         <HomeJumbotronSection />
         <HomeAboutMeSection />
         <HomeTechStackSection />
