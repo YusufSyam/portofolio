@@ -82,7 +82,7 @@ const ProjectCard: React.FC<ICProjects & { onClickDetails: (e:number) => void }>
             <Button2
               label={"details"}
               onClickFunc={() => {
-                onClickDetails(idx);
+                onClickDetails(idx || 0);
               }}
               icon={
                 <IconSearchFilledRounded

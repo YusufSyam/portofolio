@@ -3,6 +3,8 @@ import { ICProjects } from "./interfaces";
 import ProjectImage12 from "./../../assets/images/pj_img_12.png";
 import ProjectImage11 from "./../../assets/images/pj_img_11.jpeg";
 import ProjectImage14 from "./../../assets/images/pj_img_14.jpg";
+import ProjectImage15 from "./../../assets/images/pj_img_15.png";
+import ProjectImage16 from "./../../assets/images/pj_img_16.png";
 import ProjectImage1 from "./../../assets/images/pj_img_1_2.png";
 import ProjectImage2 from "./../../assets/images/pj_img_2.png";
 import ProjectImage3 from "./../../assets/images/pj_img_3.png";
@@ -29,7 +31,26 @@ const CProjectsImageArray = [
   ProjectImage14,
   null,
   null,
+  ProjectImage15,
+  ProjectImage16,
 ];
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
 
 export const CProjects: Array<ICProjects> = [
   {
@@ -109,7 +130,7 @@ export const CProjects: Array<ICProjects> = [
     additionalTechs: ["YOLO", "Roboflow"],
   },
   {
-    idx: 2,
+    idx: 2, 
     name: "SI-FA",
     projectType: "website",
     techs: ["typescript", "reactjs", "tailwind"],
@@ -126,6 +147,52 @@ export const CProjects: Array<ICProjects> = [
   },
   {
     idx: 3,
+    name: "Weekly Quiz Leaderboard System",
+    projectType: "website",
+    techs: ["typescript", "reactjs", "tailwind", "nextjs","python"],
+    githubLink:
+      "https://github.com/YusufSyam/wqls-fe",
+    summary:
+      "The Weekly Quiz Leaderboard System is a web application designed to facilitate healthy competition among users by recording and ranking quiz scores on a weekly basis. Users participate in quizzes, and their scores are automatically submitted to a centralized leaderboard. The system ranks all participants based on their total scores within the current week, and automatically resets the leaderboard every Monday to start a new competition cycle.",
+    role: ["Frontend Developer", "Backend Developer"],
+    image: CProjectsImageArray?.[17],
+    contribution: "whole",
+    shortSummary: "Leaderboard System that tracks and displays users quiz scores, ranks them weekly",
+    additionalTechs: ["Django",],
+    anotherLinks: [
+      {
+        linkName: "Backend Repository",
+        href: "https://github.com/YusufSyam/wqls_be",
+        description: "Repository for Backend Project",
+        type:'repo'
+      }
+    ]
+  },
+  {
+    idx: 4,
+    name: "Motoflow",
+    projectType: "website",
+    techs: ["typescript", "reactjs", "tailwind", "python"],
+    githubLink:
+      "https://github.com/YusufSyam/motoflow",
+    summary:
+      "This project is a fullstack web application built to manage daily operations of a motorcycle workshop. The backend is developed with Django and GraphQL (Graphene) to provide a flexible API for data retrieval and mutation. The frontend uses React with TailwindCSS and Vite for a responsive UI, and React Query combined with GraphQL Code Generator for efficient data fetching and caching. Key features include logging service transactions, tracking purchased items, associating mechanics with transactions, and aggregating daily income reports. SQLite is used as the primary database, suitable for lightweight local deployments. This system streamlines workshop operations and provides structured data for future analytics or business decisions",
+    role: ["Frontend Developer", "Backend Developer"],
+    image: CProjectsImageArray?.[16],
+    contribution: "whole",
+    shortSummary: "A Web-based motorcycle workshop management system",
+    additionalTechs: ["MantineUI", "Django", "GraphQL"],
+    anotherLinks: [
+      {
+        linkName: "Backend Repository",
+        href: "https://github.com/YusufSyam/motoflow_be",
+        description: "Repository for Backend Project",
+        type:'repo'
+      }
+    ]
+  },
+  {
+    idx: 5,
     name: "Departmental Inventory Loan Information System",
     projectType: "website",
     techs: ["typescript", "reactjs", "tailwind"],
@@ -140,7 +207,7 @@ export const CProjects: Array<ICProjects> = [
     additionalTechs: ["MantineUI"],
   },
   {
-    idx: 4,
+    idx: 6,
     name: "Anxiety Test",
     projectType: "website",
     techs: ["typescript", "reactjs", "tailwind"],
@@ -153,7 +220,7 @@ export const CProjects: Array<ICProjects> = [
     role: ["Frontend Developer"],
   },
   {
-    idx: 5,
+    idx:  7,
     name: "Dzikry Baby Shop",
     projectType: "website",
     techs: ["typescript", "reactjs", "tailwind"],
@@ -168,7 +235,7 @@ export const CProjects: Array<ICProjects> = [
     additionalTechs: ["MantineUI"],
   },
   {
-    idx: 6,
+    idx: 8,
     name: "Vehicle Recommendations",
     projectType: "machine learning",
     techs: ["python", "tensorflow", "keras", "pandas"],
@@ -183,7 +250,7 @@ export const CProjects: Array<ICProjects> = [
     additionalTechs: ["XGBoost", "Flask", "Pickle"],
   },
   {
-    idx: 7,
+    idx:  9,
     name: "Banyorang Village Portal",
     projectType: "website",
     techs: ["typescript", "reactjs", "tailwind"],
@@ -198,7 +265,7 @@ export const CProjects: Array<ICProjects> = [
     role: ["Frontend Developer"],
   },
   {
-    idx: 8,
+    idx:10,  
     name: "Self Esteem",
     projectType: "website",
     techs: ["typescript", "reactjs", "tailwind"],
@@ -212,7 +279,7 @@ export const CProjects: Array<ICProjects> = [
     role: ["Frontend Developer"],
   },
   {
-    idx: 9,
+    idx:11,  
     name: "Piece of Cake",
     projectType: "website",
     techs: ["javascript"],
@@ -225,7 +292,7 @@ export const CProjects: Array<ICProjects> = [
     role: ["Frontend Developer"],
   },
   {
-    idx: 10,
+    idx: 12, 
     name: "Asabina Development Centre Profile Website",
     projectType: "website",
     techs: ["wordpress"],
@@ -233,11 +300,11 @@ export const CProjects: Array<ICProjects> = [
     summary: "This WordPress-based community profile website was developed for Asabina Development Centre, a community initiative committed to providing free and accessible training for fresh graduates and job seekers. Asabina focuses on equipping individuals with essential skills such as Excel, basic WordPress, and other technical and soft skills relevant to the professional world. Aimed particularly at underserved communities, including those in remote areas or with limited economic means, Asabina adopts an inclusive, empowerment-based approach to learning. The website serves not only as an online presence but also as a central hub for information about workshops, programs, and community impact. Designed to reflect Asabina’s mission and values, the platform enhances visibility, credibility, and reach, helping the organization inspire and support more individuals toward a competitive and innovative future",
     image: CProjectsImageArray?.[10],
     contribution: "whole",
-    shortSummary: "Automated Python code grader for student assignments",
+    shortSummary: "A community profile website",
     role: ["Website Developer"],
   },
   {
-    idx: 11,
+    idx:  13,
     name: "DrugSyn Website",
     projectType: "website",
     techs: ["wordpress"],
@@ -249,7 +316,7 @@ export const CProjects: Array<ICProjects> = [
     role: [ "Web Administrator", "Web Developer"],
   },
   {
-    idx: 12,
+    idx:  14,
     name: "Python Visualization Snippet",
     projectType: "website",
     techs: ["python", "pandas"],
@@ -263,7 +330,7 @@ export const CProjects: Array<ICProjects> = [
     role: ["Frontend Developer"],
   },
   {
-    idx: 13,
+    idx:  15,
     name: "Top Rated Movies and TV Shows",
     projectType: "mobile",
     techs: ["java"],
@@ -276,7 +343,7 @@ export const CProjects: Array<ICProjects> = [
     role: ["Mobile Developer"],
   },
   {
-    idx: 14,
+    idx: 16,
     name: "Portfolio Website",
     projectType: "website",
     techs: ["typescript", "reactjs", "tailwind"],
@@ -289,7 +356,7 @@ export const CProjects: Array<ICProjects> = [
     role: ["Frontend Developer"],
   },
   {
-    idx: 15,
+    idx: 17,
     name: "CodeGrader",
     projectType: "desktop",
     techs: ["python"],

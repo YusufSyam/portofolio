@@ -1,7 +1,7 @@
 import { TProjectType, TTechStack } from "./types";
 
 export interface ICProjects {
-    idx: number,
+    idx?: number,
     name: string;
     image?: string | null;
     projectType: TProjectType,
