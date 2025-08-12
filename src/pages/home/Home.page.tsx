@@ -5,7 +5,6 @@ import HomeAboutMeSection from "./about-me/Home-AboutMe.section";
 import HomeJumbotronSection from "./jumbotron/Home-Jumbotron.section";
 import HomeProjectSection from "./projects/Home-Project.section";
 import HomeTechStackSection from "./teach-stack/Home-TechStack.section";
-import HomeJumbotronParallaxSection from "./jumbotron/Home-JumbotronParallax.section";
 
 export interface IHomePage {}
 

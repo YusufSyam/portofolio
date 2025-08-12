@@ -1,7 +1,6 @@
 import React from "react";
-import FooterLayout from "./footer/Footer.layout";
-import HeaderLayout from "./header/Header.layout";
 import HomeJumbotronParallaxSection from "../pages/home/jumbotron/Home-JumbotronParallax.section";
+import FooterLayout from "./footer/Footer.layout";
 
 export type TPageName = "Beranda" | "Aktivitas" | "";
 

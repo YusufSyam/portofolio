@@ -1,12 +1,11 @@
 import { Container, Stack, Text } from "@mantine/core";
 import React, { useEffect, useState } from "react";
+import bglayer from "../../../assets/images/parallax/bglayer.png";
 import layer1 from "../../../assets/images/parallax/layer0.png";
 import layer2 from "../../../assets/images/parallax/layer1.png";
 import layer3 from "../../../assets/images/parallax/layer2.png";
 import layer4 from "../../../assets/images/parallax/layer3.png";
-import bglayer from "../../../assets/images/parallax/bglayer.png";
 import HeaderLayout from "../../../layout/header/Header.layout";
-import HomeJumbotronSection from "./Home-Jumbotron.section";
 
 export interface IHomeJumbotronParallaxSection {}
 
