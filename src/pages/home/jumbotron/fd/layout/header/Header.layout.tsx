@@ -9,7 +9,7 @@ export interface IFDHeaderLayout {}
 const FDHeaderLayout: React.FC<IFDHeaderLayout> = ({}) => {
   const theme= useMantineTheme();
   return (
-    <Group className="justify-between px-4 sm:px-8 py-4 sm:py-5 bg-fd-pink mx-8 rounded-full mt-6">
+    <Group className="justify-between px-4 sm:px-8 py-4 sm:py-5 bg-fd-pink mx-8 rounded-full mt-6 z-10">
       <Text className='font-alkatra-semibold text-white text-xl sm:text-2xl'>
         Dhea's
       </Text>
