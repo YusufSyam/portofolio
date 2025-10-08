@@ -15,7 +15,7 @@ export interface IHomeJumbotronSection {}
 const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({}) => {
   
   return (
-    <Stack className="gap-20 mb-4 sm:mb-8">
+    <Stack className="gap-20 mb-4 sm:mb-8 bg-gradient-to-b from-[#093749] via-[#093749] to-transparent pt-32 pb-0 px-8 sm:px-10 md:px-12">
       <Grid gutter={54} columns={24} className="">
         <Grid.Col span={24} sm={8} className="flex">
           <Stack className="w-full items-center md:items-end relative">
@@ -35,8 +35,8 @@ const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({}) => {
             <Stack className="w-fit">
               <Stack className="gap-0">
                 <Text className="font-quicksand-semibold text-3xl md:text-5xl text-white tracking-5 text-left">
-                  HELLO THERE, I'M{" "}
-                  <span className="text-cream">YUSUF SYAM</span>
+                  CALL ME{" "}
+                  <span className="text-cream">YUSUF</span>
                   {/* hello there, i'm <span className="text-cream">yusuf syam</span> */}
                 </Text>
                 <Text className="font-quicksand-semibold text-2xl md:text-3xl text-white tracking-5 text-left">
@@ -50,7 +50,7 @@ const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({}) => {
                 <Text className="text-white text-[17px] text-start py-4 tracking-4">
                   {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corrupti eius quod? Eius repudiandae optio at excepturi quia voluptas, obcaecati ex assumenda omnis mollitia, doloremque corrupti? */}
                   I am an Information Systems graduate, enthusiastic about
-                  everything related to data. Curious, driven, and always eager
+                  everything related to data and website development. Curious, driven, and always eager
                   to learn and build impactful solutions
                 </Text>
               </Group>

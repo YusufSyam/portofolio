@@ -16,7 +16,7 @@ const HeaderLayout: React.FC<IHeaderLayout> = ({}) => {
   const label = burgerOpened ? "Close navigation" : "Open navigation";
 
   return (
-    <Group className="sm:px-[64px] md:px-[100px] lg:px-[200px] px-[64px] pb-4 pt-10 sm:pt-8 md:pt-6 md:flex-nowrap justify-between">
+    <Group className="sm:px-[64px] md:px-[100px] lg:px-[200px] px-[32px] pb-4 pt-10 sm:pt-8 md:pt-6 md:flex-nowrap justify-between relative z-10">
       <WebsiteIcon />
       <Group className="md:gap-12 gap-8 md:flex-nowrap hidden sm:flex">
         <HeaderNavigationComp label="about me" onClick={scrollToAboutMe} />

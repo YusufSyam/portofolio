@@ -32,7 +32,7 @@ function openListRepoByTechStack(stack: string, isLang?: boolean) {
 
 const HomeTechStackSection: React.FC<IHomeTechStackSection> = ({}) => {
   return (
-    <Stack className="sm:mx-12 md:mx-20 lg:mx-40">
+    <Stack className="sm:mx-12 md:mx-20 lg:mx-40 px-8 sm:px-10">
       <Text className="font-quicksand-semibold text-4xl md:text-5xl text-white tracking-5 text-center">
         tech stack
       </Text>

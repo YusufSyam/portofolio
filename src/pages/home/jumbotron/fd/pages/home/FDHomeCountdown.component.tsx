@@ -6,7 +6,7 @@ export interface IFDHomeCountdownComp {
   targetRef: React.MutableRefObject<any>;
 }
 
-const TARGET_DATE = new Date("2025-06-06T00:00:00");
+const TARGET_DATE = new Date("2025-09-14T00:00:00");
 
 const FDHomeCountdownComp: React.FC<IFDHomeCountdownComp> = ({ targetRef }) => {
   // State untuk menyimpan waktu yang tersisa
