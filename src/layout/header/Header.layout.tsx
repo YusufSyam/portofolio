@@ -34,7 +34,7 @@ const HeaderLayout: React.FC<IHeaderLayout> = ({}) => {
 
         {burgerOpened && (
           <>
-            <Stack className="absolute bg-dark-grey w-32 h-fit right-[3px] py-4 px-6 rounded-xl top-10 z-20">
+            <Stack className="absolute  w-32 h-fit right-[3px] py-4 px-6 rounded-xl top-10 z-20">
               <HeaderNavigationComp
                 label="about me"
                 onClick={scrollToAboutMe}
@@ -48,7 +48,7 @@ const HeaderLayout: React.FC<IHeaderLayout> = ({}) => {
                 onClick={scrollToContacts}
               />
             </Stack>
-            <div className="absolute w-4 h-4 rotate-45 top-[38px] right-2 bg-dark-grey z-10 rounded-sm"></div>
+            <div className="absolute w-4 h-4 rotate-45 top-[38px] right-2  z-10 rounded-sm"></div>
           </>
         )}
       </div>

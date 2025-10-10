@@ -155,12 +155,12 @@ export const CProjects: Array<ICProjects> = [
     githubLink: "https://github.com/YusufSyam/EquiCare-AI",
     summary: `EquiCare AI is a Retrieval-Augmented Generation (RAG)-based chatbot designed to assist in identifying and understanding horse diseases. The system combines document retrieval and natural language generation to provide medically grounded explanations, diagnoses, and treatment recommendations based on equine veterinary literature scraped from HorseDVM.
 
-Developed as a Flask web application with an interactive chat interface, EquiCare AI integrates two Hugging Face models — sentence-transformers/all-MiniLM-L6-v2 for embeddings and tiiuae/Falcon3-1B-Instruct for text generation. All processes, from web scraping to model inference, run locally, allowing full customization of model configurations and pipeline components.
+Developed as a Flask web application with an interactive chat interface, EquiCare AI integrates two Hugging Face models, sentence-transformers/all-MiniLM-L6-v2 for embeddings and tiiuae/Falcon3-1B-Instruct for text generation. All processes, from web scraping to model inference, run locally, allowing full customization of model configurations and pipeline components.
 
-This project demonstrates applied knowledge in RAG architecture, NLP, vector databases (ChromaDB), and model integration, showcasing end-to-end AI deployment — from data acquisition to user-facing conversational AI.`,
+This project demonstrates applied knowledge in RAG architecture, NLP, vector databases (ChromaDB), and model integration, showcasing end-to-end AI deployment from data acquisition to user-facing conversational AI.`,
     role: ["Machine Learning Engineer"],
     image: CProjectsImageArray?.[18],
-    contribution: "part",
+    contribution: "whole",
     shortSummary: "Intelligent Horse Disease Chatbot",
     additionalTechs: ["HuggingFace", "ChromaDB", "LangChain", "BeautifulSoup"],
   },
@@ -226,16 +226,19 @@ This project demonstrates applied knowledge in RAG architecture, NLP, vector dat
   },
   {
     idx: 1 + 6,
-    name: "Anxiety Test",
+    name: "Asabina Development Center Profile Website",
     projectType: "website",
-    techs: ["typescript", "reactjs", "tailwind"],
-    githubLink: "https://github.com/NPEDigiHouse/anxiety-test",
+    techs: ["wordpress", "reactjs", "nextjs", "tailwind"],
+    projectLink: "https://asabinadc.vercel.app/",
+    // projectLink: "https://asabinadc.site/",
     summary:
-      "A web-based questionnaire system developed to measure the level of social anxiety among high school students. The platform presents a series of carefully designed statements related to social anxiety, to which students respond on a scale ranging from “Strongly Disagree” to “Strongly Agree.” The primary objective of this project is to support a research study aimed at validating the reliability and effectiveness of this web-based inventory. Additionally, it seeks to gain insights into the prevalence and degree of social anxiety experienced by students. All responses are confidential and used solely for academic and scientific purposes, with no impact on students' academic performance. By digitizing the assessment process, this tool makes it easier to collect and analyze data efficiently while ensuring participant privacy and encouraging honest self-reflection",
-    image: CProjectsImageArray?.[4],
+      "This WordPress-based community profile website was developed for Asabina Development Center, a community initiative committed to providing free and accessible training for fresh graduates and job seekers. Asabina focuses on equipping individuals with essential skills such as Excel, basic WordPress, and other technical and soft skills relevant to the professional world. Aimed particularly at underserved communities, including those in remote areas or with limited economic means, Asabina adopts an inclusive, empowerment-based approach to learning. The website serves not only as an online presence but also as a central hub for information about workshops, programs, and community impact. Designed to reflect Asabina’s mission and values, the platform enhances visibility, credibility, and reach, helping the organization inspire and support more individuals toward a competitive and innovative future",
+    image: CProjectsImageArray?.[10],
     contribution: "whole",
-    shortSummary: "Anxiety self-assessment tool for better mental awareness",
-    role: ["Frontend Developer"],
+    shortSummary: "A community profile website",
+    additionalTechs: ["ChakraUI", "Vercel"],
+    githubLink: "https://github.com/YusufSyam/asabinadc",
+    role: ["Website Developer"],
   },
   {
     idx: 1 + 7,
@@ -312,16 +315,16 @@ This project demonstrates applied knowledge in RAG architecture, NLP, vector dat
   },
   {
     idx: 1 + 12,
-    name: "Asabina Development Centre Profile Website",
+    name: "Anxiety Test",
     projectType: "website",
-    techs: ["wordpress"],
-    projectLink: "https://asabinadc.site/",
+    techs: ["typescript", "reactjs", "tailwind"],
+    githubLink: "https://github.com/NPEDigiHouse/anxiety-test",
     summary:
-      "This WordPress-based community profile website was developed for Asabina Development Centre, a community initiative committed to providing free and accessible training for fresh graduates and job seekers. Asabina focuses on equipping individuals with essential skills such as Excel, basic WordPress, and other technical and soft skills relevant to the professional world. Aimed particularly at underserved communities, including those in remote areas or with limited economic means, Asabina adopts an inclusive, empowerment-based approach to learning. The website serves not only as an online presence but also as a central hub for information about workshops, programs, and community impact. Designed to reflect Asabina’s mission and values, the platform enhances visibility, credibility, and reach, helping the organization inspire and support more individuals toward a competitive and innovative future",
-    image: CProjectsImageArray?.[10],
+      "A web-based questionnaire system developed to measure the level of social anxiety among high school students. The platform presents a series of carefully designed statements related to social anxiety, to which students respond on a scale ranging from “Strongly Disagree” to “Strongly Agree.” The primary objective of this project is to support a research study aimed at validating the reliability and effectiveness of this web-based inventory. Additionally, it seeks to gain insights into the prevalence and degree of social anxiety experienced by students. All responses are confidential and used solely for academic and scientific purposes, with no impact on students' academic performance. By digitizing the assessment process, this tool makes it easier to collect and analyze data efficiently while ensuring participant privacy and encouraging honest self-reflection",
+    image: CProjectsImageArray?.[4],
     contribution: "whole",
-    shortSummary: "A community profile website",
-    role: ["Website Developer"],
+    shortSummary: "Anxiety self-assessment tool for better mental awareness",
+    role: ["Frontend Developer"],
   },
   {
     idx: 1 + 13,

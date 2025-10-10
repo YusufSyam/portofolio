@@ -15,7 +15,7 @@ export interface IHomeJumbotronSection {}
 const HomeJumbotronSection: React.FC<IHomeJumbotronSection> = ({}) => {
   
   return (
-    <Stack className="gap-20 mb-4 sm:mb-8 bg-gradient-to-b from-[#093749] via-[#093749] to-transparent pt-32 pb-0 px-8 sm:px-10 md:px-12">
+    <Stack className="gap-20 mb-4 sm:mb-8 pt-24 pb-0 px-8 sm:px-10 md:px-12">
       <Grid gutter={54} columns={24} className="">
         <Grid.Col span={24} sm={8} className="flex">
           <Stack className="w-full items-center md:items-end relative">
